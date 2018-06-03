@@ -10,8 +10,11 @@
 #define OSAPI_PLUS_H_
 
 #include "status/status.hh"
+#include "util/util.hh"
+#include "sistema/system.hh"
 #include "logging/log.hh"
+
 //#include "os/os.hh"
-//#include "sistema/system.hh"
+
 
 #endif /* OS_HH_ */

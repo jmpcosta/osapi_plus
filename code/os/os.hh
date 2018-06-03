@@ -13,34 +13,15 @@
 #include <string>
 #include <vector>
 
-#include "general/general_types.hh"
+#include "general/general_defs.hh"
+#include "sistema/trace.hh"
 
 namespace osapi
 {
 
 constexpr char module[] = "OS";
 
-class Configuration
-{
-public:
-
-		static Configuration & 	getInstance();
-
-		// delete copy and move constructors and assign operators
-		Configuration(Configuration const&) 			= delete;		// Copy construct
-		Configuration(Configuration&&) 					= delete;		// Move construct
-		Configuration& operator=(Configuration const&)	= delete; 		// Copy assign
-		Configuration& operator=(Configuration &&)		= delete;		// Move assign
-
-		void					add( std::vector<PROPERTY> & );
-
-private:
-								Configuration()		{}
-								~Configuration()	{}
-};
-
-
- class info
+class info
  {
  public:
 	 	 	 	 	 	info();
@@ -55,7 +36,8 @@ private:
  private:
 	 bool				osInfoAvailable;
 	 t_osInfo			osInfo;
- };
+	 TRACE_CLASSNAME_DECLARATION
+};
 
 
 }	// End of namespace "osapi"

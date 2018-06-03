@@ -13,9 +13,10 @@
 #include "status/status.h"
 #include "os/os.h"
 
-#include <status/status.hh>
-#include <general/general_types.hh>
-#include <os/os.hh>
+#include "general/general_defs.hh"
+#include "status/status.hh"
+#include "os/os.hh"
+#include "sistema/trace.hh"
 
 namespace osapi
 {
@@ -24,6 +25,8 @@ info::info()
 {
  t_status		st;
 
+ TRACE_CLASSNAME( "info" )
+
  osInfoAvailable = false;
 
 	st = os_info_get( & osInfo );
@@ -31,7 +34,7 @@ info::info()
 	if( status_success( st ) )
 		osInfoAvailable = true;
 	else
-        throw status( STATUS( st ) );
+        throw OSAPI_STATUS( st );
 }
 
 std::string info::get_name()
@@ -41,7 +44,7 @@ std::string info::get_name()
 
 	st = os_name_get( & osInfo, &osName );
 	if( status_failure( st ) )
-		throw status( STATUS( st ) );
+		throw OSAPI_STATUS( st );
 
 	return std::string( osName );
 }
@@ -53,7 +56,7 @@ std::string info::get_version()
 
 	st = os_version_get( & osInfo, &version );
 	if( status_failure( st ) )
-		throw status( STATUS( st ) );
+		throw OSAPI_STATUS( st );
 
 	return std::string( version );
 }
@@ -64,7 +67,7 @@ std::string info::get_release()
 
  t_status st = os_release_get( & osInfo, &release );
  if( status_failure( st ) )
-	 throw status( STATUS( st ) );
+	 throw OSAPI_STATUS( st );
 
 	return std::string( release );
 }
@@ -76,7 +79,7 @@ std::string info::get_node()
 
 	st = os_node_get( & osInfo, &node );
 	if( status_failure( st ) )
-		throw status( STATUS( st ) );
+		throw OSAPI_STATUS( st );
 
 	return std::string( node );
 }
@@ -88,7 +91,7 @@ std::string info::get_machine()
 
 	st = os_machine_get( & osInfo, &machine );
 	if( status_failure( st ) )
-		throw status( STATUS( st ) );
+		throw OSAPI_STATUS( st );
 
 	return std::string( machine );
 }
@@ -100,7 +103,7 @@ std::string info::get_domain()
 
 	st = os_domain_get( & osInfo, &domain );
 	if( status_failure( st ) )
-		throw status( STATUS( st ) );
+		throw OSAPI_STATUS( st );
 
 	return std::string( domain );
 }
@@ -112,7 +115,7 @@ std::string info::get_provider()
 
 	st = os_provider_get( & osInfo, &providerName );
 	if( status_failure( st ) )
-		throw status( STATUS( st ) );
+		throw OSAPI_STATUS( st );
 
 	return std::string( providerName );
 }
@@ -124,7 +127,7 @@ std::string info::get_provider_release()
 
 	st = os_providerRelease_get( & osInfo, &providerRelease );
 	if( status_failure( st ) )
-		throw status( STATUS( st ) );
+		throw OSAPI_STATUS( st );
 
 	return std::string( providerRelease );
 }

@@ -7,13 +7,14 @@
 
 #include <string>
 
-#include <general/general_types.hh>
-#include <util/util.hh>
+#include "general/general_defs.hh"
+#include "util/util.hh"
+
 
 namespace osapi
 {
 
-
+// Create a two strings output (name & value) based on an initial input string (line) and string separator (sep)
 
 void util::splitString( const std::string & line, const char sep, std::string & name, std::string & value )
 {
@@ -34,6 +35,26 @@ void util::stringEraser( const std::string & what, size_t location, std::string 
 
  if( pos != std::string::npos )
 	 where.erase( pos, len );
+}
+
+// Convert a string to Upper case
+void util::toUpperCase( std::string & str )
+{
+	for( auto & c : str )
+		 c = char( toupper(c) );
+}
+
+// Convert a string to Lower case
+void util::toLowerCase( std::string & str )
+{
+	for( auto & c : str )
+		 c = char( tolower(c) );
+}
+
+
+const char * util::bool2string ( bool value )
+{
+	return ( value ? trueString : falseString );
 }
 
 }; // End of namespace "osapi"

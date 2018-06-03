@@ -36,6 +36,11 @@ status::status( int code, uint8_t mod, uint8_t type, const char * function )
  status( code, status_moduleByID_get( mod ), function, status_errorByType_get( code, mod, type) );
 }
 
+status::status( const std::string message )
+{
+	reason = message;
+}
+
 status::~status() throw() {}
 
 const char * status::what() const noexcept
