@@ -1,17 +1,36 @@
-/*
- * trace.hh
- *
- *  Created on: 27/05/2018
- *      Author: joao
- */
+// *****************************************************************************************
+//
+// File description:
+//
+// Author:	Joao Costa
+// Purpose:	Provide system tracing declarations/definitions
+//
+// *****************************************************************************************
 
-#ifndef CODE_SISTEMA_TRACE_HH_
-#define CODE_SISTEMA_TRACE_HH_
+#ifndef SISTEMA_TRACE_HH_
+#define SISTEMA_TRACE_HH_
 
+// *****************************************************************************************
+//
+// Section: Import headers
+//
+// *****************************************************************************************
+
+// Import C++ system headers
 #include <iostream>
 
+// Import OSAPI C declarations
 #include "status/status.h"
+
+// Import OSAPI++ declarations
 #include "status/status.hh"
+
+
+// *****************************************************************************************
+//
+// Section: Trace API declaration/definition
+//
+// *****************************************************************************************
 
 namespace osapi
 {
@@ -45,6 +64,14 @@ void throw_on_failure( const S & st  )
 
 }	// End of namespace "osapi"
 
+
+// *****************************************************************************************
+//
+// Section: Supporting macros
+//
+// *****************************************************************************************
+
+
 #ifdef OSAPI_TRACING
  #define TRACE_CLASSNAME_DECLARATION	std::string	classname;
  #define TRACE_CLASSNAME(x)				classname=x;
@@ -65,7 +92,4 @@ void throw_on_failure( const S & st  )
 
 
 
-
-
-
-#endif /* CODE_SISTEMA_TRACE_HH_ */
+#endif /* SISTEMA_TRACE_HH_ */

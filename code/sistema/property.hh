@@ -1,43 +1,66 @@
-/*
- * property.hh
- *
- *  Created on: 13/05/2018
- *      Author: joao
- */
+// *****************************************************************************************
+//
+// File description:
+//
+// Author:	Joao Costa
+// Purpose:	Provide Property API
+//
+// *****************************************************************************************
 
-#ifndef CODE_SISTEMA_PROPERTY_HH_
-#define CODE_SISTEMA_PROPERTY_HH_
+#ifndef SISTEMA_PROPERTY_HH_
+#define SISTEMA_PROPERTY_HH_
 
+// *****************************************************************************************
+//
+// Section: Import headers
+//
+// *****************************************************************************************
+
+// Import C++ system headers
 #include <iostream>
 #include <string>
 
+// Import OSAPI++ declarations
 #include "sistema/trace.hh"
+
 
 namespace osapi
 {
 
+// *****************************************************************************************
+//
+// Section: Module declarations/definitions
+//
+// *****************************************************************************************
+
+constexpr char property_file_separator		= '=';
+constexpr char property_index_separator		= '#';
+
+
+// *****************************************************************************************
+//
+// Section: Module API declaration
+//
+// *****************************************************************************************
 
 class property
 {
 public:
-		property( std::string propName, std::string propValue );
-    	~property();
+									property( std::string propName, std::string propValue );
+    								~property();
 
-    	const std::string & getValue();
-    	bool equal( const std::string & compString );
+    	const std::string & 		getValue();
+    	bool 						equal( const std::string & compString );
 
 private:
-    	std::string name;
-    	std::string value;
+    	std::string 				name;
+    	std::string 				value;
     	TRACE_CLASSNAME_DECLARATION
 };
-
-constexpr char property_file_separator		= '=';
-constexpr char property_index_separator		= '#';
 
 };	// End of namespace "osapi"
 
 
 
 
-#endif /* CODE_SISTEMA_PROPERTY_HH_ */
+#endif /* SISTEMA_PROPERTY_HH_ */

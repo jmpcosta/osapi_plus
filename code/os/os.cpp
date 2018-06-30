@@ -1,22 +1,41 @@
-/*
- * os.cpp
- *
- *  Created on: 02/02/2018
- *      Author: joao
- */
+// *****************************************************************************************
+//
+// File description:
+//
+// Author:	Joao Costa
+// Purpose:	Provide OS module implementation
+//
+// *****************************************************************************************
 
-#include <string.h>
-#include <iostream>
-#include <string>
+// *****************************************************************************************
+//
+// Section: Import headers
+//
+// *****************************************************************************************
 
 // Include the C OSAPI interfaces first
 #include "status/status.h"
 #include "os/os.h"
 
-#include "general/general_defs.hh"
+// Import C++ system headers
+#include <string.h>
+#include <iostream>
+#include <string>
+
+// Import OSAPI++ generic headers
+#include "general/general_types.hh"
 #include "status/status.hh"
-#include "os/os.hh"
 #include "sistema/trace.hh"
+
+// Import own module declarations
+#include "os/os.hh"
+
+
+// *****************************************************************************************
+//
+// Section: Function definition
+//
+// *****************************************************************************************
 
 namespace osapi
 {

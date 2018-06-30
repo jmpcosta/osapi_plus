@@ -1,20 +1,34 @@
-/*
- * os.hh
- *
- *  Created on: 02/02/2018
- *      Author: joao
- */
+// *****************************************************************************************
+//
+// File description:
+//
+// Author:	Joao Costa
+// Purpose:	Provide OS module API
+//
+// *****************************************************************************************
 
-#ifndef OS_PLUS_HH_
-#define OS_PLUS_HH_
+#ifndef OS_OS_HH_
+#define OS_OS_HH_
 
-#include "os/os.h"
+// *****************************************************************************************
+//
+// Section: Import headers
+//
+// *****************************************************************************************
 
+// Import C++ system headers
 #include <string>
-#include <vector>
 
-#include "general/general_defs.hh"
+// Import OSAPI++ declarations
+#include "general/general_types.hh"
 #include "sistema/trace.hh"
+
+
+// *****************************************************************************************
+//
+// Section: Module API declaration
+//
+// *****************************************************************************************
 
 namespace osapi
 {
@@ -42,4 +56,4 @@ class info
 
 }	// End of namespace "osapi"
 
-#endif /* OS_HH_ */
+#endif /* OS_OS_HH_ */

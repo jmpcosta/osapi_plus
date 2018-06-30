@@ -1,17 +1,35 @@
-/*
- * configuration.hh
- *
- *  Created on: 26/05/2018
- *      Author: joao
- */
+// *****************************************************************************************
+//
+// File description:
+//
+// Author:	Joao Costa
+// Purpose:	Provide System Configuration API
+//
+// *****************************************************************************************
 
-#ifndef CODE_SISTEMA_CONFIGURATION_HH_
-#define CODE_SISTEMA_CONFIGURATION_HH_
+#ifndef SISTEMA_CONFIGURATION_HH_
+#define SISTEMA_CONFIGURATION_HH_
 
+// *****************************************************************************************
+//
+// Section: Import headers
+//
+// *****************************************************************************************
+
+// Import C++ system headers
 #include <string>
 #include <vector>
 
+// Import OSAPI++ declarations
 #include "sistema/propertiesProvider.hh"
+
+
+// *****************************************************************************************
+//
+// Section: Module API declaration
+//
+// *****************************************************************************************
+
 
 namespace osapi
 {
@@ -34,32 +52,31 @@ public:
 
 #pragma GCC visibility push(default)		// Start of public interface
 
-		static Configuration & 	getConfiguration();
+	static Configuration & 	getConfiguration();
 
-		// delete copy and move constructors and assign operators
-		Configuration(Configuration const&) 			= delete;		// Copy construct
-		Configuration(Configuration&&) 					= delete;		// Move construct
-		Configuration& operator=(Configuration const&)	= delete; 		// Copy assign
-		Configuration& operator=(Configuration &&)		= delete;		// Move assign
+	// delete copy and move constructors and assign operators
+	Configuration(Configuration const&) 			= delete;		// Copy construct
+	Configuration(Configuration&&) 					= delete;		// Move construct
+	Configuration& operator=(Configuration const&)	= delete; 		// Copy assign
+	Configuration& operator=(Configuration &&)		= delete;		// Move assign
 
-		void								init				( int argc, char * argv[], char * env[] );
-		void								import				( const std::string & pathname	);
-		void								addProperty			( const std::string module, const std::string propName, const std::string propValue );
-
-		bool								getPropertyValues	( const std::string & module, const std::string & name, std::vector<std::string> & values );
-		bool								getPropertyValues	( const std::string & name, std::vector<std::string> & values );
+	void				init				( int argc, char * argv[], char * env[] );
+	void				import				( const std::string & pathname	);
+	void				addProperty			( const std::string module, const std::string propName, const std::string propValue );
+	bool				getPropertyValues	( const std::string & module, const std::string & name, std::vector<std::string> & values );
+	bool				getPropertyValues	( const std::string & name, std::vector<std::string> & values );
 
 
 #pragma GCC visibility pop			// End of public interface
 
 private:
-											Configuration();
-											~Configuration();
+						Configuration();
+						~Configuration();
 
-		size_t								argumentCount;
-		char				**				arguments;
-		char				**				environment;
-		std::string							classname;
+	size_t				argumentCount;
+	char		**		arguments;
+	char		**		environment;
+	std::string			classname;
 
 };
 
@@ -67,4 +84,4 @@ private:
 } // End of namesoace "osapi"
 
 
-#endif /* CODE_SISTEMA_CONFIGURATION_HH_ */
+#endif /* SISTEMA_CONFIGURATION_HH_ */

@@ -3,27 +3,29 @@
 // File description:
 //
 // Author:	Joao Costa
-// Purpose:	Provide system module declaration/definition
+// Purpose:	Provide General (cross module) module type declarations/definitions
 //
 // *****************************************************************************************
 
-#ifndef SISTEMA_SYSTEM_MODULES_HH_
-#define SISTEMA_SYSTEM_MODULES_HH_
+#ifndef GENERAL_TYPES_HH_
+#define GENERAL_TYPES_HH_
 
 
 // *****************************************************************************************
 //
-// Section: Constant declaration/definition
+// Section: Type declaration/definition
 //
 // *****************************************************************************************
 
-const char *	systemModules [] =
+
+namespace osapi
 {
-		"SYSTEM",
-		"LOG",
-		nullptr
-};
+
+constexpr	char empty_string[]	= "";
+constexpr	char trueString[]	= "true";
+constexpr	char falseString[]	= "false";
 
 
+};	// End of namespace "osapi"
 
-#endif /* SISTEMA_SYSTEM_MODULES_HH_ */
+#endif /* GENERAL_TYPES_HH_ */

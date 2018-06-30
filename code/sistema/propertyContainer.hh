@@ -1,17 +1,34 @@
-/*
- * propertyContainer.hh
- *
- *  Created on: 13/05/2018
- *      Author: joao
- */
+// *****************************************************************************************
+//
+// File description:
+//
+// Author:	Joao Costa
+// Purpose:	Provide PropertyContainer API declaration
+//
+// *****************************************************************************************
 
-#ifndef CODE_SISTEMA_PROPERTYCONTAINER_HH_
-#define CODE_SISTEMA_PROPERTYCONTAINER_HH_
+#ifndef SISTEMA_PROPERTYCONTAINER_HH_
+#define SISTEMA_PROPERTYCONTAINER_HH_
 
+// *****************************************************************************************
+//
+// Section: Import headers
+//
+// *****************************************************************************************
+
+// Import C++ system headers
 #include <string>
 #include <vector>
 
+// Import OSAPI++ declarations
 #include "sistema/property.hh"
+
+
+// *****************************************************************************************
+//
+// Section: Module API declaration
+//
+// *****************************************************************************************
 
 namespace osapi
 {
@@ -19,17 +36,20 @@ namespace osapi
 class propertyContainer
 {
 public:
-						propertyContainer( const std::string & containerName );
-						~propertyContainer();
+									propertyContainer	( const std::string & containerName										);
+									~propertyContainer	();
 
-		void			addProperty	( const std::string & propertyName, const std::string & propertyValue );
-		bool			equal		( const std::string & container );
+	void							addProperty			( const std::string & propertyName, const std::string & propertyValue	);
+	bool							equal				( const std::string & container 										);
+
 		// Input property name, output is property values
-		bool			getProperty	( const std::string & name, std::vector<std::string> & values );
+	bool							getProperty			( const std::string & name, std::vector<std::string> & values 			);
+
 private:
-		std::string						name;				// Each container instance has one name
-		std::vector<property *>			propertyList;		// and a set of associated properties
-		TRACE_CLASSNAME_DECLARATION
+
+	std::string						name;				// Each container instance has one name
+	std::vector<property *>			propertyList;		// and a set of associated properties
+	TRACE_CLASSNAME_DECLARATION
 };
 
 
@@ -38,4 +58,4 @@ private:
 
 
 
-#endif /* CODE_SISTEMA_PROPERTYCONTAINER_HH_ */
+#endif /* SISTEMA_PROPERTYCONTAINER_HH_ */

@@ -1,15 +1,34 @@
-/*
- * module.cpp
- *
- *  Created on: 26/05/2018
- *      Author: joao
- */
+// *****************************************************************************************
+//
+// File description:
+//
+// Author:	Joao Costa
+// Purpose:	Provide "Module" implementation
+//
+// *****************************************************************************************
 
+// *****************************************************************************************
+//
+// Section: Import headers
+//
+// *****************************************************************************************
+
+// Import C++ system headers
 #include <string>
 
-#include "general/general_defs.hh"
+// Import OSAPI++ generic headers
 #include "sistema/trace.hh"
+#include "general/general_types.hh"
+
+// Import own module declarations
 #include "sistema/module.hh"
+
+
+// *****************************************************************************************
+//
+// Section: Function definition
+//
+// *****************************************************************************************
 
 namespace osapi
 {

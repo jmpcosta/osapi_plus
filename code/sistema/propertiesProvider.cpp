@@ -1,23 +1,40 @@
-/*
- * propertyProvider.cpp
- *
- *  Created on: 13/05/2018
- *      Author: joao
- */
+// *****************************************************************************************
+//
+// File description:
+//
+// Author:	Joao Costa
+// Purpose:	Provide PropertiesProvider implementation
+//
+// *****************************************************************************************
 
+// *****************************************************************************************
+//
+// Section: Import headers
+//
+// *****************************************************************************************
+
+// Import C++ system headers
 #include <iostream>
 #include <fstream>
 #include <string>
 #include <vector>
 #include <mutex>
 
-
+// Import OSAPI++ generic headers
 #include "util/util.hh"
 #include "sistema/trace.hh"
 #include "sistema/module.hh"
 #include "sistema/propertyContainer.hh"
+
+// Import own module declarations
 #include "sistema/propertiesProvider.hh"
 
+
+// *****************************************************************************************
+//
+// Section: Function definition
+//
+// *****************************************************************************************
 
 namespace osapi
 {

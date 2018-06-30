@@ -1,15 +1,22 @@
-/*
- * system.hh
- *
- *  Created on: 16/02/2018
- *      Author: joao
- */
+// *****************************************************************************************
+//
+// File description:
+//
+// Author:	Joao Costa
+// Purpose:	Provide Common module API
+//
+// *****************************************************************************************
 
 #ifndef SYSTEM_HH_
 #define SYSTEM_HH_
 
-// The following headers contain the public interfaces of the pseudo-module system
+// *****************************************************************************************
+//
+// Section: Import headers
+//
+// *****************************************************************************************
 
+// The following headers contain the public interfaces of the pseudo-module system
 #include "sistema/propertiesProvider.hh"
 #include "sistema/configuration.hh"
 

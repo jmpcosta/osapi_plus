@@ -1,22 +1,40 @@
-/*
- * system.cpp
- *
- *  Created on: 16/02/2018
- *      Author: joao
- */
+// *****************************************************************************************
+//
+// File description:
+//
+// Author:	Joao Costa
+// Purpose:	Provide OS module implementation
+//
+// *****************************************************************************************
 
+// *****************************************************************************************
+//
+// Section: Import headers
+//
+// *****************************************************************************************
+
+// Import C++ system headers
 #include <iostream>
 #include <string>
 #include <cstring>
 #include <vector>
 #include <algorithm>
 
+// Import OSAPI++ generic headers
+#include "general/general_types.hh"
 #include "status/status.hh"
 #include "util/util.hh"
-
 #include "sistema/trace.hh"
-#include "sistema/system.hh"				// Include my own interface
-#include "sistema/propertiesProvider.hh"
+
+// Import own declarations
+#include "sistema/configuration.hh"
+
+
+// *****************************************************************************************
+//
+// Section: Function definition
+//
+// *****************************************************************************************
 
 namespace osapi
 {

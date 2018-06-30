@@ -1,19 +1,37 @@
-/*
- * propertyContainer.cpp
- *
- *  Created on: 13/05/2018
- *      Author: joao
- */
+// *****************************************************************************************
+//
+// File description:
+//
+// Author:	Joao Costa
+// Purpose:	Provide PropertyContainer implementation
+//
+// *****************************************************************************************
 
+// *****************************************************************************************
+//
+// Section: Import headers
+//
+// *****************************************************************************************
+
+// Import C++ system headers
 #include <vector>
 
+// Import OSAPI++ generic headers
 #include "status/status.hh"
 #include "util/util.hh"
 #include "sistema/trace.hh"
 #include "sistema/property.hh"
 #include "sistema/module.hh"
+
+// Import own module declarations
 #include "sistema/propertyContainer.hh"
 
+
+// *****************************************************************************************
+//
+// Section: Function definition
+//
+// *****************************************************************************************
 
 namespace osapi
 {
