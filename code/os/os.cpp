@@ -23,113 +23,85 @@ namespace osapi
 
 info::info()
 {
- t_status		st;
-
  TRACE_CLASSNAME( "info" )
 
  osInfoAvailable = false;
 
-	st = os_info_get( & osInfo );
+ throw_on_failure( os_info_get( & osInfo ) );
 
-	if( status_success( st ) )
-		osInfoAvailable = true;
-	else
-        throw OSAPI_STATUS( st );
+ osInfoAvailable = true;
 }
 
 std::string info::get_name()
 {
- t_status		st;
  char *			osName = 0;
 
-	st = os_name_get( & osInfo, &osName );
-	if( status_failure( st ) )
-		throw OSAPI_STATUS( st );
+ throw_on_failure( os_name_get( & osInfo, &osName ) );
 
-	return std::string( osName );
+ return std::string( osName );
 }
 
 std::string info::get_version()
 {
- t_status		st;
  char *				version = 0;
 
-	st = os_version_get( & osInfo, &version );
-	if( status_failure( st ) )
-		throw OSAPI_STATUS( st );
+ throw_on_failure( os_version_get( & osInfo, &version ) );
 
-	return std::string( version );
+ return std::string( version );
 }
 
 std::string info::get_release()
 {
  char *			release = 0;
 
- t_status st = os_release_get( & osInfo, &release );
- if( status_failure( st ) )
-	 throw OSAPI_STATUS( st );
+ throw_on_failure( os_release_get( & osInfo, &release ) );
 
-	return std::string( release );
+ return std::string( release );
 }
 
 std::string info::get_node()
 {
- t_status		st;
  char *				node = 0;
 
-	st = os_node_get( & osInfo, &node );
-	if( status_failure( st ) )
-		throw OSAPI_STATUS( st );
+ throw_on_failure( os_node_get( & osInfo, &node ) );
 
-	return std::string( node );
+ return std::string( node );
 }
 
 std::string info::get_machine()
 {
- t_status		st;
  char *			machine = 0;
 
-	st = os_machine_get( & osInfo, &machine );
-	if( status_failure( st ) )
-		throw OSAPI_STATUS( st );
+ throw_on_failure( os_machine_get( & osInfo, &machine ) );
 
-	return std::string( machine );
+ return std::string( machine );
 }
 
 std::string info::get_domain()
 {
- t_status		st;
  char *				domain = 0;
 
-	st = os_domain_get( & osInfo, &domain );
-	if( status_failure( st ) )
-		throw OSAPI_STATUS( st );
+ throw_on_failure( os_domain_get( & osInfo, &domain ) );
 
-	return std::string( domain );
+ return std::string( domain );
 }
 
 std::string info::get_provider()
 {
- t_status		st;
  char *			providerName = 0;
 
-	st = os_provider_get( & osInfo, &providerName );
-	if( status_failure( st ) )
-		throw OSAPI_STATUS( st );
+ throw_on_failure( os_provider_get( & osInfo, &providerName ) );
 
-	return std::string( providerName );
+ return std::string( providerName );
 }
 
 std::string info::get_provider_release()
 {
- t_status		st;
  char *			providerRelease = 0;
 
-	st = os_providerRelease_get( & osInfo, &providerRelease );
-	if( status_failure( st ) )
-		throw OSAPI_STATUS( st );
+ throw_on_failure( os_providerRelease_get( & osInfo, &providerRelease ) );
 
-	return std::string( providerRelease );
+ return std::string( providerRelease );
 }
 
 

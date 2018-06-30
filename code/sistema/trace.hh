@@ -10,9 +10,13 @@
 
 #include <iostream>
 
+#include "status/status.h"
+#include "status/status.hh"
+
 namespace osapi
 {
 
+// Trace template composed of the next two entries
 template <typename V>
 void trace( const V & value  )
 {
@@ -28,6 +32,16 @@ void trace( const V & value, const R & ... rest  )
 	trace( rest... );
 
 }
+
+// Wrap the C status return "object" and throw exception if a failure is returned
+template <typename S>
+void throw_on_failure( const S & st  )
+{
+	if( status_failure( st ) )
+		OSAPI_STATUS( st );
+
+}
+
 
 }	// End of namespace "osapi"
 

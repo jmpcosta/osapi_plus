@@ -74,8 +74,6 @@ bool propertyContainer::getProperty( const std::string & name, std::vector<std::
     		TRACE( "Found matching property:|", name, "|" )
 
     	    values.push_back( i->getValue() );
-
-    		TRACE( "Containing returning property Value:|", i->getValue() , "|" )
     	  }
       }
 

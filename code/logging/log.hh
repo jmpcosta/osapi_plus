@@ -46,6 +46,8 @@ private:
 		Log();
 		std::mutex			openMutex;		// Block attempt by multiple threads to open the system log at the same time
 		void *				p_log;			// void pointer to avoid using C OSAPI headers in C++ interface
+
+		TRACE_CLASSNAME_DECLARATION
 };
 
 

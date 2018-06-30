@@ -10,6 +10,8 @@
 #include <exception>
 
 // Include C OSAPI log interface
+#include "general/general_baseline.h"
+#include "status/status.h"
 #include "log/log.h"
 
 // Include C++ OSAPI headers
@@ -23,9 +25,9 @@ namespace osapi
 {
 
 constexpr char log_namespace[]	= "osapi.log";
-constexpr char log_source[]		= "log.source";
-constexpr char log_target[]  	= "log.target";
-constexpr char log_options[] 	= "log.option";
+constexpr char log_source[]		= "source";
+constexpr char log_target[]  	= "target";
+constexpr char log_options[] 	= "options";
 
 Log::~Log( void ){}
 
@@ -42,6 +44,8 @@ Log::Log( void )
 {
  static t_log systemLog;
 
+ TRACE_CLASSNAME( "Log" )
+
  p_log = (void *) &systemLog;
 }
 
@@ -55,8 +59,7 @@ void Log::open( const char * source, const char * target, const char * options[]
 
  openMutex.unlock();
 
- if( status_failure( st ) )
-	 throw OSAPI_STATUS( st );
+ throw_on_failure( st );
 }
 
 
@@ -70,8 +73,13 @@ void Log::open( void )
 	Configuration & sysConf = Configuration::getConfiguration();
 
 	// Get the relevant properties from Configuration
+	TRACE( "Searching property: ", log_namespace, "$", log_source )
 	sysConf.getPropertyValues( log_namespace, log_source,  source  );
+
+	TRACE( "Searching property: ", log_namespace, "$", log_target )
 	sysConf.getPropertyValues( log_namespace, log_target,  target  );
+
+	TRACE( "Searching property: ", log_namespace, "$", log_options )
 	sysConf.getPropertyValues( log_namespace, log_options, options );
 
 	// Build an array of options
