@@ -3,12 +3,13 @@
 // File description:
 //
 // Author:	Joao Costa
-// Purpose:	Provide PropertyContainer API declaration
+// Purpose:
 //
 // *****************************************************************************************
 
-#ifndef SISTEMA_PROPERTYCONTAINER_HH_
-#define SISTEMA_PROPERTYCONTAINER_HH_
+#ifndef CODE_CONFIGURATION_ARGITEM_HH_
+#define CODE_CONFIGURATION_ARGITEM_HH_
+
 
 // *****************************************************************************************
 //
@@ -21,7 +22,8 @@
 #include <vector>
 
 // Import OSAPI++ declarations
-#include "sistema/property.hh"
+#include "status/trace_macros.hh"
+#include "configuration/configurationItem.hh"
 
 
 // *****************************************************************************************
@@ -30,32 +32,30 @@
 //
 // *****************************************************************************************
 
+
 namespace osapi
 {
 
-class propertyContainer
+class argItem : public configurationItem
 {
 public:
-									propertyContainer	( const std::string & containerName										);
-									~propertyContainer	();
-
-	void							addProperty			( const std::string & propertyName, const std::string & propertyValue	);
-	bool							equal				( const std::string & container 										);
-
-		// Input property name, output is property values
-	bool							getProperty			( const std::string & name, std::vector<std::string> & values 			);
+								argItem		( const std::string & arguments	);
+								~argItem	();
+	bool 						equal		( const std::string & name		);
+	void						setString	( const std::string & value		);
+	const std::string &			getString	() const;
 
 private:
+	std::string					arg;
 
-	std::string						name;				// Each container instance has one name
-	std::vector<property *>			propertyList;		// and a set of associated properties
 	TRACE_CLASSNAME_DECLARATION
 };
 
 
 
-};	// End of namespace "osapi"
+
+}	// End of namespace
 
 
 
-#endif /* SISTEMA_PROPERTYCONTAINER_HH_ */
+#endif /* CODE_CONFIGURATION_ARGITEM_HH_ */

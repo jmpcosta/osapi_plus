@@ -3,12 +3,12 @@
 // File description:
 //
 // Author:	Joao Costa
-// Purpose:	Provide OS module API
+// Purpose: Defines the Interface for Configuration Items
 //
 // *****************************************************************************************
 
-#ifndef OS_OS_HH_
-#define OS_OS_HH_
+#ifndef CONFIGURATION_CONFIGURATIONITEM_HH_
+#define CONFIGURATION_CONFIGURATIONITEM_HH_
 
 // *****************************************************************************************
 //
@@ -19,41 +19,28 @@
 // Import C++ system headers
 #include <string>
 
-// Import OSAPI++ declarations
-#include "general/general_types.hh"
-#include "status/trace_macros.hh"
-
 
 // *****************************************************************************************
 //
-// Section: Module API declaration
+// Section: Interface for any Configuration Item
 //
 // *****************************************************************************************
+
 
 namespace osapi
 {
 
-constexpr char module[] = "OS";
-
-class info
- {
- public:
-	 	 	 	 	 	info();
-	 std::string		get_name();
-	 std::string 		get_version();
-	 std::string		get_release();
-	 std::string		get_node();
-	 std::string		get_machine();
-	 std::string		get_domain();
-	 std::string		get_provider();
-	 std::string		get_provider_release();
- private:
-	 bool				osInfoAvailable;
-	 t_osInfo			osInfo;
-	 TRACE_CLASSNAME_DECLARATION
+class configurationItem
+{
+public:
+		virtual		 				~configurationItem	();
+		virtual const std::string &	getString			() const						= 0;
+		virtual void				setString			( const std::string & value ) 	= 0;
+		virtual bool 				equal				( const std::string & name  )	= 0;
 };
 
 
-}	// End of namespace "osapi"
 
-#endif /* OS_OS_HH_ */
+}	// End of namespace
+
+#endif /* CONFIGURATION_CONFIGURATIONITEM_HH_ */

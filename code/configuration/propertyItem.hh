@@ -3,12 +3,12 @@
 // File description:
 //
 // Author:	Joao Costa
-// Purpose:	Provide system module declarations/definitions
+// Purpose:	Provide PropertyItem API
 //
 // *****************************************************************************************
 
-#ifndef SISTEMA_MODULE_HH_
-#define SISTEMA_MODULE_HH_
+#ifndef CONFIGURATION_PROPERTY_HH_
+#define CONFIGURATION_PROPERTY_HH_
 
 // *****************************************************************************************
 //
@@ -17,7 +17,12 @@
 // *****************************************************************************************
 
 // Import C++ system headers
+#include <iostream>
 #include <string>
+
+// Import OSAPI++ declarations
+#include "status/trace_macros.hh"
+#include "configuration/configurationItem.hh"
 
 
 namespace osapi
@@ -25,14 +30,9 @@ namespace osapi
 
 // *****************************************************************************************
 //
-// Section: Constant section
+// Section: Module declarations/definitions
 //
 // *****************************************************************************************
-
-// Module constants
-constexpr char module_separator			= '$';
-constexpr char module_default_name[]	= "default";
-
 
 // *****************************************************************************************
 //
@@ -40,11 +40,26 @@ constexpr char module_default_name[]	= "default";
 //
 // *****************************************************************************************
 
-// Utility functions
-std::string getModuleName   ( const std::string & rawPropertyName );
-std::string getPropertyName ( const std::string & rawPropertyName );
+class propertyItem : configurationItem
+{
+public:
+		explicit					propertyItem	( const std::string & propName, const std::string & propValue );
+    								~propertyItem	();
+
+    	const std::string & 		getString		() const;
+    	void						setString		( const std::string & propValue	);
+    	bool 						equal			( const std::string & propName	);
+
+private:
+    	std::string 				name;
+    	std::string 				value;
+
+    	TRACE_CLASSNAME_DECLARATION
+};
+
+};	// End of namespace "osapi"
 
 
-} // End of namespace "osapi"
 
-#endif /* SISTEMA_MODULE_HH_ */
+
+#endif /* CONFIGURATION_PROPERTY_HH_ */

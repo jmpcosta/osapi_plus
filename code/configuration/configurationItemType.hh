@@ -3,13 +3,12 @@
 // File description:
 //
 // Author:	Joao Costa
-// Purpose:	Provide Util module API
+// Purpose:	Declaration for Configuration Item types
 //
 // *****************************************************************************************
 
-
-#ifndef UTIL_UTIL_HH_
-#define UTIL_UTIL_HH_
+#ifndef CONFIGURATION_CONFIGURATIONITEMTYPE_HH_
+#define CONFIGURATION_CONFIGURATIONITEMTYPE_HH_
 
 // *****************************************************************************************
 //
@@ -18,30 +17,19 @@
 // *****************************************************************************************
 
 // Import C++ system headers
-#include <string>
+#include <cstdint>
 
-// Import OSAPI headers
-#include "status/trace_macros.hh"
+
 
 // *****************************************************************************************
 //
-// Section: Module API declaration
+// Section: Declarations/definitions
 //
 // *****************************************************************************************
 
-namespace osapi
-{
+// Possible CI types
+enum class ciType { UNKNOWN = 0, ARGUMENT = 1, ENVIRONMENT = 2, PROPERTY = 3 };
 
-class util
-{
-public:
-		static void				splitString ( const std::string &, const char, std::string &, std::string & );
-		static void				stringEraser( const std::string &, size_t,     std::string &				);
-		static void				toUpperCase	( std::string &													);
-		static void				toLowerCase	( std::string &													);
-		static const char * 	bool2string ( bool value													);
-};
 
-};	// End of namespace "osapi"
 
-#endif /* UTIL_UTIL_HH_ */
+#endif /* CONFIGURATION_CONFIGURATIONITEMTYPE_HH_ */

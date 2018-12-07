@@ -3,7 +3,7 @@
 // File description:
 //
 // Author:	Joao Costa
-// Purpose:	Provide Property implementation
+// Purpose:	Provide a argument CI type implementation
 //
 // *****************************************************************************************
 
@@ -15,12 +15,13 @@
 
 // Import C++ system headers
 #include <string>
+#include <vector>
 
 // Import OSAPI++ generic headers
-#include "sistema/trace.hh"
+#include "status/trace.hh"
 
 // Import own module declarations
-#include "sistema/property.hh"
+#include "configuration/argItem.hh"
 
 
 // *****************************************************************************************
@@ -32,38 +33,43 @@
 namespace osapi
 {
 
-
-property::property( std::string propName, std::string propValue )
+argItem::argItem( const std::string & arguments )
 {
- name = propName;
- value = propValue;
- TRACE_CLASSNAME( "property" )
- TRACE( "Creating property:|", name, "=", value, "|" )
+ TRACE_CLASSNAME( "argItem" )
+
+ arg = arguments;
 }
 
-property::~property()
+argItem::~argItem()
 {
-  TRACE( "Destroing property:|", name, "|" )
+ TRACE( "Destroying argument (", arg, ")" )
 }
 
-const std::string & property::getValue()
+bool argItem::equal( const std::string & name )
 {
- TRACE( "Returning value from property:|", value, "|" )
- return value;
+ bool ret = false;
+
+ if( name == arg )
+   {
+	 TRACE( "Found matching argument:", name )
+	 ret = true;
+   }
+
+ return ret;
 }
 
-bool property::equal( const std::string & compString )
+const std::string & argItem::getString() const
 {
- // Match only the part of the string name until it finds the index separator character
- size_t 		pos = name.find( property_index_separator );
- std::string 	str = name.substr(0, pos );
-
- TRACE( "Comparing Properties (", compString, "|", str, ")" )
-
- return ( compString == str );
+ return arg;
 }
 
 
+void argItem::setString( const std::string & value )
+{
+ TRACE( "Setting Property value (", value, ")" )
+
+ arg = value;
+}
 
 
 }	// End of namespace "osapi"

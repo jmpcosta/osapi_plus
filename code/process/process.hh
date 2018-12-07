@@ -3,12 +3,12 @@
 // File description:
 //
 // Author:	Joao Costa
-// Purpose:	Provide Property API
+// Purpose:	Provide Process module API
 //
 // *****************************************************************************************
 
-#ifndef SISTEMA_PROPERTY_HH_
-#define SISTEMA_PROPERTY_HH_
+#ifndef PROCESS_PROCESS_HH_
+#define PROCESS_PROCESS_HH_
 
 // *****************************************************************************************
 //
@@ -17,25 +17,20 @@
 // *****************************************************************************************
 
 // Import C++ system headers
-#include <iostream>
 #include <string>
 
 // Import OSAPI++ declarations
-#include "sistema/trace.hh"
+#include "general/general_types.hh"
+#include "status/trace_macros.hh"
 
-
-namespace osapi
-{
 
 // *****************************************************************************************
 //
-// Section: Module declarations/definitions
+// Section: Module Constant definitions
 //
 // *****************************************************************************************
 
-constexpr char property_file_separator		= '=';
-constexpr char property_index_separator		= '#';
-
+constexpr char module[] = "Process";
 
 // *****************************************************************************************
 //
@@ -43,24 +38,27 @@ constexpr char property_index_separator		= '#';
 //
 // *****************************************************************************************
 
-class property
+namespace osapi
 {
-public:
-									property( std::string propName, std::string propValue );
-    								~property();
 
-    	const std::string & 		getValue();
-    	bool 						equal( const std::string & compString );
+class process
+ {
+ public:
+			// Constructor & Destructor
+			process();
+			~process();
 
-private:
-    	std::string 				name;
-    	std::string 				value;
-    	TRACE_CLASSNAME_DECLARATION
+	// Class methods (work on current process)
+	static	intmax_t	getPID();
+	static	intmax_t	getParentPID();
+	static	bool		suspend();
+
+ private:
+
+		TRACE_CLASSNAME_DECLARATION
 };
 
-};	// End of namespace "osapi"
 
+}	// End of namespace "osapi"
 
-
-
-#endif /* SISTEMA_PROPERTY_HH_ */
+#endif /* PROCESS_PROCESS_HH_ */

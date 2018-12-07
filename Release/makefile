@@ -10,9 +10,10 @@ RM := rm -rf
 -include sources.mk
 -include code/util/subdir.mk
 -include code/status/subdir.mk
--include code/sistema/subdir.mk
+-include code/process/subdir.mk
 -include code/os/subdir.mk
 -include code/logging/subdir.mk
+-include code/configuration/subdir.mk
 -include subdir.mk
 -include objects.mk
 
@@ -48,7 +49,7 @@ all: libosapi++.so
 libosapi++.so: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: GCC C++ Linker'
-	g++ -L/home/joao/workspace/osapi/Release -shared -o "libosapi++.so" $(OBJS) $(USER_OBJS) $(LIBS)
+	g++ -L/home/joao/workspace/osapi/Release -shared -p -pg -ftest-coverage -fprofile-arcs -o "libosapi++.so" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 

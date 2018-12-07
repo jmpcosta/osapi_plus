@@ -3,7 +3,7 @@
 // File description:
 //
 // Author:	Joao Costa
-// Purpose:	Provide "Module" implementation
+// Purpose:	Provide Process module implementation
 //
 // *****************************************************************************************
 
@@ -13,15 +13,22 @@
 //
 // *****************************************************************************************
 
+// Include the C OSAPI interfaces first
+#include "status/status.h"
+#include "proc/proc.h"
+
 // Import C++ system headers
+#include <string.h>
+#include <iostream>
 #include <string>
 
 // Import OSAPI++ generic headers
-#include "sistema/trace.hh"
 #include "general/general_types.hh"
+#include "status/status.hh"
+#include "status/trace.hh"
 
 // Import own module declarations
-#include "sistema/module.hh"
+#include "process/process.hh"
 
 
 // *****************************************************************************************
@@ -33,43 +40,46 @@
 namespace osapi
 {
 
-
-std::string getModuleName( const std::string & rawPropertyName )
+process::process()
 {
- std::string	module;
+ TRACE_CLASSNAME( "info" )
 
- // Check the propertyName for a namespace
+}
 
- size_t pos = rawPropertyName.find( module_separator );
+process::~process()
+{
+ TRACE_POINT
 
- if( pos == std::string::npos )
-	 module = module_default_name;
- else
-	 module  = rawPropertyName.substr( 0, pos  );
-
- STRACE( "Returning:|", module, "|" )
-
- return module;
 }
 
 
-std::string getPropertyName( const std::string & rawPropertyName )
+intmax_t process::getPID()
 {
- std::string	name;
+ t_pid pid = 0;
 
- // Check the propertyName for a namespace
+ throw_on_failure( proc_id_get( & pid ) );
 
- size_t pos = rawPropertyName.find( module_separator );
-
- if( pos == std::string::npos )
-	 name = rawPropertyName;
- else
-	 name  = rawPropertyName.substr( pos+1, std::string::npos );
-
- STRACE( "Returning:|", name, "|" )
-
- return name;
+ return (intmax_t) pid;
 }
 
 
-} // End namespace osapi
+intmax_t process::getParentPID()
+{
+ t_pid pid = 0;
+
+ throw_on_failure( proc_parentID_get( & pid ) );
+
+ return (intmax_t) pid;
+}
+
+
+bool process::suspend()
+{
+ if( status_success( proc_thread_suspend() ) )
+	 return true;
+ else
+	 return false;
+}
+
+
+}   // End of namespace "osapi"

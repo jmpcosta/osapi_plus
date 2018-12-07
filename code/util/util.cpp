@@ -17,8 +17,11 @@
 #include <string>
 
 // Import OSAPI++ generic headers
-#include "util/util.hh"
 #include "general/general_types.hh"
+#include "status/status.hh"
+#include "status/trace.hh"
+#include "util/util.hh"
+
 
 
 // *****************************************************************************************

@@ -20,6 +20,8 @@
 // Import C++ system headers
 #include <stdexcept>
 
+// Import own module macros
+#include "status/trace_macros.hh"
 
 
 // *****************************************************************************************
@@ -32,18 +34,18 @@
 namespace osapi
 {
 
-class status : std::exception
+class status : public std::exception
 {
 public:
-						status( int, const char *, const char *, const char * );
-						status( const char *, const char *, const char * );
-						status( int, uint8_t, uint8_t, const char * );
-						status( const std::string message );
-						~status();
+		explicit		status	( const char *, const char *, const char *	);
+		explicit		status	( const std::string & message				);
+						~status	();
 		const char *	what() const noexcept;
 
 private:
 		std::string		reason;
+
+		TRACE_CLASSNAME_DECLARATION
 };
 
 

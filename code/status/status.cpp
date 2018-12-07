@@ -13,10 +13,14 @@
 //
 // *****************************************************************************************
 
+// Import C++ system headers
+#include <stdexcept>
+
 // Import OSAPI C respective module declarations
 #include "status/status.h"
 
 // Import own module declarations
+#include "status/trace.hh"
 #include "status/status.hh"
 
 
@@ -30,38 +34,47 @@
 namespace osapi
 {
 
-status::status(int code, const char * mod, const char * function, const char * errMsg )
-{
-	reason = "Exception in function ";
-	reason += function;
-	reason += " of module ";
-	reason += mod;
-	// reason += " with error code ";
-	//reason += code;
-	reason += " with message: ";
-	reason += errMsg;
-}
-
 status::status( const char * mod, const char * function, const char * errMsg )
 {
- // Code is irrelevant in this case, set it to 0
- status( 0, mod, function, errMsg );
+ TRACE_CLASSNAME( "ConfigurationProvider" )
+
+ TRACE_ENTER
+
+ if( function != nullptr )
+   {
+	reason = "Exception in function ";
+	reason += function;
+   }
+ if( mod != nullptr )
+   {
+	reason += " of module ";
+	reason += mod;
+   }
+ if( errMsg != nullptr )
+   {
+    reason += " with message: ";
+    reason += errMsg;
+   }
+
+ TRACE_EXIT
 }
 
-status::status( int code, uint8_t mod, uint8_t type, const char * function )
+
+status::status( const std::string & message )
 {
+ TRACE_CLASSNAME( "ConfigurationProvider" )
 
- status( code, status_moduleByID_get( mod ), function, status_errorByType_get( code, mod, type) );
+ TRACE_ENTER
+
+ reason = message;
+
+ TRACE_EXIT
 }
 
-status::status( const std::string message )
-{
-	reason = message;
-}
 
-status::~status() throw() {}
+status::~status() noexcept { TRACE_POINT }
 
-const char * status::what() const noexcept
+const char * status::what() const throw ()
 {
 	return reason.c_str();
 }

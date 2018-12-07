@@ -17,11 +17,10 @@
 // *****************************************************************************************
 
 #include "status/status.hh"
+#include "configuration/configuration_interfaces.hh"
 #include "util/util.hh"
-#include "sistema/system.hh"
 #include "logging/log.hh"
-
-//#include "os/os.hh"
+#include "process/process.hh"
 
 
 #endif /* OSAPI_PLUS_H_ */

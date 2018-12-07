@@ -3,12 +3,12 @@
 // File description:
 //
 // Author:	Joao Costa
-// Purpose:	Provide system tracing declarations/definitions
+// Purpose:	Provide tracing declarations/definitions
 //
 // *****************************************************************************************
 
-#ifndef SISTEMA_TRACE_HH_
-#define SISTEMA_TRACE_HH_
+#ifndef STATUS_TRACE_HH_
+#define STATUS_TRACE_HH_
 
 // *****************************************************************************************
 //
@@ -57,39 +57,25 @@ template <typename S>
 void throw_on_failure( const S & st  )
 {
 	if( status_failure( st ) )
-		OSAPI_STATUS( st );
+		throw status(
+						status_module_get	( st ),
+						status_function_get	( st ),
+						status_error_get	( st )
+			  	  	);
 
+}
+
+
+template <typename P>
+void throw_error( const P p_c)
+{
+	if( p_c != nullptr ) throw status( p_c );
+
+	throw status( "Null pointer error !" );
 }
 
 
 }	// End of namespace "osapi"
 
 
-// *****************************************************************************************
-//
-// Section: Supporting macros
-//
-// *****************************************************************************************
-
-
-#ifdef OSAPI_TRACING
- #define TRACE_CLASSNAME_DECLARATION	std::string	classname;
- #define TRACE_CLASSNAME(x)				classname=x;
- #define TRACE_ENTER					trace ( classname, "::", __FUNCTION__, " - Entering" );
- #define TRACE_EXIT						trace ( classname, "::", __FUNCTION__, " - Leaving" );
- #define TRACE_POINT					trace ( classname, "::", __FUNCTION__, " - Passing through" );
- #define TRACE(...)						trace ( classname, "::", __FUNCTION__, " - ", __VA_ARGS__ );		// For instance methods
- #define STRACE(...)					trace ( __FUNCTION__, " - ", __VA_ARGS__ );							// For class methods
-#else
- #define TRACE_CLASSNAME_DECLARATION
- #define TRACE_CLASSNAME(x)
- #define TRACE_ENTER
- #define TRACE_EXIT
- #define TRACE_POINT
- #define TRACE(...)
- #define STRACE(...)
-#endif
-
-
-
-#endif /* SISTEMA_TRACE_HH_ */
+#endif /* STATUS_TRACE_HH_ */

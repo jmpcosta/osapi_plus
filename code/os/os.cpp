@@ -25,7 +25,7 @@
 // Import OSAPI++ generic headers
 #include "general/general_types.hh"
 #include "status/status.hh"
-#include "sistema/trace.hh"
+#include "status/trace.hh"
 
 // Import own module declarations
 #include "os/os.hh"
