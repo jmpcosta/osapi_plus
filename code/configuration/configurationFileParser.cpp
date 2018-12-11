@@ -338,7 +338,7 @@ void configurationFileParser::processLine( const std::string & line, configurati
 
 void configurationFileParser::import( const std::string & from, std::string & into )
 {
- TRACE_ENTER
+ TRACE( "Entering with", from, " and", into )
 
  std::ifstream input_file;
 

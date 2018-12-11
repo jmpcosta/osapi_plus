@@ -79,7 +79,7 @@ bool ConfigurationProvider::getConfiguration( const std::string & name, configur
 
  if( p_conf == nullptr ) throw_error( "Null configuration pointer" );
 
- TRACE( "Find configuration:", name, "." )
+ TRACE( "Looking for configuration:", name, "." )
 
  // Make sure that the Mutex is always unlock when it goes out-of-scope
  std::lock_guard<std::mutex> guard( providerMutex );
@@ -88,7 +88,9 @@ bool ConfigurationProvider::getConfiguration( const std::string & name, configur
  	  if( i->equal( name ) )
 		{
 		  TRACE( "Found a matching configuration" )
+		  TRACE( "Addresses:", p_conf, *p_conf, i )
 		  *p_conf = i;
+		  ret = true;
 		}
 
  TRACE_EXIT

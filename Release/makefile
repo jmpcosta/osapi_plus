@@ -49,7 +49,7 @@ all: libosapi++.so
 libosapi++.so: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: GCC C++ Linker'
-	g++ -L/home/joao/workspace/osapi/Release -shared -p -pg -ftest-coverage -fprofile-arcs -o "libosapi++.so" $(OBJS) $(USER_OBJS) $(LIBS)
+	g++ -L../../osapi/Release -L/osapi/Release -shared -o "libosapi++.so" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 

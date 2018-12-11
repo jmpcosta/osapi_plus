@@ -141,12 +141,12 @@ ciContainer & configuration::addContainer( const std::string & container )
 bool configuration::deleteContainer( const std::string & container )
 {
  bool									ret = false;
- std::vector<ciContainer *>::iterator	i   = ciContainers.begin();
 
  TRACE_ENTER
 
  // Make sure that the Mutex is always unlock when it goes out-of-scope
  std::lock_guard<std::mutex> guard( confMutex );
+ std::vector<ciContainer *>::iterator	i   = ciContainers.begin();
 
  for( ; i != ciContainers.end(); i++ )
     {
