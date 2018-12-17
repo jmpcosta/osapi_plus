@@ -16,10 +16,9 @@
 //
 // *****************************************************************************************
 
-// Generic OSAPI includes
-
 // Standard C++ headers
 #include <cstdint>
+#include <csignal>
 
 // Import OSAPI++ declarations
 #include "general/general_types.hh"
@@ -33,8 +32,10 @@
 //
 // *****************************************************************************************
 
-// Redefine signal handler function (must match OSAPI definition)
-typedef void (* signal_function)( int );
+// Redefine signal handler function (must match OSAPI and ANSI C definitions)
+//typedef void (* signal_function)( int );
+
+enum class signalSupportLevel { unsupported, ansi, posix, realTime };
 
 
 // *****************************************************************************************
@@ -49,21 +50,23 @@ namespace osapi
 class signal
  {
  public:
+	static	bool	isSupported		( signalSupportLevel & 	);
+
 					// Constructor & Destructor
 					~signal();
 					signal			( int number			);
 	bool			equal			( int number			);
 	int				getID			( void					);
-	void 			setHandler		( signal_function func	);
+	void 			setHandler		( sighandler_t func		);
 	void 			clearHandler	( void					);
-	signal_function	getHandler		( void					);
+	sighandler_t	getHandler		( void					);
 
 
  private:
 
 	// Instance variables
 	int						signumber;
-	signal_function			handler;
+	sighandler_t			handler;
 
 	TRACE_CLASSNAME_DECLARATION
 };

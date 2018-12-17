@@ -47,25 +47,51 @@ namespace osapi
 
 class CurrentProcess;
 
+class processData
+{
+public:
+					processData();
+					~processData();
+		bool		setCmdLine		( std::vector<std::string> & line	);
+		bool		setEnvironment	( std::vector<std::string> & env	);
+		void *		getRaw			( void								);
+
+private:
+		void	*	data;
+		void	*	cmdLine;
+		void	*	environment;
+
+private:
+		std::mutex					dataMutex;
+		TRACE_CLASSNAME_DECLARATION
+};
+
+
 class process
 {
 public:
 	// Class methods
-	static CurrentProcess &	getCurrent();
+	static CurrentProcess &	getCurrent	();
+	static bool				create		( process & proc );
 
 						// Constructor & Destructor
 						process();
 						~process();
 
-	void 				addSignal		( signal & sig	);
-	void				eraseSignal 	( int signo		);
-	void				eraseAllSignals	( void			);
+	processData &		getData			( void								);
+	bool 				addCommandLine	( std::vector<std::string> & args	);
+	bool				addEnvironment	( std::vector<std::string> & env	);
+	void 				addSignal		( signal & sig						);
+	void				eraseSignal 	( int signo							);
+	void				eraseAllSignals	( void								);
 
 protected:
 		// Instance variables
 		std::vector<osapi::signal>	sigList;
 		std::mutex					signalMutex;
+
 private:
+		processData					data;
 
 		TRACE_CLASSNAME_DECLARATION
 };
@@ -77,17 +103,21 @@ class CurrentProcess : public process
 public:
 
 	// Class methods (work on current process)
-	static CurrentProcess & getInstance();
+	static	CurrentProcess & 	getInstance	();
 
 	// Instance methods
-	unsigned long	getPID();
-	unsigned long	getParentPID();
-	bool			suspend();
-	// Signals
-	void			clearSignals();
-	void			activateSignals();
+	bool						clone		( bool & isClone	);
+	[[noreturn]] void			terminate	( bool status		);
 
-	void			activateAll();	// Activate all planed settings
+	unsigned long				getPID();
+	unsigned long				getParentPID();
+	bool						suspend();
+
+	// Signals
+	void						clearSignals();
+	void						activateSignals();
+
+	void						activateAll();	// Activate all planed settings
 
 	// delete copy and move constructors and assign operators
 	CurrentProcess( CurrentProcess const & 	)			= delete;		// Copy construct
@@ -97,9 +127,9 @@ public:
 
 private:
 
-						// Instance methods
-						CurrentProcess();
-						~CurrentProcess();
+							    // Instance methods
+								CurrentProcess();
+								~CurrentProcess();
 
 		TRACE_CLASSNAME_DECLARATION
 };

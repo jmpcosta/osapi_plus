@@ -19,6 +19,7 @@
 
 // Import C++ system headers
 #include <string>
+#include <vector>
 
 // Import OSAPI headers
 #include "status/trace_macros.hh"
@@ -40,6 +41,7 @@ public:
 		static void				toUpperCase	( std::string &													);
 		static void				toLowerCase	( std::string &													);
 		static const char * 	bool2string ( bool value													);
+		static bool				vecStr2array( const std::vector<std::string>, size_t *, char ***			);
 };
 
 };	// End of namespace "osapi"

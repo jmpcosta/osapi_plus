@@ -13,6 +13,9 @@
 //
 // *****************************************************************************************
 
+// Import OSAPI
+#include "osapi.h"
+
 // Import C++ system headers
 #include <string>
 
@@ -75,5 +78,43 @@ const char * util::bool2string ( bool value )
 {
 	return ( value ? trueString : falseString );
 }
+
+
+// Copy a vector of strings into an array of C Strings
+bool util::vecStr2array( const std::vector<std::string> vec, size_t * p_arraySize, char ** p_array[] )
+{
+ bool ret = false;
+
+ if( p_arraySize != nullptr && p_array != nullptr && vec.size() > 0 )
+   {
+	 size_t	vecSize		= vec.size();
+	 size_t allocSize	= (vecSize + 1 ) * sizeof( char * );
+	 void * p_mem		= nullptr;
+
+	 // Allocates the memory for the array of pointers first
+	 if( status_failure( proc_memory_allocate( allocSize, & p_mem ) ) )
+		 throw_error( "Error in memory allocation." );
+	 else
+	   {
+		 size_t cur = 0;
+		 *p_array = (char **) p_mem;
+
+		 // For each string, copy it and add the reference to the array of pointers
+		 for( auto const & i : vec )
+		 	{
+			  (*p_array)[ cur++ ] = (char *) i.c_str();
+
+			  // Make sure that the there are no buffer overruns
+			  if( cur >= vecSize ) break;
+		 	}
+		 // Make sure that the last element of the array is a NULL
+		 (*p_array)[ cur ] = NULL;
+	   }
+   }
+
+ return ret;
+}
+
+
 
 }; // End of namespace "osapi"
