@@ -3,12 +3,12 @@
 // File description:
 //
 // Author:	Joao Costa
-// Purpose:	Provide OS module API
+// Purpose:	Provide IO module API
 //
 // *****************************************************************************************
 
-#ifndef OS_OS_HH_
-#define OS_OS_HH_
+#ifndef IO_IO_HH_
+#define IO_IO_HH_
 
 // *****************************************************************************************
 //
@@ -23,6 +23,9 @@
 #include "general/general_types.hh"
 #include "status/trace_macros.hh"
 
+// Import own Module declarations
+
+
 
 // *****************************************************************************************
 //
@@ -33,25 +36,47 @@
 namespace osapi
 {
 
-class info
- {
- public:
-	 	 	 	 	 	info();
-	 std::string		get_name();
-	 std::string 		get_version();
-	 std::string		get_release();
-	 std::string		get_node();
-	 std::string		get_machine();
-	 std::string		get_domain();
-	 std::string		get_provider();
-	 std::string		get_provider_release();
- private:
-	 bool				osInfoAvailable;
-	 t_osInfo			osInfo;
-	 TRACE_CLASSNAME_DECLARATION
+class directory
+{
+public:
+						// Constructor & Destructor
+						directory();
+						~directory();
+		bool			change( const std::string & dirname );
+
+
+protected:
+		// Instance variables
+
+		//std::mutex					ioMutex;
+
+private:
+
+		TRACE_CLASSNAME_DECLARATION
 };
 
+/*
+class file
+{
+public:
+						// Constructor & Destructor
+						directory();
+						~directory();
+		bool			change( const std::string & dirname );
+
+
+protected:
+		// Instance variables
+
+		//std::mutex					ioMutex;
+
+private:
+
+		TRACE_CLASSNAME_DECLARATION
+};
+
+*/
 
 }	// End of namespace "osapi"
 
-#endif /* OS_OS_HH_ */
+#endif /* IO_IO_HH_ */

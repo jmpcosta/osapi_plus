@@ -3,12 +3,12 @@
 // File description:
 //
 // Author:	Joao Costa
-// Purpose:	Provide OS module API
+// Purpose:	Provide Process module API
 //
 // *****************************************************************************************
 
-#ifndef OS_OS_HH_
-#define OS_OS_HH_
+#ifndef PROCESS_PROCESSDATA_HH_
+#define PROCESS_PROCESSDATA_HH_
 
 // *****************************************************************************************
 //
@@ -18,10 +18,19 @@
 
 // Import C++ system headers
 #include <string>
+#include <vector>
+#include <mutex>
 
 // Import OSAPI++ declarations
 #include "general/general_types.hh"
 #include "status/trace_macros.hh"
+
+
+// *****************************************************************************************
+//
+// Section: Module Constant definitions
+//
+// *****************************************************************************************
 
 
 // *****************************************************************************************
@@ -33,25 +42,29 @@
 namespace osapi
 {
 
-class info
- {
- public:
-	 	 	 	 	 	info();
-	 std::string		get_name();
-	 std::string 		get_version();
-	 std::string		get_release();
-	 std::string		get_node();
-	 std::string		get_machine();
-	 std::string		get_domain();
-	 std::string		get_provider();
-	 std::string		get_provider_release();
- private:
-	 bool				osInfoAvailable;
-	 t_osInfo			osInfo;
-	 TRACE_CLASSNAME_DECLARATION
+class CurrentProcess;
+
+class processData
+{
+public:
+					processData();
+					~processData();
+		bool		setCmdLine		( std::vector<std::string> & line	);
+		bool		setEnvironment	( std::vector<std::string> & env	);
+		void *		getRaw			( void								);
+
+private:
+		void	*	data;
+		void	*	cmdLine;
+		void	*	environment;
+
+private:
+		std::mutex					dataMutex;
+		TRACE_CLASSNAME_DECLARATION
 };
+
 
 
 }	// End of namespace "osapi"
 
-#endif /* OS_OS_HH_ */
+#endif /* PROCESS_PROCESSDATA_HH_ */

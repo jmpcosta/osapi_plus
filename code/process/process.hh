@@ -27,14 +27,9 @@
 
 // Import Module declarations
 #include "process/signal.hh"
+#include "process/processData.hh"
 
-// *****************************************************************************************
-//
-// Section: Module Constant definitions
-//
-// *****************************************************************************************
 
-constexpr char module[] = "Process";
 
 // *****************************************************************************************
 //
@@ -46,25 +41,6 @@ namespace osapi
 {
 
 class CurrentProcess;
-
-class processData
-{
-public:
-					processData();
-					~processData();
-		bool		setCmdLine		( std::vector<std::string> & line	);
-		bool		setEnvironment	( std::vector<std::string> & env	);
-		void *		getRaw			( void								);
-
-private:
-		void	*	data;
-		void	*	cmdLine;
-		void	*	environment;
-
-private:
-		std::mutex					dataMutex;
-		TRACE_CLASSNAME_DECLARATION
-};
 
 
 class process
@@ -111,6 +87,7 @@ public:
 
 	unsigned long				getPID();
 	unsigned long				getParentPID();
+	bool						setSession();
 	bool						suspend();
 
 	// Signals

@@ -21,6 +21,7 @@
 #include "util/util.hh"
 #include "logging/log.hh"
 #include "process/process.hh"
+#include "io/io.hh"
 
 
 #endif /* OSAPI_PLUS_H_ */

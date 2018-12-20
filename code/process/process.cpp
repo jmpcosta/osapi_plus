@@ -34,100 +34,23 @@
 #include "process/process.hh"
 
 
+namespace osapi
+{
+
+// *****************************************************************************************
+//
+// Section: Module Constant definitions
+//
+// *****************************************************************************************
+
+constexpr char module[] = "Process";
+
+
 // *****************************************************************************************
 //
 // Section: Function definition
 //
 // *****************************************************************************************
-
-namespace osapi
-{
-
-// ProcessData Instance methods
-
-processData::processData()
-{
- TRACE_CLASSNAME( "processData" )
- TRACE_POINT
-
- // Initialize data
- environment	= nullptr;
- cmdLine		= nullptr;
-
- throw_on_failure( proc_memory_allocate( sizeof(t_proc), &data ) );
-}
-
-
-processData::~processData()
-{
- TRACE_POINT
-
- // Deallocate memory from Heap
- proc_memory_deallocate( cmdLine 		);
- proc_memory_deallocate( environment	);
- proc_memory_deallocate( data			);
-}
-
-
-void * processData::getRaw( void )
-{
- TRACE_POINT
- return data;
-}
-
-bool processData::setCmdLine( std::vector<std::string> & line )
-{
- bool		ret			= false;
- char	**	p_array;
- t_proc	*	p_proc		= (t_proc *) data;
- size_t		size;
-
- TRACE_ENTER
-
- std::lock_guard<std::mutex> guard( dataMutex );
-
- if( cmdLine != nullptr )
-	 proc_memory_deallocate( cmdLine );
-
- ret = util::vecStr2array( line, &size, &p_array );
-
- if( ret )
-   {
-	 cmdLine = (void *) p_array;
-	 throw_on_failure( proc_data_setCmdLine( size, p_array, p_proc ) );
-   }
-
- TRACE_EXIT
-
- return ret;
-}
-
-bool processData::setEnvironment( std::vector<std::string> & env )
-{
- bool		ret			= false;
- char	**	p_array;
- t_proc	*	p_proc		= (t_proc *) data;
- size_t		size		= env.size();
-
- TRACE_ENTER
-
- std::lock_guard<std::mutex> guard( dataMutex );
-
- if( environment != nullptr )
-	 proc_memory_deallocate( environment );
-
- ret = util::vecStr2array( env, &size, &p_array );
-
- if( ret )
-   {
-	 environment = (void *) p_array;
-	 throw_on_failure( proc_data_setEnvironment( size, p_array, p_proc ) );
-   }
-
- TRACE_EXIT
-
- return ret;
-}
 
 
 // Process Class methods
@@ -305,6 +228,26 @@ unsigned long CurrentProcess::getParentPID()
 
  return (unsigned long) pid;
 }
+
+bool CurrentProcess::setSession()
+{
+ bool 		ret = false;
+ t_status	st;
+
+ TRACE_ENTER
+
+ st = proc_id_setSession();
+ if( status_success( st ) )
+   {
+	 TRACE( "Success in creating own session process" )
+	 ret = true;
+   }
+
+ TRACE( " Exiting with ", ret )
+
+ return ret;
+}
+
 
 bool CurrentProcess::suspend()
 {
