@@ -7,8 +7,8 @@
 //
 // *****************************************************************************************
 
-#ifndef OSAPI_PLUS_H_
-#define OSAPI_PLUS_H_
+#ifndef OSAPI_PLUS_HH_
+#define OSAPI_PLUS_HH_
 
 // *****************************************************************************************
 //
@@ -20,8 +20,7 @@
 #include "configuration/configuration_interfaces.hh"
 #include "util/util.hh"
 #include "logging/log.hh"
-#include "process/process.hh"
 #include "io/io.hh"
+#include "process/process.hh"
 
-
-#endif /* OSAPI_PLUS_H_ */
+#endif /* OSAPI_PLUS_HH_ */

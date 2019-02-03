@@ -22,6 +22,17 @@
 // Import own module declarations
 #include "configuration/propertyItem.hh"
 
+// *****************************************************************************************
+//
+// Section: Module constants
+//
+// *****************************************************************************************
+
+namespace osapi
+{
+
+TRACE_CLASSNAME( propertyItem )
+
 
 // *****************************************************************************************
 //
@@ -29,15 +40,11 @@
 //
 // *****************************************************************************************
 
-namespace osapi
-{
-
 
 propertyItem::propertyItem( const std::string & propName, const std::string & propValue )
 {
  name = propName;
  value = propValue;
- TRACE_CLASSNAME( "propertyItem" )
 
  TRACE( "Creating property:|", name, "=", value, "|" )
 }

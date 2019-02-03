@@ -33,10 +33,12 @@
 namespace osapi
 {
 
+TRACE_CLASSNAME( argItem )
+
+
 argItem::argItem( const std::string & arguments )
 {
- TRACE_CLASSNAME( "argItem" )
-
+ TRACE_POINT
  arg = arguments;
 }
 

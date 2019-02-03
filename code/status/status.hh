@@ -7,8 +7,8 @@
 //
 // *****************************************************************************************
 
-#ifndef STATUS_PLUS_HH_
-#define STATUS_PLUS_HH_
+#ifndef OSAPI_STATUS_HH_
+#define OSAPI_STATUS_HH_
 
 
 // *****************************************************************************************
@@ -51,4 +51,4 @@ private:
 
 }
 
-#endif /* STATUS_HH_ */
+#endif /* OSAPI_STATUS_HH_ */

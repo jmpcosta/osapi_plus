@@ -49,6 +49,11 @@
 namespace osapi
 {
 
+namespace process
+{
+
+TRACE_CLASSNAME(signal)
+
 // Class methods
 bool signal::isSupported( signalSupportLevel & supportLevel )
 {
@@ -79,47 +84,56 @@ bool signal::isSupported( signalSupportLevel & supportLevel )
 // Constructor & Destructor
 signal::signal( int number )
 {
- TRACE_CLASSNAME( "signal" )
+ sigNumber    = number;
+ sigHandler   = nullptr;
 
- TRACE( "signal:", number )
- signumber = number;
- handler   = nullptr;
+ TRACE( "signo:", sigNumber )
 }
+
 
 signal::~signal()
 {
- TRACE( "signal:", signumber )
+ TRACE_POINT
 }
 
 bool signal::equal( int number )
 {
- TRACE( "Testing equal for signal:", number )
- return ( signumber == number );
+ TRACE( "Testing equal for signal:", sigNumber )
+ return ( sigNumber == number );
 }
 
-void signal::setHandler( sighandler_t func )
+void signal::setHandler( sighandler_t handlerFunction )
 {
- TRACE( "signal:", signumber )
- handler = func;
+ TRACE( "signal:", sigNumber )
+ sigHandler = handlerFunction;
+}
+
+bool signal::hasValidHandler( void )
+{
+ return ( ! (sigHandler == nullptr) );
 }
 
 void signal::clearHandler( void )
 {
- TRACE( "signal:", signumber )
- handler = nullptr;
+ TRACE( "signal:", sigNumber )
+ sigHandler = nullptr;
 }
 
 
 sighandler_t signal::getHandler( void )
 {
- TRACE( "signal:", signumber )
- return handler;
+ TRACE( "signal number:",  sigNumber  )
+ TRACE( "signal handler:", sigHandler )
+ return sigHandler;
 }
 
 int signal::getID( void	)
 {
- TRACE( "signal:", signumber )
- return signumber;
+ TRACE( "signal:", sigNumber )
+ return sigNumber;
 }
 
-}; // End of OSAPI namespace
+
+}	// End of namespace "process"
+
+}	// End of OSAPI namespace

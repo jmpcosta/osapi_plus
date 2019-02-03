@@ -7,8 +7,8 @@
 //
 // *****************************************************************************************
 
-#ifndef PROCESS_SIGNAL_HH_
-#define PROCESS_SIGNAL_HH_
+#ifndef OSAPI_PROCESS_SIGNAL_HH_
+#define OSAPI_PROCESS_SIGNAL_HH_
 
 // *****************************************************************************************
 //
@@ -47,33 +47,40 @@ enum class signalSupportLevel { unsupported, ansi, posix, realTime };
 namespace osapi
 {
 
+namespace process
+{
+
 class signal
  {
  public:
 	static	bool	isSupported		( signalSupportLevel & 	);
 
 					// Constructor & Destructor
-					~signal();
+					~signal			();
 					signal			( int number			);
 	bool			equal			( int number			);
 	int				getID			( void					);
 	void 			setHandler		( sighandler_t func		);
 	void 			clearHandler	( void					);
 	sighandler_t	getHandler		( void					);
+	bool			hasValidHandler	( void					);
 
 
- private:
-
+private:
 	// Instance variables
-	int						signumber;
-	sighandler_t			handler;
+	int						sigNumber;
+	sighandler_t			sigHandler;
 
 	TRACE_CLASSNAME_DECLARATION
 };
 
 
+
+
+}	// End of namespace "process"
+
 }	// End of namespace "osapi"
 
 
-#endif /* PROCESS_SIGNAL_HH_ */
+#endif /* OSAPI_PROCESS_SIGNAL_HH_ */
 

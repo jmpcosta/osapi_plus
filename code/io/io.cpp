@@ -29,17 +29,16 @@
 #include "io/io.hh"
 
 
-namespace osapi
-{
-
-
 // *****************************************************************************************
 //
 // Section: Module Constant definitions
 //
 // *****************************************************************************************
 
-constexpr char module[] = "IO";
+namespace osapi
+{
+
+TRACE_CLASSNAME( directory )
 
 
 // *****************************************************************************************
@@ -52,7 +51,6 @@ constexpr char module[] = "IO";
 
 directory::directory()
 {
- TRACE_CLASSNAME( "directory" )
  TRACE_POINT
 }
 

@@ -7,8 +7,8 @@
 //
 // *****************************************************************************************
 
-#ifndef CONFIGURATION_CONFIGURATIONITEM_HH_
-#define CONFIGURATION_CONFIGURATIONITEM_HH_
+#ifndef OSAPI_CONFIGURATIONITEM_HH_
+#define OSAPI_CONFIGURATIONITEM_HH_
 
 // *****************************************************************************************
 //
@@ -43,4 +43,4 @@ public:
 
 }	// End of namespace
 
-#endif /* CONFIGURATION_CONFIGURATIONITEM_HH_ */
+#endif /* OSAPI_CONFIGURATIONITEM_HH_ */

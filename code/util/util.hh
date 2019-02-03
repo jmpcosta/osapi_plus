@@ -8,8 +8,8 @@
 // *****************************************************************************************
 
 
-#ifndef UTIL_UTIL_HH_
-#define UTIL_UTIL_HH_
+#ifndef OSAPI_UTIL_HH_
+#define OSAPI_UTIL_HH_
 
 // *****************************************************************************************
 //
@@ -42,8 +42,11 @@ public:
 		static void				toLowerCase	( std::string &													);
 		static const char * 	bool2string ( bool value													);
 		static bool				vecStr2array( const std::vector<std::string>, size_t *, char ***			);
+
+private:
+		TRACE_CLASSNAME_DECLARATION
 };
 
 };	// End of namespace "osapi"
 
-#endif /* UTIL_UTIL_HH_ */
+#endif /* OSAPI_UTIL_HH_ */

@@ -7,8 +7,8 @@
 //
 // *****************************************************************************************
 
-#ifndef STATUS_TRACE_HH_
-#define STATUS_TRACE_HH_
+#ifndef OSAPI_TRACE_HH_
+#define OSAPI_TRACE_HH_
 
 // *****************************************************************************************
 //
@@ -21,6 +21,7 @@
 
 // Import OSAPI C declarations
 #include "status/status.h"
+#include "proc/proc.h"
 
 // Import OSAPI++ declarations
 #include "status/status.hh"
@@ -39,43 +40,43 @@ namespace osapi
 template <typename V>
 void trace( const V & value  )
 {
-	std::cerr << value;
-	std::cerr << std::endl;
+ std::cerr << value;
+ std::cerr << std::endl;
 }
 
 template <typename V, typename... R>
 void trace( const V & value, const R & ... rest  )
 {
-	std::cerr << value;
+ std::cerr << value;
 
-	trace( rest... );
-
+ trace( rest... );
 }
+
+
 
 // Wrap the C status return "object" and throw exception if a failure is returned
 template <typename S>
 void throw_on_failure( const S & st  )
 {
-	if( status_failure( st ) )
-		throw status(
+ if( status_failure( st ) )
+	 throw status(
 						status_module_get	( st ),
 						status_function_get	( st ),
 						status_error_get	( st )
-			  	  	);
-
+	 	 	 	 );
 }
 
 
 template <typename P>
 void throw_error( const P p_c)
 {
-	if( p_c != nullptr ) throw status( p_c );
+ if( p_c != nullptr ) throw status( p_c );
 
-	throw status( "Null pointer error !" );
+ throw status( "Null pointer error !" );
 }
 
 
 }	// End of namespace "osapi"
 
 
-#endif /* STATUS_TRACE_HH_ */
+#endif /* OSAPI_TRACE_HH_ */

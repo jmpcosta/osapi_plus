@@ -7,8 +7,8 @@
 //
 // *****************************************************************************************
 
-#ifndef CODE_CONFIGURATION_CICONTAINER_HH_
-#define CODE_CONFIGURATION_CICONTAINER_HH_
+#ifndef OSAPI_CONFIGURATION_CICONTAINER_HH_
+#define OSAPI_CONFIGURATION_CICONTAINER_HH_
 
 
 // *****************************************************************************************
@@ -78,4 +78,4 @@ private:
 
 
 
-#endif /* CODE_CONFIGURATION_CICONTAINER_HH_ */
+#endif /* OSAPI_CONFIGURATION_CICONTAINER_HH_ */

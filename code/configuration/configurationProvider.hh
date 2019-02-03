@@ -7,8 +7,8 @@
 //
 // *****************************************************************************************
 
-#ifndef CONFIGURATIONPROVIDER_HH_
-#define CONFIGURATIONPROVIDER_HH_
+#ifndef OSAPI_CONFIGURATIONPROVIDER_HH_
+#define OSAPI_CONFIGURATIONPROVIDER_HH_
 
 // *****************************************************************************************
 //
@@ -68,4 +68,4 @@ private:
 };	// End of namespace "osapi"
 
 
-#endif /* CONFIGURATIONPROVIDER_HH_ */
+#endif /* OSAPI_CONFIGURATIONPROVIDER_HH_ */

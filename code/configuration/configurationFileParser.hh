@@ -7,8 +7,8 @@
 //
 // *****************************************************************************************
 
-#ifndef CONFIGURATION_CONFIGURATIONFILEPARSER_HH_
-#define CONFIGURATION_CONFIGURATIONFILEPARSER_HH_
+#ifndef OSAPI_CONFIGURATIONFILEPARSER_HH_
+#define OSAPI_CONFIGURATIONFILEPARSER_HH_
 
 
 // *****************************************************************************************
@@ -76,4 +76,4 @@ private:
 
 
 
-#endif /* CONFIGURATION_CONFIGURATIONFILEPARSER_HH_ */
+#endif /* OSAPI_CONFIGURATIONFILEPARSER_HH_ */

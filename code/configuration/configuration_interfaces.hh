@@ -7,8 +7,8 @@
 //
 // *****************************************************************************************
 
-#ifndef CONFIGURATION_CONFIGURATION_INTERFACES_HH_
-#define CONFIGURATION_CONFIGURATION_INTERFACES_HH_
+#ifndef OSAPI_CONFIGURATION_INTERFACES_HH_
+#define OSAPI_CONFIGURATION_INTERFACES_HH_
 
 // *****************************************************************************************
 //
@@ -27,4 +27,4 @@
 #include "configuration/configurationParser.hh"
 #include "configuration/configurationFileParser.hh"
 
-#endif /* CONFIGURATION_CONFIGURATION_INTERFACES_HH_ */
+#endif /* OSAPI_CONFIGURATION_INTERFACES_HH_ */

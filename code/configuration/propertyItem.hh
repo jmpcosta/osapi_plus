@@ -7,8 +7,8 @@
 //
 // *****************************************************************************************
 
-#ifndef CONFIGURATION_PROPERTY_HH_
-#define CONFIGURATION_PROPERTY_HH_
+#ifndef OSAPI_PROPERTYITEM_HH_
+#define OSAPI_PROPERTYITEM_HH_
 
 // *****************************************************************************************
 //
@@ -62,4 +62,4 @@ private:
 
 
 
-#endif /* CONFIGURATION_PROPERTY_HH_ */
+#endif /* OSAPI_PROPERTYITEM_HH_ */

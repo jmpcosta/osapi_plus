@@ -1,0 +1,26 @@
+<map id="code/osapi.hh" name="code/osapi.hh">
+<area shape="rect" id="node2" href="$status_8hh.html" title="status/status.hh" alt="" coords="1643,87,1759,114"/>
+<area shape="rect" id="node5" href="$configuration__interfaces_8hh.html" title="configuration/configuration\l_interfaces.hh" alt="" coords="639,80,814,121"/>
+<area shape="rect" id="node21" href="$util_8hh.html" title="util/util.hh" alt="" coords="1313,437,1391,464"/>
+<area shape="rect" id="node22" href="$log_8hh.html" title="logging/log.hh" alt="" coords="1569,437,1671,464"/>
+<area shape="rect" id="node23" href="$io_8hh.html" title="io/io.hh" alt="" coords="1869,519,1933,546"/>
+<area shape="rect" id="node25" href="$process_8hh.html" title="process/process.hh" alt="" coords="2121,177,2257,203"/>
+<area shape="rect" id="node4" href="$trace__macros_8hh.html" title="status/trace_macros.hh" alt="" coords="1702,601,1861,628"/>
+<area shape="rect" id="node6" href="$configuration_item_8hh.html" title="configuration/configuration\lItem.hh" alt="" coords="387,512,562,553"/>
+<area shape="rect" id="node8" href="$arg_item_8hh.html" title="configuration/argItem.hh" alt="" coords="512,437,675,464"/>
+<area shape="rect" id="node10" href="$property_item_8hh.html" title="configuration/propertyItem.hh" alt="" coords="94,437,285,464"/>
+<area shape="rect" id="node12" href="$ci_container_8hh.html" title="configuration/ciContainer.hh" alt="" coords="800,437,984,464"/>
+<area shape="rect" id="node14" href="$configuration_8hh.html" title="configuration/configuration.hh" alt="" coords="893,355,1085,382"/>
+<area shape="rect" id="node15" href="$configuration_provider_8hh.html" title="configuration/configuration\lProvider.hh" alt="" coords="1035,259,1210,300"/>
+<area shape="rect" id="node16" href="$configuration_parser_8hh.html" title="configuration/configuration\lParser.hh" alt="" coords="502,259,677,300"/>
+<area shape="rect" id="node17" href="$configuration_file_parser_8hh.html" title="configuration/configuration\lFileParser.hh" alt="" coords="639,169,814,211"/>
+<area shape="rect" id="node19" href="$configuration_item_type_8hh.html" title="configuration/configuration\lItemType.hh" alt="" coords="2987,348,3162,389"/>
+<area shape="rect" id="node24" href="$general__types_8hh.html" title="general/general_types.hh" alt="" coords="2714,601,2881,628"/>
+<area shape="rect" id="node26" href="$plan_8hh.html" title="process/plan.hh" alt="" coords="1977,355,2092,382"/>
+<area shape="rect" id="node31" href="$runner_8hh.html" title="process/runner.hh" alt="" coords="2281,437,2407,464"/>
+<area shape="rect" id="node33" href="$factory_8hh.html" title="process/factory.hh" alt="" coords="2329,266,2460,293"/>
+<area shape="rect" id="node34" href="$current_8hh.html" title="process/current.hh" alt="" coords="2124,355,2255,382"/>
+<area shape="rect" id="node27" href="$plan__signal_8hh.html" title="process/plan_signal.hh" alt="" coords="1949,437,2104,464"/>
+<area shape="rect" id="node29" href="$signal_8hh.html" title="process/signal.hh" alt="" coords="2534,519,2658,546"/>
+<area shape="rect" id="node32" href="$id_8hh.html" title="common/id.hh" alt="" coords="2253,519,2357,546"/>
+</map>

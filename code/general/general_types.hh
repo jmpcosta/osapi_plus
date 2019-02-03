@@ -7,8 +7,8 @@
 //
 // *****************************************************************************************
 
-#ifndef GENERAL_TYPES_HH_
-#define GENERAL_TYPES_HH_
+#ifndef OSAPI_GENERAL_TYPES_HH_
+#define OSAPI_GENERAL_TYPES_HH_
 
 
 // *****************************************************************************************
@@ -28,4 +28,4 @@ constexpr	char falseString[]	= "false";
 
 };	// End of namespace "osapi"
 
-#endif /* GENERAL_TYPES_HH_ */
+#endif /* OSAPI_GENERAL_TYPES_HH_ */

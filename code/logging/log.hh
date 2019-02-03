@@ -7,8 +7,8 @@
 //
 // *****************************************************************************************
 
-#ifndef LOG_LOG_HH_
-#define LOG_LOG_HH_
+#ifndef OSAPI_LOG_HH_
+#define OSAPI_LOG_HH_
 
 // *****************************************************************************************
 //
@@ -82,4 +82,4 @@ private:
 
 };	// End of namespace "osapi"
 
-#endif /*LOG_LOG_HH_ */
+#endif /*OSAPI_LOG_HH_ */

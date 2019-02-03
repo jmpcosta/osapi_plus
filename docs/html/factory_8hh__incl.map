@@ -1,0 +1,9 @@
+<map id="code/process/factory.hh" name="code/process/factory.hh">
+<area shape="rect" id="node2" href="$general__types_8hh.html" title="general/general_types.hh" alt="" coords="729,304,895,331"/>
+<area shape="rect" id="node3" href="$trace__macros_8hh.html" title="status/trace_macros.hh" alt="" coords="287,304,446,331"/>
+<area shape="rect" id="node4" href="$plan_8hh.html" title="process/plan.hh" alt="" coords="683,80,797,107"/>
+<area shape="rect" id="node13" href="$runner_8hh.html" title="process/runner.hh" alt="" coords="101,155,227,181"/>
+<area shape="rect" id="node8" href="$plan__signal_8hh.html" title="process/plan_signal.hh" alt="" coords="663,155,817,181"/>
+<area shape="rect" id="node10" href="$signal_8hh.html" title="process/signal.hh" alt="" coords="506,229,630,256"/>
+<area shape="rect" id="node14" href="$id_8hh.html" title="common/id.hh" alt="" coords="23,229,127,256"/>
+</map>

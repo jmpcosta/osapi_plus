@@ -7,8 +7,8 @@
 //
 // *****************************************************************************************
 
-#ifndef CONFIGURATION_CONFIGURATIONITEMTYPE_HH_
-#define CONFIGURATION_CONFIGURATIONITEMTYPE_HH_
+#ifndef OSAPI_CONFIGURATIONITEMTYPE_HH_
+#define OSAPI_CONFIGURATIONITEMTYPE_HH_
 
 // *****************************************************************************************
 //
@@ -32,4 +32,4 @@ enum class ciType { UNKNOWN = 0, ARGUMENT = 1, ENVIRONMENT = 2, PROPERTY = 3 };
 
 
 
-#endif /* CONFIGURATION_CONFIGURATIONITEMTYPE_HH_ */
+#endif /* OSAPI_CONFIGURATIONITEMTYPE_HH_ */

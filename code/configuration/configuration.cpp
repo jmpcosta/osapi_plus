@@ -28,19 +28,16 @@
 #include "configuration/configuration.hh"
 
 
-
-
-namespace osapi
-{
-
 // *****************************************************************************************
 //
 // Section: Module constants
 //
 // *****************************************************************************************
 
-constexpr char module[] 					=	"CONFIGURATION";
+namespace osapi
+{
 
+TRACE_CLASSNAME( configuration )
 
 // *****************************************************************************************
 //
@@ -52,7 +49,6 @@ constexpr char module[] 					=	"CONFIGURATION";
 // Constructor
 configuration::configuration( const std::string & name )
 {
- TRACE_CLASSNAME( "configuration" )
  TRACE( "New configuration (", name, ")" )
 
  configurationName = name;

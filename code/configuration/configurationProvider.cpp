@@ -32,19 +32,27 @@
 
 // *****************************************************************************************
 //
-// Section: Function definition
+// Section: Module constants
 //
 // *****************************************************************************************
 
 namespace osapi
 {
 
+TRACE_CLASSNAME( ConfigurationProvider )
+
+
+// *****************************************************************************************
+//
+// Section: Function definition
+//
+// *****************************************************************************************
 
 ConfigurationProvider & ConfigurationProvider::getProvider()
 {
-	static	ConfigurationProvider instance;
+ static	ConfigurationProvider instance;
 
-	return instance;
+ return instance;
 }
 
 // Instance Methods
@@ -53,10 +61,7 @@ ConfigurationProvider & ConfigurationProvider::getProvider()
 
 // Private Constructor
 ConfigurationProvider::ConfigurationProvider()
-{
-	TRACE_CLASSNAME( "ConfigurationProvider" )
-	TRACE_POINT
-}
+{ TRACE_POINT }
 
 // Private Destructor
 ConfigurationProvider::~ConfigurationProvider()

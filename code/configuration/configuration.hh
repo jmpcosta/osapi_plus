@@ -7,8 +7,8 @@
 //
 // *****************************************************************************************
 
-#ifndef CODE_CONFIGURATION_CONFIGURATION_HH_
-#define CODE_CONFIGURATION_CONFIGURATION_HH_
+#ifndef OSAPI_CONFIGURATION_HH_
+#define OSAPI_CONFIGURATION_HH_
 
 
 // *****************************************************************************************
@@ -82,4 +82,4 @@ private:
 
 
 
-#endif /* CODE_CONFIGURATION_CONFIGURATION_HH_ */
+#endif /* OSAPI_CONFIGURATION_HH_ */

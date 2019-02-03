@@ -26,16 +26,16 @@
 #include "configuration/configurationProvider.hh"
 
 
-namespace osapi
-{
-
 // *****************************************************************************************
 //
 // Section: Module constants
 //
 // *****************************************************************************************
 
-constexpr char module[] = "LOG";
+namespace osapi
+{
+
+TRACE_CLASSNAME( Log )
 
 // *****************************************************************************************
 //
@@ -71,8 +71,6 @@ Log::~Log( void ){}
 Log::Log( void )
 {
  static t_log systemLog;
-
- TRACE_CLASSNAME( "Log" )
 
  p_log = (void *) &systemLog;
 }

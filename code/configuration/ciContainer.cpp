@@ -40,7 +40,7 @@ namespace osapi
 
 constexpr char container_default_name[]	=	"-Default-";
 
-
+TRACE_CLASSNAME( ciContainer )
 
 // *****************************************************************************************
 //
@@ -59,23 +59,20 @@ const char * ciContainer::getDefaultName()
 
 ciContainer::ciContainer( const std::string & containerName )
 {
-	TRACE_CLASSNAME( "ciContainer" )
-
-	name = containerName;
-	TRACE( "Creating Container name:|", name, "|" )
+ name = containerName;
+ TRACE( "Creating Container name:|", name, "|" )
 }
 
 ciContainer::~ciContainer()
 {
-	TRACE( "Destroying container (", name, ")" )
+ TRACE( "Destroying container (", name, ")" )
 
-	for( const auto & i : ciList )
-		 delete i;
+ for( const auto & i : ciList )	 delete i;
 }
 
 size_t ciContainer::getNumber()
 {
-	return ciList.size();
+ return ciList.size();
 }
 
 std::vector<std::string> ciContainer::getStringList()

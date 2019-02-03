@@ -7,8 +7,8 @@
 //
 // *****************************************************************************************
 
-#ifndef CONFIGURATION_CONFIGURATIONPARSER_HH_
-#define CONFIGURATION_CONFIGURATIONPARSER_HH_
+#ifndef OSAPI_CONFIGURATIONPARSER_HH_
+#define OSAPI_CONFIGURATIONPARSER_HH_
 
 // *****************************************************************************************
 //
@@ -77,4 +77,4 @@ public:
 
 };	// osapi namespace
 
-#endif /* CONFIGURATION_CONFIGURATIONPARSER_HH_ */
+#endif /* OSAPI_CONFIGURATIONPARSER_HH_ */

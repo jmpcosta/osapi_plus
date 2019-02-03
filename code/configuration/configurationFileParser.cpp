@@ -55,6 +55,8 @@ constexpr char argument_token[]		=	"arg:";
 constexpr char environment_token[]	=	"env:";
 
 
+TRACE_CLASSNAME( configurationFileParser )
+
 // *****************************************************************************************
 //
 // Section: Function definition
@@ -64,8 +66,6 @@ constexpr char environment_token[]	=	"env:";
 
 configurationFileParser::configurationFileParser()
 {
- TRACE_CLASSNAME( "configurationFileParser" )
-
  TRACE_POINT
 }
 

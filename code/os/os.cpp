@@ -31,8 +31,6 @@
 #include "os/os.hh"
 
 
-namespace osapi
-{
 
 // *****************************************************************************************
 //
@@ -40,7 +38,11 @@ namespace osapi
 //
 // *****************************************************************************************
 
-constexpr char module[] = "OS";
+namespace osapi
+{
+
+TRACE_CLASSNAME( info )
+
 
 // *****************************************************************************************
 //
@@ -51,8 +53,6 @@ constexpr char module[] = "OS";
 
 info::info()
 {
- TRACE_CLASSNAME( "info" )
-
  osInfoAvailable = false;
 
  throw_on_failure( os_info_get( & osInfo ) );

@@ -26,18 +26,24 @@
 
 // *****************************************************************************************
 //
+// Section: Module constants
+//
+// *****************************************************************************************
+
+namespace osapi
+{
+
+TRACE_CLASSNAME( status )
+
+// *****************************************************************************************
+//
 // Section: Function definition
 //
 // *****************************************************************************************
 
 
-namespace osapi
-{
-
 status::status( const char * mod, const char * function, const char * errMsg )
 {
- TRACE_CLASSNAME( "ConfigurationProvider" )
-
  TRACE_ENTER
 
  if( function != nullptr )
@@ -62,8 +68,6 @@ status::status( const char * mod, const char * function, const char * errMsg )
 
 status::status( const std::string & message )
 {
- TRACE_CLASSNAME( "ConfigurationProvider" )
-
  TRACE_ENTER
 
  reason = message;

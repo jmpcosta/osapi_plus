@@ -7,8 +7,8 @@
 //
 // *****************************************************************************************
 
-#ifndef CODE_CONFIGURATION_ARGITEM_HH_
-#define CODE_CONFIGURATION_ARGITEM_HH_
+#ifndef OSAPI_CONFIGURATION_ARGITEM_HH_
+#define OSAPI_CONFIGURATION_ARGITEM_HH_
 
 
 // *****************************************************************************************
@@ -58,4 +58,4 @@ private:
 
 
 
-#endif /* CODE_CONFIGURATION_ARGITEM_HH_ */
+#endif /* OSAPI_CONFIGURATION_ARGITEM_HH_ */
