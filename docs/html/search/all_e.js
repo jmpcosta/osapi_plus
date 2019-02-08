@@ -14,9 +14,11 @@ var searchData=
   ['signalmutex',['signalMutex',['../classosapi_1_1process_1_1plan_signal.html#a53d21838e17f286e657f4b5b0ef765eb',1,'osapi::process::planSignal']]],
   ['signalsupportlevel',['signalSupportLevel',['../signal_8hh.html#a6088e68d9bfe9f8b952ce9b9c681e182',1,'signal.hh']]],
   ['splitstring',['splitString',['../classosapi_1_1util.html#af61152127f49f56874b6e6568369d683',1,'osapi::util']]],
+  ['state_2ehh',['state.hh',['../state_8hh.html',1,'']]],
   ['status',['status',['../classosapi_1_1status.html',1,'osapi::status'],['../classosapi_1_1status.html#a4b82ab1ea473afc2fde3fb8fcac8c7fe',1,'osapi::status::status(const char *, const char *, const char *)'],['../classosapi_1_1status.html#a268b222d00db66390137d64315bae660',1,'osapi::status::status(const std::string &amp;message)']]],
   ['status_2ecpp',['status.cpp',['../status_8cpp.html',1,'']]],
   ['status_2ehh',['status.hh',['../status_8hh.html',1,'']]],
+  ['stopped',['stopped',['../namespaceosapi_1_1process.html#a90d798f010ffecaef45b17ca0d823c9ca057b0716c2c65999e5cf9bcbfbbd603a',1,'osapi::process']]],
   ['stringeraser',['stringEraser',['../classosapi_1_1util.html#a0c0027607271f5d2b6bbb0443bf04acd',1,'osapi::util']]],
   ['suspend',['suspend',['../classosapi_1_1process_1_1_current.html#a7eb10aa0705b9fc1fbece78a71bfd34d',1,'osapi::process::Current']]]
 ];

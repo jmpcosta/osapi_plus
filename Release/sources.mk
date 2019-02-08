@@ -25,6 +25,8 @@ C_DEPS :=
 SUBDIRS := \
 code/common \
 code/configuration \
+code/general \
+code/general/library \
 code/io \
 code/logging \
 code/os \

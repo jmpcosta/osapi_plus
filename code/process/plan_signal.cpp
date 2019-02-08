@@ -25,7 +25,7 @@
 #include <memory>
 
 // Import OSAPI++ generic headers
-#include "general/general_types.hh"
+#include "general/general.hh"
 #include "general/templates.hh"
 #include "status/status.hh"
 #include "status/trace.hh"

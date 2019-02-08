@@ -1,9 +1,21 @@
 <map id="code/configuration/configuration.cpp" name="code/configuration/configuration.cpp">
-<area shape="rect" id="node4" href="$general__types_8hh.html" title="general/general_types.hh" alt="" coords="924,95,1091,121"/>
-<area shape="rect" id="node5" href="$status_8hh.html" title="status/status.hh" alt="" coords="693,169,809,196"/>
-<area shape="rect" id="node8" href="$trace_8hh.html" title="status/trace.hh" alt="" coords="790,95,899,121"/>
-<area shape="rect" id="node12" href="$configuration_item_8hh.html" title="configuration/configuration\lItem.hh" alt="" coords="5,244,180,285"/>
-<area shape="rect" id="node14" href="$ci_container_8hh.html" title="configuration/ciContainer.hh" alt="" coords="333,169,517,196"/>
-<area shape="rect" id="node15" href="$configuration_8hh.html" title="configuration/configuration.hh" alt="" coords="329,95,521,121"/>
-<area shape="rect" id="node7" href="$trace__macros_8hh.html" title="status/trace_macros.hh" alt="" coords="527,251,685,278"/>
+<area shape="rect" id="node4" href="$general_8hh.html" title="general/general.hh" alt="" coords="1193,95,1321,121"/>
+<area shape="rect" id="node18" href="$status_8hh.html" title="status/status.hh" alt="" coords="890,169,1006,196"/>
+<area shape="rect" id="node21" href="$trace_8hh.html" title="status/trace.hh" alt="" coords="645,95,755,121"/>
+<area shape="rect" id="node25" href="$configuration_item_8hh.html" title="configuration/configuration\lItem.hh" alt="" coords="249,244,423,285"/>
+<area shape="rect" id="node27" href="$ci_container_8hh.html" title="configuration/ciContainer.hh" alt="" coords="139,169,323,196"/>
+<area shape="rect" id="node28" href="$configuration_8hh.html" title="configuration/configuration.hh" alt="" coords="181,95,373,121"/>
+<area shape="rect" id="node5" href="$baseline_8hh.html" title="general/baseline.hh" alt="" coords="1239,251,1374,278"/>
+<area shape="rect" id="node14" href="$types_8hh.html" title="general/types.hh" alt="" coords="1394,169,1513,196"/>
+<area shape="rect" id="node15" href="$templates_8hh.html" title="general/templates.hh" alt="" coords="1030,169,1173,196"/>
+<area shape="rect" id="node17" href="$library_8hh.html" title="general/library.hh" alt="" coords="1197,169,1318,196"/>
+<area shape="rect" id="node6" href="$language_8hh.html" title="general/language.hh" alt="" coords="887,408,1025,435"/>
+<area shape="rect" id="node7" href="$compiler_8hh.html" title="general/compiler.hh" alt="" coords="1143,408,1278,435"/>
+<area shape="rect" id="node8" href="$libraries_8hh.html" title="general/libraries.hh" alt="" coords="1561,408,1692,435"/>
+<area shape="rect" id="node11" href="$baseline__language_8hh.html" title="general/baseline_language.hh" alt="" coords="1142,333,1335,360"/>
+<area shape="rect" id="node12" href="$baseline__compiler_8hh.html" title="general/baseline_compiler.hh" alt="" coords="927,333,1118,360"/>
+<area shape="rect" id="node13" href="$baseline__libraries_8hh.html" title="general/baseline_libraries.hh" alt="" coords="1411,333,1597,360"/>
+<area shape="rect" id="node9" href="$release_8hh.html" title="general/mappings/release.hh" alt="" coords="1329,483,1517,509"/>
+<area shape="rect" id="node10" href="$version_8hh.html" title="general/mappings/version.hh" alt="" coords="1541,483,1729,509"/>
+<area shape="rect" id="node20" href="$trace__macros_8hh.html" title="status/trace_macros.hh" alt="" coords="499,251,658,278"/>
 </map>

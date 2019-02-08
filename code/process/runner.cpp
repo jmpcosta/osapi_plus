@@ -24,7 +24,7 @@
 #include <mutex>
 
 // Import OSAPI++ generic headers
-#include "general/general_types.hh"
+#include "general/general.hh"
 #include "status/status.hh"
 #include "status/trace.hh"
 #include "common/id.hh"
@@ -117,6 +117,17 @@ bool runner::exists( int64_t pid )
  return true;
 }
 
+
+process_state runner::getState()
+{
+ t_status	st;
+ int		state;
+
+ st = proc_instance_getState( (t_pid) getPID(), & state );
+ throw_on_failure( st );
+
+ return (process_state) state;
+}
 
 }	// End of namespace "process"
 

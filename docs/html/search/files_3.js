@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['factory_2ecpp',['factory.cpp',['../factory_8cpp.html',1,'']]],
-  ['factory_2ehh',['factory.hh',['../factory_8hh.html',1,'']]]
+  ['defs_2ehh',['defs.hh',['../defs_8hh.html',1,'']]]
 ];

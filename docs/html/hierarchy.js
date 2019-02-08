@@ -17,6 +17,7 @@ var hierarchy =
     [ "osapi::process::factory", "classosapi_1_1process_1_1factory.html", null ],
     [ "osapi::id::group", "classosapi_1_1id_1_1group.html", null ],
     [ "osapi::info", "classosapi_1_1info.html", null ],
+    [ "osapi::library", "classosapi_1_1library.html", null ],
     [ "osapi::Log", "classosapi_1_1_log.html", null ],
     [ "osapi::process::planSignal", "classosapi_1_1process_1_1plan_signal.html", [
       [ "osapi::process::Current", "classosapi_1_1process_1_1_current.html", null ],

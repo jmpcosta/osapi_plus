@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['general_5ftypes_2ehh',['general_types.hh',['../general__types_8hh.html',1,'']]],
+  ['general_2ecpp',['general.cpp',['../general_8cpp.html',1,'']]],
+  ['general_2ehh',['general.hh',['../general_8hh.html',1,'']]],
   ['get',['get',['../classosapi_1_1id_1_1process.html#ac82b500e9f75b38373b61cb1ffe89f6a',1,'osapi::id::process::get()'],['../classosapi_1_1id_1_1user.html#ad571238708a4db398b96e87d5c22d9f7',1,'osapi::id::user::get()'],['../classosapi_1_1id_1_1group.html#a8bf75c71e769d75c4c0a28aa343cadd4',1,'osapi::id::group::get()'],['../classosapi_1_1process_1_1_current.html#a931b18d9dcad0003ff0326e109774c99',1,'osapi::process::Current::get()']]],
   ['get_5fdomain',['get_domain',['../classosapi_1_1info.html#a5746d905ab20dbae5d611e7e4a342aa1',1,'osapi::info']]],
   ['get_5fmachine',['get_machine',['../classosapi_1_1info.html#a87754b059668122858450943d3aacf01',1,'osapi::info']]],
@@ -24,10 +25,16 @@ var searchData=
   ['getpid',['getPID',['../classosapi_1_1process_1_1_current.html#a3527d9544faee112102498f82f671326',1,'osapi::process::Current::getPID()'],['../classosapi_1_1process_1_1runner.html#a3a41eb48f3a0e1d82de20e4324e91b2e',1,'osapi::process::runner::getPID()']]],
   ['getprovider',['getProvider',['../classosapi_1_1_configuration_provider.html#af44eecfe854b5eba20a5670254f950df',1,'osapi::ConfigurationProvider']]],
   ['getraw',['getRaw',['../classosapi_1_1process_1_1plan.html#aea5cfeb29c217c4a42eb8b286765adaa',1,'osapi::process::plan']]],
+  ['getrelease',['getRelease',['../classosapi_1_1library.html#a51e2e910dc801d9a989c9f64a6ef9061',1,'osapi::library']]],
+  ['getreleasestring',['getReleaseString',['../classosapi_1_1library.html#ad5f742619ff1c9bc176d51eb2872b131',1,'osapi::library']]],
+  ['getstate',['getState',['../classosapi_1_1process_1_1runner.html#a5996110215191cd3ce40409a8e3f89bc',1,'osapi::process::runner']]],
   ['getstring',['getString',['../classosapi_1_1arg_item.html#a98ff54aa96c59d1205df07b3ac379a85',1,'osapi::argItem::getString()'],['../classosapi_1_1configuration_item.html#acc113217f76066c8bb56a3a0e6572898',1,'osapi::configurationItem::getString()'],['../classosapi_1_1property_item.html#a1e5649ef9ee221919af6358479c599df',1,'osapi::propertyItem::getString()']]],
   ['getstringgid',['getStringGID',['../classosapi_1_1process_1_1plan.html#aee479c61513ec81c9f51ee1eda625027',1,'osapi::process::plan']]],
   ['getstringlist',['getStringList',['../classosapi_1_1ci_container.html#a919d5a20cb29f8155754e8dac0515b35',1,'osapi::ciContainer']]],
   ['getstringpid',['getStringPID',['../classosapi_1_1process_1_1plan.html#a62eb411037dbec99ac08408095caa328',1,'osapi::process::plan']]],
   ['getstringuid',['getStringUID',['../classosapi_1_1process_1_1plan.html#a2fcc0d5e60715ad9ae81e99f45ba3251',1,'osapi::process::plan']]],
+  ['getversion',['getVersion',['../classosapi_1_1library.html#aa2a7d1e6faed11c937280e0e08a748dc',1,'osapi::library']]],
+  ['getversionstring',['getVersionString',['../classosapi_1_1library.html#ad5702dde0618459e514aa27aecaed9eb',1,'osapi::library']]],
+  ['glib_2ecpp',['glib.cpp',['../glib_8cpp.html',1,'']]],
   ['group',['group',['../classosapi_1_1id_1_1group.html',1,'osapi::id::group'],['../classosapi_1_1id_1_1group.html#a96f0f3278fd96a477bd1def767a16288',1,'osapi::id::group::group()']]]
 ];

@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['general_5ftypes_2ehh',['general_types.hh',['../general__types_8hh.html',1,'']]]
+  ['factory_2ecpp',['factory.cpp',['../factory_8cpp.html',1,'']]],
+  ['factory_2ehh',['factory.hh',['../factory_8hh.html',1,'']]]
 ];

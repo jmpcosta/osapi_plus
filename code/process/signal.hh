@@ -21,7 +21,7 @@
 #include <csignal>
 
 // Import OSAPI++ declarations
-#include "general/general_types.hh"
+#include "general/general.hh"
 #include "status/trace_macros.hh"
 
 

@@ -1,0 +1,24 @@
+<map id="code/general/baseline.hh" name="code/general/baseline.hh">
+<area shape="rect" id="node2" href="$general_8hh.html" title="code/general/general.hh" alt="" coords="705,155,865,181"/>
+<area shape="rect" id="node22" href="$library_8hh.html" title="code/general/library.hh" alt="" coords="823,80,977,107"/>
+<area shape="rect" id="node3" href="$configuration_8cpp.html" title="code/configuration\l/configuration.cpp" alt="" coords="5,229,133,271"/>
+<area shape="rect" id="node4" href="$glib_8cpp.html" title="code/general/library\l/glib.cpp" alt="" coords="158,229,293,271"/>
+<area shape="rect" id="node5" href="$os_8cpp.html" title="code/os/os.cpp" alt="" coords="318,319,429,345"/>
+<area shape="rect" id="node6" href="$os_8hh.html" title="code/os/os.hh" alt="" coords="368,237,472,263"/>
+<area shape="rect" id="node7" href="$osapi_8hh.html" title="code/osapi.hh" alt="" coords="691,617,794,644"/>
+<area shape="rect" id="node8" href="$current_8cpp.html" title="code/process/current.cpp" alt="" coords="1494,468,1663,495"/>
+<area shape="rect" id="node9" href="$current_8hh.html" title="code/process/current.hh" alt="" coords="1379,393,1541,420"/>
+<area shape="rect" id="node11" href="$factory_8cpp.html" title="code/process/factory.cpp" alt="" coords="623,543,793,569"/>
+<area shape="rect" id="node12" href="$factory_8hh.html" title="code/process/factory.hh" alt="" coords="776,468,939,495"/>
+<area shape="rect" id="node13" href="$plan_8cpp.html" title="code/process/plan.cpp" alt="" coords="598,468,751,495"/>
+<area shape="rect" id="node14" href="$plan_8hh.html" title="code/process/plan.hh" alt="" coords="989,393,1136,420"/>
+<area shape="rect" id="node15" href="$plan__signal_8cpp.html" title="code/process/plan_signal.cpp" alt="" coords="1160,393,1355,420"/>
+<area shape="rect" id="node16" href="$plan__signal_8hh.html" title="code/process/plan_signal.hh" alt="" coords="1236,319,1423,345"/>
+<area shape="rect" id="node17" href="$runner_8cpp.html" title="code/process/runner.cpp" alt="" coords="699,393,864,420"/>
+<area shape="rect" id="node18" href="$runner_8hh.html" title="code/process/runner.hh" alt="" coords="765,319,923,345"/>
+<area shape="rect" id="node19" href="$signal_8cpp.html" title="code/process/signal.cpp" alt="" coords="1049,319,1212,345"/>
+<area shape="rect" id="node20" href="$signal_8hh.html" title="code/process/signal.hh" alt="" coords="1251,237,1407,263"/>
+<area shape="rect" id="node21" href="$util_8cpp.html" title="code/util/util.cpp" alt="" coords="1667,237,1784,263"/>
+<area shape="rect" id="node10" href="$process_8hh.html" title="code/process/process.hh" alt="" coords="892,543,1060,569"/>
+<area shape="rect" id="node23" href="$general_8cpp.html" title="code/general/general.cpp" alt="" coords="890,155,1057,181"/>
+</map>

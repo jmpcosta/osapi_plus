@@ -21,5 +21,6 @@ var dir_8efefc3f958fa384c7a6ecf05b5dddae =
       [ "runner", "classosapi_1_1process_1_1runner.html", "classosapi_1_1process_1_1runner" ]
     ] ],
     [ "signal.cpp", "signal_8cpp.html", null ],
-    [ "signal.hh", "signal_8hh.html", "signal_8hh" ]
+    [ "signal.hh", "signal_8hh.html", "signal_8hh" ],
+    [ "state.hh", "state_8hh.html", "state_8hh" ]
 ];

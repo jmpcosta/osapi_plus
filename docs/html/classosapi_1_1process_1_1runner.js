@@ -5,5 +5,6 @@ var classosapi_1_1process_1_1runner =
     [ "~runner", "classosapi_1_1process_1_1runner.html#af57b0e043052bb0d7be86db191466e04", null ],
     [ "getParentPID", "classosapi_1_1process_1_1runner.html#a4d96db0f69826a05adda9146a3c2ff0c", null ],
     [ "getPID", "classosapi_1_1process_1_1runner.html#a3a41eb48f3a0e1d82de20e4324e91b2e", null ],
+    [ "getState", "classosapi_1_1process_1_1runner.html#a5996110215191cd3ce40409a8e3f89bc", null ],
     [ "id", "classosapi_1_1process_1_1runner.html#a4e53a9a5c8555cbe0eeecd71b5eb20ba", null ]
 ];

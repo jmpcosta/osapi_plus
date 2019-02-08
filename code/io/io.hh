@@ -20,7 +20,7 @@
 #include <string>
 
 // Import OSAPI++ declarations
-#include "general/general_types.hh"
+#include "general/types.hh"
 #include "status/trace_macros.hh"
 
 // Import own Module declarations

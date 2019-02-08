@@ -23,9 +23,13 @@
 #include <string>
 
 // Import OSAPI++ declarations
-#include "general/general_types.hh"
+#include "general/general.hh"
 #include "status/trace_macros.hh"
 #include "common/id.hh"
+
+// Import own declarations
+#include "process/state.hh"
+
 
 // *****************************************************************************************
 //
@@ -51,6 +55,7 @@ public:
 
 			int64_t			getPID			(				);
 			int64_t			getParentPID	(				);
+			process_state	getState		(				);
 
 			static bool		exists			( int64_t pid	);
 

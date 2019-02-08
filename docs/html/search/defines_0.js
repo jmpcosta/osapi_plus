@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['trace',['TRACE',['../trace__macros_8hh.html#a5f6aa8edcd99914757600b5d3b259bb7',1,'trace_macros.hh']]],
-  ['trace_5fclassname',['TRACE_CLASSNAME',['../trace__macros_8hh.html#a439b9d8a4881e577026c7ad59491ab92',1,'trace_macros.hh']]],
-  ['trace_5fclassname_5fdeclaration',['TRACE_CLASSNAME_DECLARATION',['../trace__macros_8hh.html#abf16fde95537eeed74febaec0eef3c98',1,'trace_macros.hh']]],
-  ['trace_5fenter',['TRACE_ENTER',['../trace__macros_8hh.html#ae481bd98d6475b901f3bda374d7dd804',1,'trace_macros.hh']]],
-  ['trace_5fexit',['TRACE_EXIT',['../trace__macros_8hh.html#aefc1351ad1453affbdc3bf4fbda3be06',1,'trace_macros.hh']]],
-  ['trace_5fpoint',['TRACE_POINT',['../trace__macros_8hh.html#a9d106c3baa240e9e3bdc687df08023e6',1,'trace_macros.hh']]]
+  ['osapi_5fcompiler',['OSAPI_COMPILER',['../compiler_8hh.html#a81b0f68aac5294a33e7327c3011b5147',1,'compiler.hh']]],
+  ['osapi_5fcompiler_5fclang',['OSAPI_COMPILER_CLANG',['../compiler_8hh.html#aeca9a75c71f4d3aaa0bcbe7512c72b48',1,'compiler.hh']]],
+  ['osapi_5fcompiler_5fgnu',['OSAPI_COMPILER_GNU',['../compiler_8hh.html#a4e908c1c43238988fac43707999e4d0b',1,'compiler.hh']]],
+  ['osapi_5fcompiler_5funknown',['OSAPI_COMPILER_UNKNOWN',['../compiler_8hh.html#a217d8419501252e944c70177016f3a30',1,'compiler.hh']]],
+  ['osapic_5frequired_5frelease',['OSAPIC_REQUIRED_RELEASE',['../release_8hh.html#aec1373cd2077c660f848a6ddc4fe8b47',1,'release.hh']]],
+  ['osapic_5frequired_5fversion',['OSAPIC_REQUIRED_VERSION',['../version_8hh.html#a0b97560f438a8da8bcf6f452c3ecd3fa',1,'version.hh']]]
 ];

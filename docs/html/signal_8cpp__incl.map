@@ -1,7 +1,19 @@
 <map id="code/process/signal.cpp" name="code/process/signal.cpp">
-<area shape="rect" id="node8" href="$general__types_8hh.html" title="general/general_types.hh" alt="" coords="487,155,654,181"/>
-<area shape="rect" id="node9" href="$status_8hh.html" title="status/status.hh" alt="" coords="347,155,463,181"/>
-<area shape="rect" id="node12" href="$trace_8hh.html" title="status/trace.hh" alt="" coords="223,80,332,107"/>
-<area shape="rect" id="node13" href="$signal_8hh.html" title="process/signal.hh" alt="" coords="509,80,633,107"/>
-<area shape="rect" id="node11" href="$trace__macros_8hh.html" title="status/trace_macros.hh" alt="" coords="541,229,699,256"/>
+<area shape="rect" id="node8" href="$general_8hh.html" title="general/general.hh" alt="" coords="539,155,667,181"/>
+<area shape="rect" id="node22" href="$status_8hh.html" title="status/status.hh" alt="" coords="347,155,463,181"/>
+<area shape="rect" id="node25" href="$trace_8hh.html" title="status/trace.hh" alt="" coords="220,80,329,107"/>
+<area shape="rect" id="node26" href="$signal_8hh.html" title="process/signal.hh" alt="" coords="506,80,630,107"/>
+<area shape="rect" id="node9" href="$baseline_8hh.html" title="general/baseline.hh" alt="" coords="505,304,639,331"/>
+<area shape="rect" id="node18" href="$types_8hh.html" title="general/types.hh" alt="" coords="706,229,825,256"/>
+<area shape="rect" id="node19" href="$templates_8hh.html" title="general/templates.hh" alt="" coords="849,229,991,256"/>
+<area shape="rect" id="node21" href="$library_8hh.html" title="general/library.hh" alt="" coords="561,229,682,256"/>
+<area shape="rect" id="node10" href="$language_8hh.html" title="general/language.hh" alt="" coords="224,453,363,480"/>
+<area shape="rect" id="node11" href="$compiler_8hh.html" title="general/compiler.hh" alt="" coords="394,453,529,480"/>
+<area shape="rect" id="node12" href="$libraries_8hh.html" title="general/libraries.hh" alt="" coords="556,453,687,480"/>
+<area shape="rect" id="node15" href="$baseline__language_8hh.html" title="general/baseline_language.hh" alt="" coords="846,379,1039,405"/>
+<area shape="rect" id="node16" href="$baseline__compiler_8hh.html" title="general/baseline_compiler.hh" alt="" coords="318,379,509,405"/>
+<area shape="rect" id="node17" href="$baseline__libraries_8hh.html" title="general/baseline_libraries.hh" alt="" coords="635,379,821,405"/>
+<area shape="rect" id="node13" href="$release_8hh.html" title="general/mappings/release.hh" alt="" coords="513,528,701,555"/>
+<area shape="rect" id="node14" href="$version_8hh.html" title="general/mappings/version.hh" alt="" coords="725,528,913,555"/>
+<area shape="rect" id="node24" href="$trace__macros_8hh.html" title="status/trace_macros.hh" alt="" coords="326,229,485,256"/>
 </map>
