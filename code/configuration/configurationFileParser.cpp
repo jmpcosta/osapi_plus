@@ -217,7 +217,7 @@ configurationItem * configurationFileParser::make_prop( const std::string & entr
 	 std::string name, value;
 	 splitProperty( entry, where, name, value );
 
-	 TRACE( "Environment: name(", name, ") and value(", value, ")." )
+	 TRACE( "Property: name(", name, ") and value(", value, ")." )
 
 	 if( name.size() > 0 && value.size() > 0 )
 	   {

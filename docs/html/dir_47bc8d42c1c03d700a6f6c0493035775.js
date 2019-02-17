@@ -12,7 +12,6 @@ var dir_47bc8d42c1c03d700a6f6c0493035775 =
     [ "configuration.hh", "configuration_8hh.html", [
       [ "configuration", "classosapi_1_1configuration.html", "classosapi_1_1configuration" ]
     ] ],
-    [ "configuration_defs.hh", "configuration__defs_8hh.html", "configuration__defs_8hh" ],
     [ "configuration_interfaces.hh", "configuration__interfaces_8hh.html", null ],
     [ "configurationFileParser.cpp", "configuration_file_parser_8cpp.html", "configuration_file_parser_8cpp" ],
     [ "configurationFileParser.hh", "configuration_file_parser_8hh.html", [
@@ -31,6 +30,7 @@ var dir_47bc8d42c1c03d700a6f6c0493035775 =
     [ "configurationProvider.hh", "configuration_provider_8hh.html", [
       [ "ConfigurationProvider", "classosapi_1_1_configuration_provider.html", "classosapi_1_1_configuration_provider" ]
     ] ],
+    [ "defs.hh", "configuration_2defs_8hh.html", null ],
     [ "propertyItem.cpp", "property_item_8cpp.html", null ],
     [ "propertyItem.hh", "property_item_8hh.html", [
       [ "propertyItem", "classosapi_1_1property_item.html", "classosapi_1_1property_item" ]

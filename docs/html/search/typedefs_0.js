@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['signal_5flist',['signal_list',['../namespaceosapi_1_1process.html#a986ea8e6abfc2b2e4c99a492947769b8',1,'osapi::process']]]
+  ['refconststr',['refConstStr',['../namespaceosapi.html#a9c691d7b64fd555d9ba559b5ca2138cc',1,'osapi']]]
 ];

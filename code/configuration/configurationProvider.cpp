@@ -93,7 +93,6 @@ bool ConfigurationProvider::getConfiguration( const std::string & name, configur
  	  if( i->equal( name ) )
 		{
 		  TRACE( "Found a matching configuration" )
-		  TRACE( "Addresses:", p_conf, *p_conf, i )
 		  *p_conf = i;
 		  ret = true;
 		}

@@ -46,16 +46,23 @@ class plan : public planSignal
 public:
 							plan();
 							~plan();
-		bool				setCmdLine		( std::vector<std::string> & line	);
-		bool				setEnvironment	( std::vector<std::string> & env	);
 		void *				getRaw			( void								);
 
 		// Add data to the instance
-		bool 				addCommandLine	( std::vector<std::string> & args	);
-		bool				addEnvironment	( std::vector<std::string> & env	);
-		bool				addUser			( const std::string & user			);
-		bool				addGroup		( const std::string & group			);
-		void				addName			( const std::string & procName		);
+		bool 				addCommandLine	( const std::vector<refConstStr> & line		);
+		bool				addEnvironment	( const std::vector<refConstStr> & env		);
+		bool				addUser			( const std::string & user					);
+		bool				addGroup		( const std::string & group					);
+		void				addName			( const std::string & procName				);
+
+		// Retrieve data from the instance
+		std::vector<char *>	getCommandLine	( void 										);
+		std::vector<char *>	getEnvironment	( void 										);
+		/*
+		std::string			getUserID		( void 								);
+		std::string			getGroupID		( void 								);
+		*/
+		char *				getName			( void 								);
 
 		// Get information from a raw process structure
 		std::string			getStringPID( void );
@@ -66,8 +73,6 @@ public:
 private:
 		// Instance variables
 		void	*	rawData;
-		void	*	cmdLine;
-		void	*	environment;
 
 		std::mutex						procMutex;
 

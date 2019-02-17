@@ -1,6 +1,7 @@
 var hierarchy =
 [
     [ "osapi::ciContainer", "classosapi_1_1ci_container.html", null ],
+    [ "osapi::common", "classosapi_1_1common.html", null ],
     [ "osapi::configuration", "classosapi_1_1configuration.html", null ],
     [ "osapi::configurationItem", "classosapi_1_1configuration_item.html", [
       [ "osapi::argItem", "classosapi_1_1arg_item.html", null ],
@@ -28,6 +29,7 @@ var hierarchy =
       [ "osapi::process::Current", "classosapi_1_1process_1_1_current.html", null ]
     ] ],
     [ "osapi::process::signal", "classosapi_1_1process_1_1signal.html", null ],
+    [ "osapi::process::status", "classosapi_1_1process_1_1status.html", null ],
     [ "osapi::id::user", "classosapi_1_1id_1_1user.html", null ],
     [ "osapi::util", "classosapi_1_1util.html", null ]
 ];

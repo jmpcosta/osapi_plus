@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['posix',['posix',['../signal_8hh.html#a6088e68d9bfe9f8b952ce9b9c681e182a950616e5405e4ef51a87d384180e7aa1',1,'signal.hh']]],
-  ['property',['PROPERTY',['../configuration_item_type_8hh.html#a6f5194514e959fcb03f3603a5db3b585a77bc4ffc1b6dce554d9dda5d6dea1660',1,'configurationItemType.hh']]]
+  ['library_5frelease',['library_release',['../namespaceosapi.html#abffac92170214098cb1da44bceb13b2da802b7a5f53c6a04f3250be7a43bb9d43',1,'osapi']]],
+  ['library_5fversion',['library_version',['../namespaceosapi.html#a142c8a45a751d87840d1a7f2644367f4a7198b221300b2674cd1fd19daa6d4771',1,'osapi']]]
 ];

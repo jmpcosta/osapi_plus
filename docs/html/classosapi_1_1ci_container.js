@@ -9,5 +9,5 @@ var classosapi_1_1ci_container =
     [ "getItem", "classosapi_1_1ci_container.html#a4cebbc272468bfc15a78e80557332e93", null ],
     [ "getName", "classosapi_1_1ci_container.html#ab3e6af24179e417a44d969b2bc08d044", null ],
     [ "getNumber", "classosapi_1_1ci_container.html#ad9adc78d1c9d2c177250288b04a7ace5", null ],
-    [ "getStringList", "classosapi_1_1ci_container.html#a919d5a20cb29f8155754e8dac0515b35", null ]
+    [ "getStringList", "classosapi_1_1ci_container.html#a644530bee44c28b1e34fe3f7bf1fcc6a", null ]
 ];

@@ -21,9 +21,13 @@
 #include <string>
 #include <vector>
 #include <mutex>
+#include <functional>
 
 // Import OSAPI++ declarations
+#include "general/types.hh"
 #include "status/trace_macros.hh"
+
+// include own headers
 #include "configuration/configurationItem.hh"
 
 
@@ -60,7 +64,7 @@ public:
 
 	std::string & 				getName			();
 	size_t						getNumber		();
-	std::vector<std::string> 	getStringList	();
+	std::vector<refConstStr> 	getStringList	();
 
 
 private:

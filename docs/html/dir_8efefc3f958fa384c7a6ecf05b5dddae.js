@@ -4,7 +4,7 @@ var dir_8efefc3f958fa384c7a6ecf05b5dddae =
     [ "current.hh", "current_8hh.html", [
       [ "Current", "classosapi_1_1process_1_1_current.html", "classosapi_1_1process_1_1_current" ]
     ] ],
-    [ "defs.hh", "defs_8hh.html", null ],
+    [ "defs.hh", "process_2defs_8hh.html", null ],
     [ "factory.cpp", "factory_8cpp.html", null ],
     [ "factory.hh", "factory_8hh.html", [
       [ "factory", "classosapi_1_1process_1_1factory.html", "classosapi_1_1process_1_1factory" ]
@@ -22,5 +22,7 @@ var dir_8efefc3f958fa384c7a6ecf05b5dddae =
     ] ],
     [ "signal.cpp", "signal_8cpp.html", null ],
     [ "signal.hh", "signal_8hh.html", "signal_8hh" ],
-    [ "state.hh", "state_8hh.html", "state_8hh" ]
+    [ "state.hh", "state_8hh.html", "state_8hh" ],
+    [ "status.cpp", "process_2status_8cpp.html", null ],
+    [ "status.hh", "process_2status_8hh.html", "process_2status_8hh" ]
 ];

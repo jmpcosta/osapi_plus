@@ -1,4 +1,5 @@
 <map id="code/configuration/ciContainer.hh" name="code/configuration/ciContainer.hh">
-<area shape="rect" id="node5" href="$trace__macros_8hh.html" title="status/trace_macros.hh" alt="" coords="191,102,350,129"/>
-<area shape="rect" id="node6" href="$configuration_item_8hh.html" title="configuration/configuration\lItem.hh" alt="" coords="374,95,549,136"/>
+<area shape="rect" id="node6" href="$types_8hh.html" title="general/types.hh" alt="" coords="421,102,540,129"/>
+<area shape="rect" id="node7" href="$trace__macros_8hh.html" title="status/trace_macros.hh" alt="" coords="564,102,723,129"/>
+<area shape="rect" id="node8" href="$configuration_item_8hh.html" title="configuration/configuration\lItem.hh" alt="" coords="5,95,180,136"/>
 </map>

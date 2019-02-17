@@ -21,12 +21,13 @@
 // Import C++ system headers
 #include <iostream>
 #include <string>
+#include <functional>
 
 // Import OSAPI++ generic headers
 #include "general/general.hh"
 #include "status/status.hh"
 #include "status/trace.hh"
-#include "util/util.hh"
+#include "common/common.hh"
 
 // Import own module declarations
 #include "process/plan.hh"
@@ -56,13 +57,10 @@ TRACE_CLASSNAME( plan )
 
 plan::plan( void )
 {
+ t_status st;
+
  TRACE_ENTER
 
- // Initialize data
- environment	= nullptr;
- cmdLine		= nullptr;
-
- t_status st;
  st = proc_memory_allocate( sizeof(t_proc), & rawData );
  if( status_failure( st ) )
    {
@@ -84,9 +82,30 @@ plan::~plan()
  TRACE_ENTER
 
  // Deallocate memory from Heap
- if( cmdLine     != nullptr )	proc_memory_deallocate( cmdLine 	);
- if( environment != nullptr )	proc_memory_deallocate( environment	);
- if( rawData     != nullptr )	proc_memory_deallocate( rawData		);
+ if( rawData != nullptr )
+   {
+	 t_status	st;
+	 char	**	p_array;
+	 size_t		size;
+	 t_proc	*	p_proc	= (t_proc *) rawData;
+
+	 st = proc_data_getEnvironment( p_proc, &size, &p_array );
+	 if( status_success( st ) )
+	   {
+		 TRACE( "Successfully deallocated process environment" )
+		 proc_memory_deallocate( (void *) p_array );
+	   }
+
+	 // Deallocate command line
+	 st = proc_data_getCmdLine( p_proc, &size, &p_array );
+	 if( status_success( st ) )
+	   {
+		 TRACE( "Successfully deallocated process environment" )
+		 proc_memory_deallocate( (void *) p_array );
+	   }
+
+	 proc_memory_deallocate( rawData );
+   }
 
  TRACE_EXIT
 }
@@ -98,26 +117,46 @@ void * plan::getRaw( void )
  return rawData;
 }
 
-bool plan::setCmdLine( std::vector<std::string> & line )
+bool plan::addCommandLine( const std::vector<refConstStr> & line )
 {
+ t_status	st;
+ char	**	p_array		= nullptr;
+ t_size		size		= 0;
+ size_t		arraySize	= 0;
  bool		ret			= false;
- char	**	p_array;
  t_proc	*	p_proc		= (t_proc *) rawData;
- size_t		size;
 
  TRACE_ENTER
 
- if( cmdLine != nullptr )
-	 proc_memory_deallocate( cmdLine );
+ if( line.size() <= 0 )
+	 throw_error( "No command line provided !" );
 
- ret = util::vecStr2array( line, &size, &p_array );
+ st = proc_data_getCmdLine( p_proc, &size, &p_array );
 
- if( ret )
+ if( status_success( st ) )
    {
-	 TRACE( "Successfully transformed vector of strings to array of char pointers" )
-	 cmdLine = (void *) p_array;
-	 t_status st = proc_data_setCmdLine( size, p_array, p_proc );
-	 throw_on_failure( st );
+	 TRACE( "Environment already exists. Remove existing environment first." )
+	 st = proc_memory_deallocate( (void *) p_array );
+	 if( status_failure( st) )
+	   {
+		 TRACE( "Unable to deallocate process environment. Memory leaking.." )
+	   }
+   }
+
+ if( ! common::vecRefStr2array( line, &arraySize, &p_array ) )
+   {
+	 TRACE( "Error in conversion from vector of strings to an array of C-Strings" )
+	 ret = false;	// To compile without traces
+   }
+ else
+   {
+	 size = (t_size) arraySize;
+	 st = proc_data_setCmdLine( size, p_array, p_proc );
+	 if( status_success( st ) )
+	   {
+		 TRACE( "Successfully set the process environment with ", size, " values." )
+		 ret = true;
+	   }
    }
 
  TRACE_EXIT
@@ -125,26 +164,46 @@ bool plan::setCmdLine( std::vector<std::string> & line )
  return ret;
 }
 
-bool plan::setEnvironment( std::vector<std::string> & env )
+bool plan::addEnvironment( const std::vector<refConstStr> & env )
 {
- bool		ret			= false;
- char	**	p_array;
+ t_status	st;
+ char	**	p_array			= nullptr;
+ t_size		size			= 0;
+ size_t		arraySize		= 0;
+ bool		ret 			= false;
  t_proc	*	p_proc		= (t_proc *) rawData;
- size_t		size		= env.size();
 
  TRACE_ENTER
 
- if( environment != nullptr )
-	 proc_memory_deallocate( environment );
+ if( env.size() <= 0 )
+	 throw_error( "No environment provided !" );
 
- ret = util::vecStr2array( env, &size, &p_array );
+ st = proc_data_getEnvironment( p_proc, &size, &p_array );
 
- if( ret )
+ if( status_success( st ) )
    {
-	 TRACE( "Successfully transformed vector of strings to array of char pointers" )
-	 environment = (void *) p_array;
-	 t_status st = proc_data_setEnvironment( size, p_array, p_proc );
-	 throw_on_failure( st );
+	 TRACE( "Environment already exists. Remove existing environment first." )
+	 st = proc_memory_deallocate( (void *) p_array );
+	 if( status_failure( st) )
+	   {
+		 TRACE( "Unable to deallocate process environment. Memory leaking.." )
+	   }
+   }
+
+ if( ! common::vecRefStr2array( env, &arraySize, &p_array ) )
+   {
+	 TRACE( "Error in conversion from vector of strings to an array of C-Strings" )
+	 ret = false;	// To compile without traces
+   }
+ else
+   {
+	 size = (t_size) arraySize;
+	 st = proc_data_setEnvironment( size, p_array, p_proc );
+	 if( status_success( st ) )
+	   {
+		 TRACE( "Successfully set the process environment with ", size, " values." )
+		 ret = true;
+	   }
    }
 
  TRACE_EXIT
@@ -179,7 +238,7 @@ std::string	plan::getStringUID( void )
  t_uid  	uid;
  t_char 	str[ OSAPI_STRING_SIZE_UID + 1 ];
 
- st = proc_data_getUID( p_proc, &uid );
+ st = proc_data_getUser( p_proc, &uid );
  throw_on_failure( st );
 
  st = sec_user_idToString( uid, OSAPI_STRING_SIZE_UID, str );
@@ -199,7 +258,7 @@ std::string	plan::getStringGID( void )
  t_gid  	gid;
  t_char 	str[ OSAPI_STRING_SIZE_GID + 1 ];
 
- st = proc_data_getGID( p_proc, &gid );
+ st = proc_data_getGroup( p_proc, &gid );
  throw_on_failure( st );
 
  st = sec_group_idToString( gid, OSAPI_STRING_SIZE_GID, str );
@@ -209,24 +268,6 @@ std::string	plan::getStringGID( void )
  str[ OSAPI_STRING_SIZE_GID ] = '\0';
 
  return std::string( str );
-}
-
-
-bool plan::addCommandLine( std::vector<std::string> & args )
-{
- if( args.size() <= 0 )
-	 throw_error( "No command line provided !" );
-
- return setCmdLine( args );
-}
-
-
-bool plan::addEnvironment( std::vector<std::string> & env )
-{
- if( env.size() <= 0 )
-	 throw_error( "No environment provided !" );
-
- return setEnvironment( env );
 }
 
 
@@ -314,8 +355,108 @@ void plan::addName( const std::string & procName )
  // Convert the generic pointer to the concrete OSAPI t_proc pointer
  t_proc * p_proc = (t_proc *) rawData;
 
- p_proc->name =  (char *) procName.c_str();
+ p_proc->name = (char *) procName.c_str();
 }
+
+
+std::vector<char *> plan::getCommandLine( void )
+{
+ t_status				st;
+ t_proc *				p_proc	= (t_proc *) rawData;
+ char **				p_cmd	= nullptr;
+ t_size					nargs	= 0;
+ std::vector<char *>	vec;
+
+ TRACE_ENTER
+
+ st = proc_data_getCmdLine( p_proc, &nargs, &p_cmd );
+
+ if( status_success( st ) )	// Ensure valid output
+   {
+	 TRACE( "Successfully retrieved process command line" )
+	 for( t_size i=0; i < nargs; i++ )
+		  vec.push_back( p_cmd[ i ] );
+   }
+
+ TRACE_EXIT
+
+ return vec;
+}
+
+std::vector<char *> plan::getEnvironment( void )
+{
+ t_status				st;
+ t_proc *				p_proc	= (t_proc *) rawData;
+ char **				p_env	= nullptr;
+ t_size					nargs	= 0;
+ std::vector<char *>	vec;
+
+ TRACE_ENTER
+
+ st = proc_data_getEnvironment( p_proc, &nargs, &p_env );
+
+ if( status_success( st ) )	// Ensure valid output
+   {
+	 TRACE( "Successfully retrieved process environment" )
+	 for( t_size i=0; i < nargs; i++ )
+		  vec.push_back( p_env[ i ] );
+   }
+
+ TRACE_EXIT
+
+ return vec;
+}
+
+
+/*
+char * plan::getUser( void )
+{
+
+ t_proc * p_proc = (t_proc *) rawData;
+
+ TRACE_ENTER
+
+ TRACE_EXIT
+}
+
+
+char * plan::getGroup( void	)
+{
+
+ t_proc * p_proc = (t_proc *) rawData;
+
+ TRACE_ENTER
+
+ TRACE_EXIT
+}
+*/
+
+char * plan::getName( void )
+{
+ TRACE_ENTER
+
+ if( rawData == nullptr )
+	 throw_error( "No process plan data found" );
+
+ t_proc * p_proc = (t_proc *) rawData;
+ char   * procName;
+ t_status st;
+
+ st = proc_data_getName( p_proc, &procName );
+
+ // Ensure that there is a valid content
+ if( status_failure( st ) )
+   {
+	 TRACE( "No process name available, using sane values" )
+     procName=(char *) empty_string;
+   }
+
+ TRACE_EXIT
+
+ return procName;
+}
+
+
 
 
 }	// End of namespace "process"

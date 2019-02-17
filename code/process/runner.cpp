@@ -22,6 +22,8 @@
 #include <string.h>
 #include <string>
 #include <mutex>
+#include <chrono>
+#include <thread>
 
 // Import OSAPI++ generic headers
 #include "general/general.hh"
@@ -60,7 +62,7 @@ runner::runner( int64_t pid ) : id( pid )
  TRACE_POINT
 
  if( ! exists( pid ) )
-	 throw status( "The Process is not running" );
+	 throw osapi::status( "The Process is not running" );
 }
 
 
@@ -78,14 +80,14 @@ runner::~runner()
 { TRACE_POINT }
 
 
-int64_t runner::getPID()
+int64_t runner::getPID( void )
 {
  TRACE_POINT
 
  return id.get();
 }
 
-int64_t runner::getParentPID()
+int64_t runner::getParentPID( void )
 {
  t_status st;
  t_pid pid = 0;
@@ -118,15 +120,48 @@ bool runner::exists( int64_t pid )
 }
 
 
-process_state runner::getState()
+state runner::getState( void )
 {
  t_status	st;
- int		state;
+ int		iState;
 
- st = proc_instance_getState( (t_pid) getPID(), & state );
+ st = proc_instance_getState( (t_pid) getPID(), & iState );
  throw_on_failure( st );
 
- return (process_state) state;
+ return (state) iState;
+}
+
+
+status runner::getStatus( void )
+{
+ t_status		st;
+ t_proc_status	iStatus;
+
+ st = proc_instance_getStatus( (t_pid) getPID(), & iStatus );
+ throw_on_failure( st );
+
+ status	retStatus(
+		 	 	 	 proc_getStatusInfo(   iStatus	),
+					 proc_getStatusSignal( iStatus  ),
+					 proc_getStatusCode(   iStatus  )
+ 	 	 	 	 );
+
+ return retStatus;
+}
+
+bool runner::terminate( size_t graceTime )
+{
+ t_status		st;
+
+ st = proc_instance_destroy( (t_pid) id.get(), false );
+ if( status_failure( st ) )
+	 return false;			// No need to wait since the forced kill bellow will also fail
+
+ std::this_thread::sleep_for( std::chrono::milliseconds( graceTime ) );
+
+ st = proc_instance_destroy( (t_pid) id.get(), true );
+
+ return status_result( st );
 }
 
 }	// End of namespace "process"

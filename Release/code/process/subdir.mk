@@ -9,7 +9,8 @@ CPP_SRCS += \
 ../code/process/plan.cpp \
 ../code/process/plan_signal.cpp \
 ../code/process/runner.cpp \
-../code/process/signal.cpp 
+../code/process/signal.cpp \
+../code/process/status.cpp 
 
 OBJS += \
 ./code/process/current.o \
@@ -17,7 +18,8 @@ OBJS += \
 ./code/process/plan.o \
 ./code/process/plan_signal.o \
 ./code/process/runner.o \
-./code/process/signal.o 
+./code/process/signal.o \
+./code/process/status.o 
 
 CPP_DEPS += \
 ./code/process/current.d \
@@ -25,7 +27,8 @@ CPP_DEPS += \
 ./code/process/plan.d \
 ./code/process/plan_signal.d \
 ./code/process/runner.d \
-./code/process/signal.d 
+./code/process/signal.d \
+./code/process/status.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['vecstr2array',['vecStr2array',['../classosapi_1_1util.html#afff4f619983f4296001256ac8465db6f',1,'osapi::util']]],
+  ['vecrefstr2array',['vecRefStr2array',['../classosapi_1_1common.html#ad92f751b60c9bf0190b7a336a26bc23d',1,'osapi::common']]],
+  ['vecstr2array',['vecStr2array',['../classosapi_1_1common.html#a47563c36a745e38d658cf81a5eb09a1d',1,'osapi::common::vecStr2array()'],['../classosapi_1_1util.html#af572bbe82fca4fe50c1826ee7855da5c',1,'osapi::util::vecStr2array()']]],
   ['verifybaseline',['verifyBaseline',['../classosapi_1_1library.html#adc01c03a99b228e128326e57fbeaeca5',1,'osapi::library']]]
 ];

@@ -1,0 +1,11 @@
+<map id="code/process/status.hh" name="code/process/status.hh">
+<area shape="rect" id="node2" href="$runner_8hh.html" title="code/process/runner.hh" alt="" coords="263,80,421,107"/>
+<area shape="rect" id="node10" href="$process_2status_8cpp.html" title="code/process/status.cpp" alt="" coords="446,80,611,107"/>
+<area shape="rect" id="node3" href="$process_8hh.html" title="code/process/process.hh" alt="" coords="199,229,367,256"/>
+<area shape="rect" id="node5" href="$current_8hh.html" title="code/process/current.hh" alt="" coords="83,155,246,181"/>
+<area shape="rect" id="node7" href="$factory_8hh.html" title="code/process/factory.hh" alt="" coords="321,155,483,181"/>
+<area shape="rect" id="node9" href="$runner_8cpp.html" title="code/process/runner.cpp" alt="" coords="507,155,673,181"/>
+<area shape="rect" id="node4" href="$osapi_8hh.html" title="code/osapi.hh" alt="" coords="232,304,335,331"/>
+<area shape="rect" id="node6" href="$current_8cpp.html" title="code/process/current.cpp" alt="" coords="5,229,175,256"/>
+<area shape="rect" id="node8" href="$factory_8cpp.html" title="code/process/factory.cpp" alt="" coords="392,229,561,256"/>
+</map>

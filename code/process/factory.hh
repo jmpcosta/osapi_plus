@@ -44,8 +44,10 @@ class factory
 public:
 
 	// Class methods
-	static runner *  make( process::plan & planned );
-	static factory & getFactory( void );
+	static runner *  	make		( process::plan & planned 	);
+	static factory & 	getFactory	( void 						);
+	static bool			isParent	( process::plan & planned 	);
+	static bool			isChild		( process::plan & planned 	);
 
 	// delete copy and move constructors and assign operators
 	factory( factory const & 	)			= delete;		// Copy construct

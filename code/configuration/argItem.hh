@@ -39,7 +39,7 @@ namespace osapi
 class argItem : public configurationItem
 {
 public:
-								argItem		( const std::string & arguments	);
+	explicit					argItem		( const std::string & arguments	);
 								~argItem	();
 	bool 						equal		( const std::string & name		);
 	void						setString	( const std::string & value		);

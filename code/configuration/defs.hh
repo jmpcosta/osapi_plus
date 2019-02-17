@@ -13,7 +13,7 @@
 namespace osapi
 {
 
-constexpr char module_configuration[] = "Configuration";
+
 
 
 

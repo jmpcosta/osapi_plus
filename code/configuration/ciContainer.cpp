@@ -14,6 +14,7 @@
 // *****************************************************************************************
 
 // Import C++ system headers
+#include <configuration/defs.hh>
 #include <vector>
 #include <algorithm>
 #include <mutex>
@@ -24,7 +25,6 @@
 #include "status/trace.hh"
 
 // Import own module declarations
-#include "configuration/configuration_defs.hh"
 #include "configuration/ciContainer.hh"
 
 
@@ -75,14 +75,12 @@ size_t ciContainer::getNumber()
  return ciList.size();
 }
 
-std::vector<std::string> ciContainer::getStringList()
+std::vector<refConstStr> ciContainer::getStringList()
 {
- std::vector<std::string> stringList;
+ std::vector<std::reference_wrapper<const std::string>> stringList;
 
  for( const auto & i : ciList )
-	{
-	  stringList.push_back( i->getString() );
-	}
+	  stringList.push_back( std::ref( i->getString() ) );
 
  return stringList;
 }
@@ -186,6 +184,7 @@ bool ciContainer::getItem( const std::string & name, configurationItem ** p_item
 		  // Return address of configurationItem and not the address in the item in the vector (item is pointer to object and not the object itself)
 		  *p_item = i;
 		  ret = true;
+		  break;
 	    }
 
  TRACE_EXIT

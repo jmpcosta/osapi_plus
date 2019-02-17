@@ -4,6 +4,7 @@ var namespaceosapi =
     [ "process", "namespaceosapi_1_1process.html", "namespaceosapi_1_1process" ],
     [ "argItem", "classosapi_1_1arg_item.html", "classosapi_1_1arg_item" ],
     [ "ciContainer", "classosapi_1_1ci_container.html", "classosapi_1_1ci_container" ],
+    [ "common", "classosapi_1_1common.html", null ],
     [ "configuration", "classosapi_1_1configuration.html", "classosapi_1_1configuration" ],
     [ "configurationFileParser", "classosapi_1_1configuration_file_parser.html", "classosapi_1_1configuration_file_parser" ],
     [ "configurationItem", "classosapi_1_1configuration_item.html", "classosapi_1_1configuration_item" ],

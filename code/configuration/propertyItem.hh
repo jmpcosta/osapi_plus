@@ -46,7 +46,7 @@ public:
 		explicit					propertyItem	( const std::string & propName, const std::string & propValue );
     								~propertyItem	();
 
-    	const std::string & 		getString		() const;
+    	std::string const &	 		getString		() const;
     	void						setString		( const std::string & propValue	);
     	bool 						equal			( const std::string & propName	);
 

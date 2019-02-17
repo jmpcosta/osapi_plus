@@ -1,6 +1,7 @@
 <map id="code/configuration/configurationProvider.hh" name="code/configuration/configurationProvider.hh">
-<area shape="rect" id="node4" href="$trace__macros_8hh.html" title="status/trace_macros.hh" alt="" coords="503,251,662,278"/>
-<area shape="rect" id="node5" href="$configuration_8hh.html" title="configuration/configuration.hh" alt="" coords="184,95,376,121"/>
-<area shape="rect" id="node7" href="$configuration_item_8hh.html" title="configuration/configuration\lItem.hh" alt="" coords="252,244,427,285"/>
-<area shape="rect" id="node8" href="$ci_container_8hh.html" title="configuration/ciContainer.hh" alt="" coords="188,169,372,196"/>
+<area shape="rect" id="node4" href="$trace__macros_8hh.html" title="status/trace_macros.hh" alt="" coords="643,251,802,278"/>
+<area shape="rect" id="node5" href="$configuration_8hh.html" title="configuration/configuration.hh" alt="" coords="108,95,300,121"/>
+<area shape="rect" id="node7" href="$configuration_item_8hh.html" title="configuration/configuration\lItem.hh" alt="" coords="116,244,291,285"/>
+<area shape="rect" id="node8" href="$ci_container_8hh.html" title="configuration/ciContainer.hh" alt="" coords="264,169,448,196"/>
+<area shape="rect" id="node10" href="$types_8hh.html" title="general/types.hh" alt="" coords="418,251,536,278"/>
 </map>

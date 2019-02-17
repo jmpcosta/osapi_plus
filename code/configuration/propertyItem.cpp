@@ -54,7 +54,7 @@ propertyItem::~propertyItem()
   TRACE( "Destroying property:|", name, "|" )
 }
 
-const std::string & propertyItem::getString() const
+std::string const & propertyItem::getString() const
 {
  TRACE( "Returning value from property:|", value, "|" )
  return value;

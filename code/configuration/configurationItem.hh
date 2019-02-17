@@ -34,7 +34,7 @@ class configurationItem
 {
 public:
 		virtual		 				~configurationItem	();
-		virtual const std::string &	getString			() const						= 0;
+		virtual std::string const &	getString			() const						= 0;
 		virtual void				setString			( const std::string & value ) 	= 0;
 		virtual bool 				equal				( const std::string & name  )	= 0;
 };

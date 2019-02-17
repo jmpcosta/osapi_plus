@@ -15,6 +15,6 @@ var searchData=
   ['_7epropertyitem',['~propertyItem',['../classosapi_1_1property_item.html#ae7053f0d60bd4cce004a032a83612a40',1,'osapi::propertyItem']]],
   ['_7erunner',['~runner',['../classosapi_1_1process_1_1runner.html#af57b0e043052bb0d7be86db191466e04',1,'osapi::process::runner']]],
   ['_7esignal',['~signal',['../classosapi_1_1process_1_1signal.html#a87e6ac4686e4c6ad2b6a90a74cda26da',1,'osapi::process::signal']]],
-  ['_7estatus',['~status',['../classosapi_1_1status.html#ae716b6e86c8f6f38cb68d6f7f2d8825a',1,'osapi::status']]],
+  ['_7estatus',['~status',['../classosapi_1_1process_1_1status.html#a9448680cebe787a71384405292a58a31',1,'osapi::process::status::~status()'],['../classosapi_1_1status.html#ae716b6e86c8f6f38cb68d6f7f2d8825a',1,'osapi::status::~status()']]],
   ['_7euser',['~user',['../classosapi_1_1id_1_1user.html#a4ce1fbec0569e88400aaa4877e5f5e32',1,'osapi::id::user']]]
 ];

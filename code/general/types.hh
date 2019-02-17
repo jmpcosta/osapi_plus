@@ -10,6 +10,14 @@
 #ifndef OSAPI_GENERAL_TYPES_HH_
 #define OSAPI_GENERAL_TYPES_HH_
 
+// *****************************************************************************************
+//
+// Section: Import headers
+//
+// *****************************************************************************************
+
+// Import C++ system headers
+#include <functional>
 
 // *****************************************************************************************
 //
@@ -25,6 +33,9 @@ constexpr	char empty_string[]	= "";
 constexpr	char trueString[]	= "true";
 constexpr	char falseString[]	= "false";
 
+// Useful type declaration for containers
+
+using refConstStr = std::reference_wrapper<const std::string>;
 
 };	// End of namespace "osapi"
 

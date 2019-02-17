@@ -59,6 +59,10 @@ Log & Log::getLog()
  return instance;
 }
 
+bool Log::isLogAvailable()
+{
+ return logAvailable;
+}
 
 // *****************************************************************************************
 //

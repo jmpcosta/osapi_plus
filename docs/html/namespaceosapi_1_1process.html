@@ -104,6 +104,8 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1process_1_1signal.html">signal</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1process_1_1status.html">status</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -112,16 +114,27 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a90d798f010ffecaef45b17ca0d823c9c"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceosapi_1_1process.html#a90d798f010ffecaef45b17ca0d823c9c">process_state</a> { <br />
-&#160;&#160;<a class="el" href="namespaceosapi_1_1process.html#a90d798f010ffecaef45b17ca0d823c9ca0fa59048ab496f5765e07a8ae3f241c3">inexistent</a> = 0, 
-<a class="el" href="namespaceosapi_1_1process.html#a90d798f010ffecaef45b17ca0d823c9ca04d7c8a3a77608cdcd35a33fecb5c22b">running</a> = 1, 
-<a class="el" href="namespaceosapi_1_1process.html#a90d798f010ffecaef45b17ca0d823c9ca0d3bd4934b2a5850dc41bb4877e7edf2">terminated</a> = 2, 
-<a class="el" href="namespaceosapi_1_1process.html#a90d798f010ffecaef45b17ca0d823c9cab400784eefd658050be46c548f09e10f">waiting</a> = 3, 
+<tr class="memitem:a78ca600f0c423008834ffbda0af2fbd3"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceosapi_1_1process.html#a78ca600f0c423008834ffbda0af2fbd3">state</a> { <br />
+&#160;&#160;<a class="el" href="namespaceosapi_1_1process.html#a78ca600f0c423008834ffbda0af2fbd3a5b220a70beff0a2eaf51a39ae53991c8">state::inexistent</a> = 0, 
+<a class="el" href="namespaceosapi_1_1process.html#a78ca600f0c423008834ffbda0af2fbd3a75101dcdfc88455bcafc9e53e0b06689">state::running</a> = 1, 
+<a class="el" href="namespaceosapi_1_1process.html#a78ca600f0c423008834ffbda0af2fbd3add4b8c762f1258f89c4383961c5be121">state::terminated</a> = 2, 
+<a class="el" href="namespaceosapi_1_1process.html#a78ca600f0c423008834ffbda0af2fbd3acb05cab65afefab8fd3831d92cfc68be">state::waiting</a> = 3, 
 <br />
-&#160;&#160;<a class="el" href="namespaceosapi_1_1process.html#a90d798f010ffecaef45b17ca0d823c9ca057b0716c2c65999e5cf9bcbfbbd603a">stopped</a> = 4
+&#160;&#160;<a class="el" href="namespaceosapi_1_1process.html#a78ca600f0c423008834ffbda0af2fbd3af0a0bfe6bc7d2c58d2989034f83183e0">state::stopped</a> = 4
 <br />
  }</td></tr>
-<tr class="separator:a90d798f010ffecaef45b17ca0d823c9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a78ca600f0c423008834ffbda0af2fbd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a40de8e309519bf16123848d67861b5"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceosapi_1_1process.html#a0a40de8e309519bf16123848d67861b5">statusInfo</a> { <br />
+&#160;&#160;<a class="el" href="namespaceosapi_1_1process.html#a0a40de8e309519bf16123848d67861b5a7060e0481896e00b3f7d20f1e8e2749a">statusInfo::unavailable</a> = 0, 
+<a class="el" href="namespaceosapi_1_1process.html#a0a40de8e309519bf16123848d67861b5ae4894ca167b08880bfc35862f18575eb">statusInfo::available</a> = 1, 
+<a class="el" href="namespaceosapi_1_1process.html#a0a40de8e309519bf16123848d67861b5a521345a9fb579f52117f27be6e0673ee">statusInfo::signal</a> = 2, 
+<a class="el" href="namespaceosapi_1_1process.html#a0a40de8e309519bf16123848d67861b5aa74ad8dfacd4f985eb3977517615ce25">statusInfo::core</a> = 3, 
+<br />
+&#160;&#160;<a class="el" href="namespaceosapi_1_1process.html#a0a40de8e309519bf16123848d67861b5af0a0bfe6bc7d2c58d2989034f83183e0">statusInfo::stopped</a> = 4, 
+<a class="el" href="namespaceosapi_1_1process.html#a0a40de8e309519bf16123848d67861b5ad2940a0e09b88be2041e12abacc881ef">statusInfo::continued</a> = 5
+<br />
+ }</td></tr>
+<tr class="separator:a0a40de8e309519bf16123848d67861b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="a986ea8e6abfc2b2e4c99a492947769b8"></a>
@@ -139,23 +152,61 @@ Enumerations</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="a90d798f010ffecaef45b17ca0d823c9c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a90d798f010ffecaef45b17ca0d823c9c">&#9670;&nbsp;</a></span>process_state</h2>
+<a id="a78ca600f0c423008834ffbda0af2fbd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78ca600f0c423008834ffbda0af2fbd3">&#9670;&nbsp;</a></span>state</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="namespaceosapi_1_1process.html#a90d798f010ffecaef45b17ca0d823c9c">osapi::process::process_state</a></td>
+          <td class="memname">enum <a class="el" href="namespaceosapi_1_1process.html#a78ca600f0c423008834ffbda0af2fbd3">osapi::process::state</a></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a90d798f010ffecaef45b17ca0d823c9ca0fa59048ab496f5765e07a8ae3f241c3"></a>inexistent&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a90d798f010ffecaef45b17ca0d823c9ca04d7c8a3a77608cdcd35a33fecb5c22b"></a>running&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a90d798f010ffecaef45b17ca0d823c9ca0d3bd4934b2a5850dc41bb4877e7edf2"></a>terminated&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a90d798f010ffecaef45b17ca0d823c9cab400784eefd658050be46c548f09e10f"></a>waiting&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a90d798f010ffecaef45b17ca0d823c9ca057b0716c2c65999e5cf9bcbfbbd603a"></a>stopped&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a78ca600f0c423008834ffbda0af2fbd3a5b220a70beff0a2eaf51a39ae53991c8"></a>inexistent&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a78ca600f0c423008834ffbda0af2fbd3a75101dcdfc88455bcafc9e53e0b06689"></a>running&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a78ca600f0c423008834ffbda0af2fbd3add4b8c762f1258f89c4383961c5be121"></a>terminated&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a78ca600f0c423008834ffbda0af2fbd3acb05cab65afefab8fd3831d92cfc68be"></a>waiting&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a78ca600f0c423008834ffbda0af2fbd3af0a0bfe6bc7d2c58d2989034f83183e0"></a>stopped&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="a0a40de8e309519bf16123848d67861b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a40de8e309519bf16123848d67861b5">&#9670;&nbsp;</a></span>statusInfo</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespaceosapi_1_1process.html#a0a40de8e309519bf16123848d67861b5">osapi::process::statusInfo</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a0a40de8e309519bf16123848d67861b5a7060e0481896e00b3f7d20f1e8e2749a"></a>unavailable&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0a40de8e309519bf16123848d67861b5ae4894ca167b08880bfc35862f18575eb"></a>available&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0a40de8e309519bf16123848d67861b5a521345a9fb579f52117f27be6e0673ee"></a>signal&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0a40de8e309519bf16123848d67861b5aa74ad8dfacd4f985eb3977517615ce25"></a>core&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0a40de8e309519bf16123848d67861b5af0a0bfe6bc7d2c58d2989034f83183e0"></a>stopped&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0a40de8e309519bf16123848d67861b5ad2940a0e09b88be2041e12abacc881ef"></a>continued&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>

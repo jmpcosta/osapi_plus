@@ -60,7 +60,7 @@ bool argItem::equal( const std::string & name )
  return ret;
 }
 
-const std::string & argItem::getString() const
+std::string const & argItem::getString() const
 {
  return arg;
 }

@@ -1,10 +1,10 @@
 var state_8hh =
 [
-    [ "process_state", "state_8hh.html#a90d798f010ffecaef45b17ca0d823c9c", [
-      [ "inexistent", "state_8hh.html#a90d798f010ffecaef45b17ca0d823c9ca0fa59048ab496f5765e07a8ae3f241c3", null ],
-      [ "running", "state_8hh.html#a90d798f010ffecaef45b17ca0d823c9ca04d7c8a3a77608cdcd35a33fecb5c22b", null ],
-      [ "terminated", "state_8hh.html#a90d798f010ffecaef45b17ca0d823c9ca0d3bd4934b2a5850dc41bb4877e7edf2", null ],
-      [ "waiting", "state_8hh.html#a90d798f010ffecaef45b17ca0d823c9cab400784eefd658050be46c548f09e10f", null ],
-      [ "stopped", "state_8hh.html#a90d798f010ffecaef45b17ca0d823c9ca057b0716c2c65999e5cf9bcbfbbd603a", null ]
+    [ "state", "state_8hh.html#a78ca600f0c423008834ffbda0af2fbd3", [
+      [ "inexistent", "state_8hh.html#a78ca600f0c423008834ffbda0af2fbd3a5b220a70beff0a2eaf51a39ae53991c8", null ],
+      [ "running", "state_8hh.html#a78ca600f0c423008834ffbda0af2fbd3a75101dcdfc88455bcafc9e53e0b06689", null ],
+      [ "terminated", "state_8hh.html#a78ca600f0c423008834ffbda0af2fbd3add4b8c762f1258f89c4383961c5be121", null ],
+      [ "waiting", "state_8hh.html#a78ca600f0c423008834ffbda0af2fbd3acb05cab65afefab8fd3831d92cfc68be", null ],
+      [ "stopped", "state_8hh.html#a78ca600f0c423008834ffbda0af2fbd3af0a0bfe6bc7d2c58d2989034f83183e0", null ]
     ] ]
 ];

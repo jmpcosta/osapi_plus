@@ -84,6 +84,7 @@ $(document).ready(function(){initNavTree('namespaceosapi.html','');});
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#nested-classes">Classes</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a> &#124;
 <a href="#var-members">Variables</a>  </div>
@@ -104,6 +105,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1arg_item.html">argItem</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1ci_container.html">ciContainer</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1common.html">common</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1configuration.html">configuration</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -130,17 +133,24 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1util.html">util</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a9c691d7b64fd555d9ba559b5ca2138cc"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceosapi.html#a9c691d7b64fd555d9ba559b5ca2138cc">refConstStr</a> = std::reference_wrapper&lt; const std::string &gt;</td></tr>
+<tr class="separator:a9c691d7b64fd555d9ba559b5ca2138cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:abffac92170214098cb1da44bceb13b2d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceosapi.html#abffac92170214098cb1da44bceb13b2d">osapi_release</a> { <a class="el" href="namespaceosapi.html#abffac92170214098cb1da44bceb13b2da802b7a5f53c6a04f3250be7a43bb9d43">library_release</a> = 0
  }</td></tr>
 <tr class="separator:abffac92170214098cb1da44bceb13b2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a142c8a45a751d87840d1a7f2644367f4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceosapi.html#a142c8a45a751d87840d1a7f2644367f4">osapi_version</a> { <a class="el" href="namespaceosapi.html#a142c8a45a751d87840d1a7f2644367f4a7198b221300b2674cd1fd19daa6d4771">library_version</a> = 1
+<tr class="memitem:a142c8a45a751d87840d1a7f2644367f4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceosapi.html#a142c8a45a751d87840d1a7f2644367f4">osapi_version</a> { <a class="el" href="namespaceosapi.html#a142c8a45a751d87840d1a7f2644367f4a7198b221300b2674cd1fd19daa6d4771">library_version</a> = 2
  }</td></tr>
 <tr class="separator:a142c8a45a751d87840d1a7f2644367f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:afd36b13427af6e3371024f4bb021b96e"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceosapi.html#afd36b13427af6e3371024f4bb021b96e">getVecRefString</a> (const std::vector&lt; <a class="el" href="namespaceosapi.html#a9c691d7b64fd555d9ba559b5ca2138cc">refConstStr</a> &gt; &amp;vec, size_t index)</td></tr>
+<tr class="separator:afd36b13427af6e3371024f4bb021b96e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77b697e29ce0c8b7f0ac192023721988"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Args&gt; </td></tr>
 <tr class="memitem:a77b697e29ce0c8b7f0ac192023721988"><td class="memTemplItemLeft" align="right" valign="top">std::unique_ptr&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceosapi.html#a77b697e29ce0c8b7f0ac192023721988">make_unique</a> (Args &amp;&amp;... args)</td></tr>
 <tr class="separator:a77b697e29ce0c8b7f0ac192023721988"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -161,8 +171,6 @@ Functions</h2></td></tr>
 Variables</h2></td></tr>
 <tr class="memitem:ac35e94a0802d6966edf1f82b57993057"><td class="memItemLeft" align="right" valign="top">constexpr char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceosapi.html#ac35e94a0802d6966edf1f82b57993057">container_default_name</a> [] = &quot;-Default-&quot;</td></tr>
 <tr class="separator:ac35e94a0802d6966edf1f82b57993057"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3047083ccd6b83527c8975dcbabbd14"><td class="memItemLeft" align="right" valign="top">constexpr char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceosapi.html#ae3047083ccd6b83527c8975dcbabbd14">module_configuration</a> [] = &quot;Configuration&quot;</td></tr>
-<tr class="separator:ae3047083ccd6b83527c8975dcbabbd14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a775a78f4ebb57e68bf8f3a9c60d680d9"><td class="memItemLeft" align="right" valign="top">constexpr char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceosapi.html#a775a78f4ebb57e68bf8f3a9c60d680d9">module_separator</a> [] = &quot;|&quot;</td></tr>
 <tr class="separator:a775a78f4ebb57e68bf8f3a9c60d680d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a049bdb8504f479b8833a1a503472bfc5"><td class="memItemLeft" align="right" valign="top">constexpr char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceosapi.html#a049bdb8504f479b8833a1a503472bfc5">property_separator</a> [] = &quot;=&quot;</td></tr>
@@ -183,9 +191,22 @@ Variables</h2></td></tr>
 <tr class="separator:afeadd9543f4b6a5db581479fb7360f1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a787948547a9066af1502031cf77c892c"><td class="memItemLeft" align="right" valign="top">constexpr char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceosapi.html#a787948547a9066af1502031cf77c892c">falseString</a> [] = &quot;false&quot;</td></tr>
 <tr class="separator:a787948547a9066af1502031cf77c892c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26f9502f1e12154625fe3bcd205cd6a0"><td class="memItemLeft" align="right" valign="top">constexpr char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceosapi.html#a26f9502f1e12154625fe3bcd205cd6a0">module</a> [] = &quot;UTIL&quot;</td></tr>
-<tr class="separator:a26f9502f1e12154625fe3bcd205cd6a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a id="a9c691d7b64fd555d9ba559b5ca2138cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c691d7b64fd555d9ba559b5ca2138cc">&#9670;&nbsp;</a></span>refConstStr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespaceosapi.html#a9c691d7b64fd555d9ba559b5ca2138cc">osapi::refConstStr</a> = typedef std::reference_wrapper&lt;const std::string&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="abffac92170214098cb1da44bceb13b2d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abffac92170214098cb1da44bceb13b2d">&#9670;&nbsp;</a></span>osapi_release</h2>
@@ -222,6 +243,34 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="afd36b13427af6e3371024f4bb021b96e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd36b13427af6e3371024f4bb021b96e">&#9670;&nbsp;</a></span>getVecRefString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* osapi::getVecRefString </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="namespaceosapi.html#a9c691d7b64fd555d9ba559b5ca2138cc">refConstStr</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a77b697e29ce0c8b7f0ac192023721988"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a77b697e29ce0c8b7f0ac192023721988">&#9670;&nbsp;</a></span>make_unique()</h2>
 
@@ -397,34 +446,6 @@ template&lt;typename V , typename... R&gt; </div>
       <table class="memname">
         <tr>
           <td class="memname">constexpr char osapi::falseString[] = &quot;false&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a26f9502f1e12154625fe3bcd205cd6a0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a26f9502f1e12154625fe3bcd205cd6a0">&#9670;&nbsp;</a></span>module</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr char osapi::module[] = &quot;UTIL&quot;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae3047083ccd6b83527c8975dcbabbd14"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae3047083ccd6b83527c8975dcbabbd14">&#9670;&nbsp;</a></span>module_configuration</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr char osapi::module_configuration[] = &quot;Configuration&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">

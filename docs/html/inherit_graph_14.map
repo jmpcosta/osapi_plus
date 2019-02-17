@@ -1,3 +1,6 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classosapi_1_1process_1_1signal.html" title="osapi::process::signal" alt="" coords="5,5,155,32"/>
+<area shape="rect" id="node1" href="$classosapi_1_1process_1_1plan_signal.html" title="osapi::process::planSignal" alt="" coords="5,56,180,83"/>
+<area shape="rect" id="node2" href="$classosapi_1_1process_1_1_current.html" title="osapi::process::Current" alt="" coords="228,5,387,32"/>
+<area shape="rect" id="node3" href="$classosapi_1_1process_1_1plan.html" title="osapi::process::plan" alt="" coords="238,56,377,83"/>
+<area shape="rect" id="node4" href="$classosapi_1_1process_1_1runner.html" title="osapi::process::runner" alt="" coords="17,5,168,32"/>
 </map>

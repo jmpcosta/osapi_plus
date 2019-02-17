@@ -29,6 +29,7 @@
 
 // Import own declarations
 #include "process/state.hh"
+#include "process/status.hh"
 
 
 // *****************************************************************************************
@@ -49,13 +50,15 @@ class runner
 {
 public:
 							// Constructor & Destructor
-							runner			( int64_t pid	);
-							runner			(				);
-							~runner			(				);
+							runner			( int64_t pid		);
+							runner			(					);
+							~runner			(					);
 
-			int64_t			getPID			(				);
-			int64_t			getParentPID	(				);
-			process_state	getState		(				);
+			int64_t			getPID			( void				);
+			int64_t			getParentPID	( void				);
+			state			getState		( void				);
+			status			getStatus		( void				);
+			bool			terminate		( size_t graceTime	);
 
 			static bool		exists			( int64_t pid	);
 

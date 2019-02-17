@@ -1,11 +1,11 @@
 <map id="code/process/plan_signal.hh" name="code/process/plan_signal.hh">
 <area shape="rect" id="node6" href="$general_8hh.html" title="general/general.hh" alt="" coords="309,155,437,181"/>
-<area shape="rect" id="node19" href="$trace__macros_8hh.html" title="status/trace_macros.hh" alt="" coords="461,155,620,181"/>
-<area shape="rect" id="node20" href="$signal_8hh.html" title="process/signal.hh" alt="" coords="479,80,603,107"/>
+<area shape="rect" id="node20" href="$trace__macros_8hh.html" title="status/trace_macros.hh" alt="" coords="461,155,620,181"/>
+<area shape="rect" id="node21" href="$signal_8hh.html" title="process/signal.hh" alt="" coords="479,80,603,107"/>
 <area shape="rect" id="node7" href="$baseline_8hh.html" title="general/baseline.hh" alt="" coords="445,304,580,331"/>
-<area shape="rect" id="node16" href="$types_8hh.html" title="general/types.hh" alt="" coords="520,229,639,256"/>
-<area shape="rect" id="node17" href="$templates_8hh.html" title="general/templates.hh" alt="" coords="301,229,444,256"/>
-<area shape="rect" id="node18" href="$library_8hh.html" title="general/library.hh" alt="" coords="663,229,784,256"/>
+<area shape="rect" id="node16" href="$types_8hh.html" title="general/types.hh" alt="" coords="665,229,784,256"/>
+<area shape="rect" id="node18" href="$templates_8hh.html" title="general/templates.hh" alt="" coords="301,229,444,256"/>
+<area shape="rect" id="node19" href="$library_8hh.html" title="general/library.hh" alt="" coords="520,229,641,256"/>
 <area shape="rect" id="node8" href="$language_8hh.html" title="general/language.hh" alt="" coords="129,453,267,480"/>
 <area shape="rect" id="node9" href="$compiler_8hh.html" title="general/compiler.hh" alt="" coords="332,453,467,480"/>
 <area shape="rect" id="node10" href="$libraries_8hh.html" title="general/libraries.hh" alt="" coords="635,453,766,480"/>

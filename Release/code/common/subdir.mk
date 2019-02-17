@@ -4,12 +4,15 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
+../code/common/common.cpp \
 ../code/common/id.cpp 
 
 OBJS += \
+./code/common/common.o \
 ./code/common/id.o 
 
 CPP_DEPS += \
+./code/common/common.d \
 ./code/common/id.d 
 
 
