@@ -21,6 +21,6 @@
 #include "process/runner.hh"
 #include "process/factory.hh"
 #include "process/current.hh"
-
+#include "process/library.hh"
 
 #endif /* OSAPI_PROCESS_HH_ */

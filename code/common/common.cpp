@@ -110,6 +110,7 @@ bool common::vecStr2array( const std::vector<std::string> & vec, size_t * p_arra
 	 else
 	   {
 		 size_t cur		= 0;
+		 *p_arraySize	= 0;
 		 *p_array		= (char **) p_mem;
 		 TRACE( "Successfully allocated ", allocSize, " bytes at location:", p_mem )
 		 TRACE( "Converting vector with size ", vecSize, " to a C-String array" )

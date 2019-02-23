@@ -6,6 +6,7 @@
 CPP_SRCS += \
 ../code/process/current.cpp \
 ../code/process/factory.cpp \
+../code/process/library.cpp \
 ../code/process/plan.cpp \
 ../code/process/plan_signal.cpp \
 ../code/process/runner.cpp \
@@ -15,6 +16,7 @@ CPP_SRCS += \
 OBJS += \
 ./code/process/current.o \
 ./code/process/factory.o \
+./code/process/library.o \
 ./code/process/plan.o \
 ./code/process/plan_signal.o \
 ./code/process/runner.o \
@@ -24,6 +26,7 @@ OBJS += \
 CPP_DEPS += \
 ./code/process/current.d \
 ./code/process/factory.d \
+./code/process/library.d \
 ./code/process/plan.d \
 ./code/process/plan_signal.d \
 ./code/process/runner.d \

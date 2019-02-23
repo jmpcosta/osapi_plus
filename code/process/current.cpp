@@ -17,9 +17,10 @@
 #include "status/status.h"
 #include "proc/proc.h"
 
+// #import <string.h>
+
 // Import C++ system headers
 #include <iostream>
-#include <string.h>
 #include <string>
 #include <mutex>
 
