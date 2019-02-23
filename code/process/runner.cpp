@@ -30,7 +30,6 @@
 #include "status/status.hh"
 #include "status/trace.hh"
 #include "common/id.hh"
-#include "util/util.hh"
 
 // Import own module declarations
 #include "process/runner.hh"

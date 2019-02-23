@@ -21,7 +21,6 @@
 
 // Import OSAPI C declarations
 #include "status/status.h"
-#include "proc/proc.h"
 
 // Import OSAPI++ declarations
 #include "status/status.hh"

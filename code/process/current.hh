@@ -44,25 +44,47 @@ namespace osapi
 namespace process
 {
 
-// Specialization class with a single occurrence of a process to support the current working process
+/// @brief Specialization class with a single occurrence of a process to support the current working process
 class Current : public planSignal, public runner
 {
 public:
 
 	// Class methods (work on current process)
+	/// @brief Get the current singleton instance (only one running process)
+	/// @return The singleton instance
 	static	Current &		 	get();
 
 	// Instance methods
+	/// @brief Clone the current process (Fork in UNIX systems)
+	/// @param [out] isClone - Indicates if the current process is the clone or the original
+	/// @return Operation status, True if cloned, false otherwise
 	bool						clone		( bool & isClone	);
-	[[noreturn]] void			terminate	( bool status		);
 
+	/// @brief Terminate the current process
+	/// @param [in] normal - The exit is a normal exit or not?
+	[[noreturn]] void			terminate	( bool normal		);
+
+	/// @brief Get the current process ID
+	/// @return The own process ID
 	int64_t						getPID();
+
+	/// @brief Obtain the Process ID of the parent process
+	/// @return The parent PID
 	int64_t						getParentPID();
+
+	/// @brief Promote itself as session leader
+	/// @return Operation status, True if process was able to set itself as Session Leader. False otherwise.
 	bool						setSession();
+
+	/// @brief Suspend the current working process
+	/// @return False if an error occurred, if suspended, upon resuming it will return True
 	bool						suspend();
 
 	// Signals
+	/// @brief Clear all process signals disposition in the current process
 	void						clearAllSignals();
+
+	/// @brief Enable all planned signals disposition in the current process
 	void						activateAllSignals();
 
 	// delete copy and move constructors and assign operators

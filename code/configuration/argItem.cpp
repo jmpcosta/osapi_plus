@@ -33,6 +33,10 @@
 namespace osapi
 {
 
+namespace configuration
+{
+
+
 TRACE_CLASSNAME( argItem )
 
 
@@ -74,4 +78,5 @@ void argItem::setString( const std::string & value )
 }
 
 
+}	// End of namespace "configuration"
 }	// End of namespace "osapi"

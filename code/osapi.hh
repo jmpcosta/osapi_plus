@@ -16,9 +16,9 @@
 //
 // *****************************************************************************************
 
+#include <configuration/interfaces.hh>
 #include "general/general.hh"
 #include "status/status.hh"
-#include "configuration/configuration_interfaces.hh"
 #include "util/util.hh"
 #include "logging/log.hh"
 #include "io/io.hh"

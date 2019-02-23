@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['module_5fseparator',['module_separator',['../namespaceosapi.html#a775a78f4ebb57e68bf8f3a9c60d680d9',1,'osapi']]]
+  ['module_5fseparator',['module_separator',['../namespaceosapi_1_1configuration.html#ab8993cbf7eed681c5c4554f752fcbeed',1,'osapi::configuration']]]
 ];

@@ -8,6 +8,7 @@
 // *****************************************************************************************
 
 // Include C++ system headers
+#include <configuration/Provider.hh>
 #include <string>
 #include <vector>
 #include <exception>
@@ -23,7 +24,6 @@
 #include "status/trace.hh"
 #include "logging/log.hh"
 
-#include "configuration/configurationProvider.hh"
 
 
 // *****************************************************************************************

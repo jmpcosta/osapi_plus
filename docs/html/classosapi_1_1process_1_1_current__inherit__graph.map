@@ -1,4 +1,4 @@
 <map id="osapi::process::Current" name="osapi::process::Current">
-<area shape="rect" id="node2" href="$classosapi_1_1process_1_1plan_signal.html" title="osapi::process::planSignal" alt="" coords="5,5,180,32"/>
+<area shape="rect" id="node2" href="$classosapi_1_1process_1_1plan_signal.html" title="Class that represents a plan for setting process signals. " alt="" coords="5,5,180,32"/>
 <area shape="rect" id="node3" href="$classosapi_1_1process_1_1runner.html" title="osapi::process::runner" alt="" coords="204,5,355,32"/>
 </map>

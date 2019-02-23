@@ -23,8 +23,8 @@
 #include "status/trace.hh"
 
 // Import own declarations
-#include "configuration/configurationItem.hh"
-#include "configuration/ciContainer.hh"
+#include "configuration/item.hh"
+#include "configuration/container.hh"
 #include "configuration/configuration.hh"
 
 
@@ -35,6 +35,9 @@
 // *****************************************************************************************
 
 namespace osapi
+{
+
+namespace configuration
 {
 
 TRACE_CLASSNAME( configuration )
@@ -54,8 +57,8 @@ configuration::configuration( const std::string & name )
  configurationName = name;
 
  // Create default container for this configuration
- std::string defaultContainerName = ciContainer::getDefaultName();
- ciContainers.push_back( new ciContainer( defaultContainerName ) );
+ std::string defaultContainerName = container::getDefaultName();
+ ciContainers.push_back( new container( defaultContainerName ) );
 
  TRACE( "Default Container name", defaultContainerName )
  TRACE_EXIT
@@ -99,32 +102,32 @@ bool configuration::equal( const std::string & name )
  return ( configurationName == name );
 }
 
-ciContainer & configuration::addContainer( void )
+container & configuration::addContainer( void )
 {
  TRACE_POINT
 
   return *(ciContainers[0]);
 }
 
-ciContainer & configuration::addContainer( const std::string & container )
+container & configuration::addContainer( const std::string & newContainer )
 {
  TRACE_ENTER
 
- std::vector<ciContainer *>::iterator i = ciContainers.begin();
+ std::vector<container *>::iterator i = ciContainers.begin();
 
  // Make sure that the Mutex is always unlock when it goes out-of-scope
  std::lock_guard<std::mutex> guard( confMutex );
 
  for( ; i != ciContainers.end(); i++ )
     {
-      if( (*i)->equal( container ) )
+      if( (*i)->equal( newContainer ) )
     	  break;		// Container found, add to this container
     }
 
  // No container exists yet, create container for this configuration list
  if( i == ciContainers.end() )
    {
-     ciContainers.push_back( new ciContainer( container ) );
+     ciContainers.push_back( new container( newContainer ) );
      *i = ciContainers.back();
    }
 
@@ -134,19 +137,19 @@ ciContainer & configuration::addContainer( const std::string & container )
 }
 
 
-bool configuration::deleteContainer( const std::string & container )
+bool configuration::deleteContainer( const std::string & ciContainer )
 {
  bool									ret = false;
 
  TRACE_ENTER
 
  // Make sure that the Mutex is always unlock when it goes out-of-scope
- std::lock_guard<std::mutex> guard( confMutex );
- std::vector<ciContainer *>::iterator	i   = ciContainers.begin();
+ std::lock_guard<std::mutex> 		guard( confMutex );
+ std::vector<container *>::iterator	i   = ciContainers.begin();
 
  for( ; i != ciContainers.end(); i++ )
     {
-      if( (*i)->equal( container ) )
+      if( (*i)->equal( ciContainer ) )
     	  break;		// Container found, add to this container
     }
 
@@ -163,7 +166,7 @@ bool configuration::deleteContainer( const std::string & container )
 }
 
 
-ciContainer & configuration::getContainer( const std::string & name	)
+container & configuration::getContainer( const std::string & name )
 {
  TRACE_ENTER
 
@@ -183,15 +186,17 @@ ciContainer & configuration::getContainer( const std::string & name	)
 
 
 
-ciContainer & configuration::getContainer()
+container & configuration::getContainer()
 {
   TRACE_POINT
 
-  std::string defaultName = ciContainer::getDefaultName();
+  std::string defaultName = container::getDefaultName();
   return getContainer( defaultName );
 }
 
 
 
+
+}	// End of namespace "configuration"
 }	// End of namespace "osapi"
 

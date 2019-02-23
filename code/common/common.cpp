@@ -16,6 +16,9 @@
 // Import C++ system headers
 #include <vector>
 
+// Import OSAPI C headers
+#include "proc/proc.h"
+
 // Import OSAPI++ generic headers
 #include "general/types.hh"
 #include "status/status.hh"

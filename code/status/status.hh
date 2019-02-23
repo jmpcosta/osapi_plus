@@ -34,12 +34,24 @@
 namespace osapi
 {
 
+/// @brief Class responsible for reporting OSAPI C++ exceptions
 class status : public std::exception
 {
 public:
+
+		/// @brief Constructor to support the OSAPI C API
+		///
+		/// Parameters are not described since these should not be used by OSAPI C++ client applications
 		explicit		status	( const char *, const char *, const char *	);
+
+		/// @brief Constructor to support the OSAPI C++ API
 		explicit		status	( const std::string & message				);
+
+		/// @brief Destructor
 						~status	();
+
+		/// @brief Override the parent what method
+		/// @return Get the exception explanation
 		const char *	what() const noexcept;
 
 private:

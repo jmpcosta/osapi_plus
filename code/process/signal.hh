@@ -50,19 +50,45 @@ namespace osapi
 namespace process
 {
 
+/// @brief Class responsible for the signal concept
 class signal
  {
  public:
-	static	bool	isSupported		( signalSupportLevel & 	);
 
-					// Constructor & Destructor
+	/// @brief Are signals supported, and if so, to which level?
+	/// @param [out] level - The signal support level
+	/// @return True if there is any support of signals in the OSAPI C platform implementation. False otherwise.
+	static	bool	isSupported		( signalSupportLevel & level );
+
+	/// @brief Destructor
 					~signal			();
+
+	/// @brief Constructor
+	/// @param [in] number - The signal number for which the instance will be built.
 					signal			( int number			);
+
+	/// @brief Is the signal the same? The matching is based on the signal number
+	/// @param [in] number - The signal number
+	/// @return True if signals match. False otherwise.
 	bool			equal			( int number			);
-	int				getID			( void					);
+
+	/// @brief Get the signal number from the signal instance
+	/// @return Signal number
+	int				getNumber		( void					);
+
+	/// @brief Set handler function to call upon signal reception
+	/// @param [in] func - Function name
 	void 			setHandler		( sighandler_t func		);
+
+	/// @brief Clear any function handler set for this signal instance
 	void 			clearHandler	( void					);
+
+	/// @brief Get the function handler/address for this signal instance
+	/// @return The function handler
 	sighandler_t	getHandler		( void					);
+
+	/// @brief Check if there is a valid handler for this signal instance
+	/// @return True if handler valid, false otherwise
 	bool			hasValidHandler	( void					);
 
 

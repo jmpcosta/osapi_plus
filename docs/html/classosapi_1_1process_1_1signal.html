@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">OSAPI Plus
-   &#160;<span id="projectnumber">0.1</span>
+   &#160;<span id="projectnumber">0.3</span>
    </div>
    <div id="projectbrief">The Open System API for C++</div>
   </td>
@@ -90,33 +90,47 @@ $(document).ready(function(){initNavTree('classosapi_1_1process_1_1signal.html',
 </div><!--header-->
 <div class="contents">
 
+<p>Class responsible for the signal concept.  
+ <a href="classosapi_1_1process_1_1signal.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="signal_8hh_source.html">signal.hh</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a87e6ac4686e4c6ad2b6a90a74cda26da"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1process_1_1signal.html#a87e6ac4686e4c6ad2b6a90a74cda26da">~signal</a> ()</td></tr>
+<tr class="memdesc:a87e6ac4686e4c6ad2b6a90a74cda26da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a87e6ac4686e4c6ad2b6a90a74cda26da">More...</a><br /></td></tr>
 <tr class="separator:a87e6ac4686e4c6ad2b6a90a74cda26da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3e196b73db8d88ef9ce7340a13ade72"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1process_1_1signal.html#af3e196b73db8d88ef9ce7340a13ade72">signal</a> (int number)</td></tr>
+<tr class="memdesc:af3e196b73db8d88ef9ce7340a13ade72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#af3e196b73db8d88ef9ce7340a13ade72">More...</a><br /></td></tr>
 <tr class="separator:af3e196b73db8d88ef9ce7340a13ade72"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e6f8b2be0a58b4a1aee3b2c99d39cde"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1process_1_1signal.html#a9e6f8b2be0a58b4a1aee3b2c99d39cde">equal</a> (int number)</td></tr>
+<tr class="memdesc:a9e6f8b2be0a58b4a1aee3b2c99d39cde"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is the signal the same? The matching is based on the signal number.  <a href="#a9e6f8b2be0a58b4a1aee3b2c99d39cde">More...</a><br /></td></tr>
 <tr class="separator:a9e6f8b2be0a58b4a1aee3b2c99d39cde"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1eed9a274d64f0afc1e9beb7ee52bf01"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1process_1_1signal.html#a1eed9a274d64f0afc1e9beb7ee52bf01">getID</a> (void)</td></tr>
-<tr class="separator:a1eed9a274d64f0afc1e9beb7ee52bf01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac532f0f31dae34311cbfecd6f21c10f6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1process_1_1signal.html#ac532f0f31dae34311cbfecd6f21c10f6">getNumber</a> (void)</td></tr>
+<tr class="memdesc:ac532f0f31dae34311cbfecd6f21c10f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the signal number from the signal instance.  <a href="#ac532f0f31dae34311cbfecd6f21c10f6">More...</a><br /></td></tr>
+<tr class="separator:ac532f0f31dae34311cbfecd6f21c10f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34da89739d9c871aca6065940dac65a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1process_1_1signal.html#a34da89739d9c871aca6065940dac65a6">setHandler</a> (sighandler_t func)</td></tr>
+<tr class="memdesc:a34da89739d9c871aca6065940dac65a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set handler function to call upon signal reception.  <a href="#a34da89739d9c871aca6065940dac65a6">More...</a><br /></td></tr>
 <tr class="separator:a34da89739d9c871aca6065940dac65a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a458cba131518d5091438c31d18f35a21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1process_1_1signal.html#a458cba131518d5091438c31d18f35a21">clearHandler</a> (void)</td></tr>
+<tr class="memdesc:a458cba131518d5091438c31d18f35a21"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear any function handler set for this signal instance.  <a href="#a458cba131518d5091438c31d18f35a21">More...</a><br /></td></tr>
 <tr class="separator:a458cba131518d5091438c31d18f35a21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0c02ec7b6a70088d26ee6a13539d735f"><td class="memItemLeft" align="right" valign="top">sighandler_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1process_1_1signal.html#a0c02ec7b6a70088d26ee6a13539d735f">getHandler</a> (void)</td></tr>
+<tr class="memdesc:a0c02ec7b6a70088d26ee6a13539d735f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the function handler/address for this signal instance.  <a href="#a0c02ec7b6a70088d26ee6a13539d735f">More...</a><br /></td></tr>
 <tr class="separator:a0c02ec7b6a70088d26ee6a13539d735f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcd4046c0a88bff8052c85f613a45c93"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1process_1_1signal.html#abcd4046c0a88bff8052c85f613a45c93">hasValidHandler</a> (void)</td></tr>
+<tr class="memdesc:abcd4046c0a88bff8052c85f613a45c93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if there is a valid handler for this signal instance.  <a href="#abcd4046c0a88bff8052c85f613a45c93">More...</a><br /></td></tr>
 <tr class="separator:abcd4046c0a88bff8052c85f613a45c93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aa4b785576431197276727845a98ebe28"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1process_1_1signal.html#aa4b785576431197276727845a98ebe28">isSupported</a> (<a class="el" href="signal_8hh.html#a6088e68d9bfe9f8b952ce9b9c681e182">signalSupportLevel</a> &amp;)</td></tr>
-<tr class="separator:aa4b785576431197276727845a98ebe28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c77cbedaa8cecc2ed24f4e42297db67"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1process_1_1signal.html#a4c77cbedaa8cecc2ed24f4e42297db67">isSupported</a> (<a class="el" href="signal_8hh.html#a6088e68d9bfe9f8b952ce9b9c681e182">signalSupportLevel</a> &amp;level)</td></tr>
+<tr class="memdesc:a4c77cbedaa8cecc2ed24f4e42297db67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Are signals supported, and if so, to which level?  <a href="#a4c77cbedaa8cecc2ed24f4e42297db67">More...</a><br /></td></tr>
+<tr class="separator:a4c77cbedaa8cecc2ed24f4e42297db67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Class responsible for the signal concept. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a87e6ac4686e4c6ad2b6a90a74cda26da"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a87e6ac4686e4c6ad2b6a90a74cda26da">&#9670;&nbsp;</a></span>~signal()</h2>
 
@@ -131,6 +145,8 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Destructor. </p>
 
 </div>
 </div>
@@ -149,6 +165,14 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">number</td><td>- The signal number for which the instance will be built. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -169,6 +193,8 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Clear any function handler set for this signal instance. </p>
+
 </div>
 </div>
 <a id="a9e6f8b2be0a58b4a1aee3b2c99d39cde"></a>
@@ -186,6 +212,15 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Is the signal the same? The matching is based on the signal number. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">number</td><td>- The signal number </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if signals match. False otherwise. </dd></dl>
 
 </div>
 </div>
@@ -205,16 +240,19 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Get the function handler/address for this signal instance. </p>
+<dl class="section return"><dt>Returns</dt><dd>The function handler </dd></dl>
+
 </div>
 </div>
-<a id="a1eed9a274d64f0afc1e9beb7ee52bf01"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1eed9a274d64f0afc1e9beb7ee52bf01">&#9670;&nbsp;</a></span>getID()</h2>
+<a id="ac532f0f31dae34311cbfecd6f21c10f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac532f0f31dae34311cbfecd6f21c10f6">&#9670;&nbsp;</a></span>getNumber()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int osapi::process::signal::getID </td>
+          <td class="memname">int osapi::process::signal::getNumber </td>
           <td>(</td>
           <td class="paramtype">void&#160;</td>
           <td class="paramname"></td><td>)</td>
@@ -222,6 +260,9 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get the signal number from the signal instance. </p>
+<dl class="section return"><dt>Returns</dt><dd>Signal number </dd></dl>
 
 </div>
 </div>
@@ -241,10 +282,13 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Check if there is a valid handler for this signal instance. </p>
+<dl class="section return"><dt>Returns</dt><dd>True if handler valid, false otherwise </dd></dl>
+
 </div>
 </div>
-<a id="aa4b785576431197276727845a98ebe28"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa4b785576431197276727845a98ebe28">&#9670;&nbsp;</a></span>isSupported()</h2>
+<a id="a4c77cbedaa8cecc2ed24f4e42297db67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c77cbedaa8cecc2ed24f4e42297db67">&#9670;&nbsp;</a></span>isSupported()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -256,7 +300,7 @@ Static Public Member Functions</h2></td></tr>
           <td class="memname">bool osapi::process::signal::isSupported </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="signal_8hh.html#a6088e68d9bfe9f8b952ce9b9c681e182">signalSupportLevel</a> &amp;&#160;</td>
-          <td class="paramname"><em>supportLevel</em></td><td>)</td>
+          <td class="paramname"><em>level</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -266,6 +310,15 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Are signals supported, and if so, to which level? </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">level</td><td>- The signal support level </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if there is any support of signals in the OSAPI C platform implementation. False otherwise. </dd></dl>
 
 </div>
 </div>
@@ -284,6 +337,14 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Set handler function to call upon signal reception. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">func</td><td>- Function name </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

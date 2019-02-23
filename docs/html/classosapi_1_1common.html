@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">OSAPI Plus
-   &#160;<span id="projectnumber">0.1</span>
+   &#160;<span id="projectnumber">0.3</span>
    </div>
    <div id="projectbrief">The Open System API for C++</div>
   </td>
@@ -89,28 +89,41 @@ $(document).ready(function(){initNavTree('classosapi_1_1common.html','');});
 </div><!--header-->
 <div class="contents">
 
+<p>Class that provides common (among functional modules) functionality.  
+ <a href="classosapi_1_1common.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="common_8hh_source.html">common.hh</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a8a982b1482ea255441b302c531974e49"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1common.html#a8a982b1482ea255441b302c531974e49">splitString</a> (const std::string &amp;, const char, std::string &amp;, std::string &amp;)</td></tr>
-<tr class="separator:a8a982b1482ea255441b302c531974e49"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac746f5b59630d2aad13c9369134c0c43"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1common.html#ac746f5b59630d2aad13c9369134c0c43">stringEraser</a> (const std::string &amp;, size_t, std::string &amp;)</td></tr>
-<tr class="separator:ac746f5b59630d2aad13c9369134c0c43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aac107a1d4436353e9b8327816b48f818"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1common.html#aac107a1d4436353e9b8327816b48f818">toUpperCase</a> (std::string &amp;)</td></tr>
-<tr class="separator:aac107a1d4436353e9b8327816b48f818"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec5d7f6b766c7a4c030338afdec52c45"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1common.html#aec5d7f6b766c7a4c030338afdec52c45">toLowerCase</a> (std::string &amp;)</td></tr>
-<tr class="separator:aec5d7f6b766c7a4c030338afdec52c45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66cf3b09e8293dd2e9d8fa751eae7e4b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1common.html#a66cf3b09e8293dd2e9d8fa751eae7e4b">splitString</a> (const std::string &amp;input, const char sep, std::string &amp;out1, std::string &amp;out2)</td></tr>
+<tr class="memdesc:a66cf3b09e8293dd2e9d8fa751eae7e4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Split an input string in two using a string separator.  <a href="#a66cf3b09e8293dd2e9d8fa751eae7e4b">More...</a><br /></td></tr>
+<tr class="separator:a66cf3b09e8293dd2e9d8fa751eae7e4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bbf91ae40e96773eec2167bc35a8b33"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1common.html#a6bbf91ae40e96773eec2167bc35a8b33">stringEraser</a> (const std::string &amp;what, size_t location, std::string &amp;where)</td></tr>
+<tr class="memdesc:a6bbf91ae40e96773eec2167bc35a8b33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete part of a string.  <a href="#a6bbf91ae40e96773eec2167bc35a8b33">More...</a><br /></td></tr>
+<tr class="separator:a6bbf91ae40e96773eec2167bc35a8b33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78da65d5bae2981b94e420d77d81a78d"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1common.html#a78da65d5bae2981b94e420d77d81a78d">toUpperCase</a> (std::string &amp;str)</td></tr>
+<tr class="memdesc:a78da65d5bae2981b94e420d77d81a78d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transform a string into Upper case.  <a href="#a78da65d5bae2981b94e420d77d81a78d">More...</a><br /></td></tr>
+<tr class="separator:a78da65d5bae2981b94e420d77d81a78d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b039b0b46db236eb6fcc0727dda6c9f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1common.html#a2b039b0b46db236eb6fcc0727dda6c9f">toLowerCase</a> (std::string &amp;str)</td></tr>
+<tr class="memdesc:a2b039b0b46db236eb6fcc0727dda6c9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transform a string into Lower case.  <a href="#a2b039b0b46db236eb6fcc0727dda6c9f">More...</a><br /></td></tr>
+<tr class="separator:a2b039b0b46db236eb6fcc0727dda6c9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6346215d363dbd46e2e8915f1bfcc69d"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1common.html#a6346215d363dbd46e2e8915f1bfcc69d">bool2string</a> (bool value)</td></tr>
+<tr class="memdesc:a6346215d363dbd46e2e8915f1bfcc69d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Translate a true or false boolean value into the respective string.  <a href="#a6346215d363dbd46e2e8915f1bfcc69d">More...</a><br /></td></tr>
 <tr class="separator:a6346215d363dbd46e2e8915f1bfcc69d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47563c36a745e38d658cf81a5eb09a1d"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1common.html#a47563c36a745e38d658cf81a5eb09a1d">vecStr2array</a> (const std::vector&lt; std::string &gt; &amp;vec, size_t *p_arraySize, char ***p_array)</td></tr>
-<tr class="separator:a47563c36a745e38d658cf81a5eb09a1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acfd3b1f26fcd9e9cfb8d7883950405eb"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1common.html#acfd3b1f26fcd9e9cfb8d7883950405eb">vecStr2array</a> (const std::vector&lt; std::string &gt; &amp;vec, size_t *arraySize, char ***array)</td></tr>
+<tr class="memdesc:acfd3b1f26fcd9e9cfb8d7883950405eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a Vector of strings into a C-array.  <a href="#acfd3b1f26fcd9e9cfb8d7883950405eb">More...</a><br /></td></tr>
+<tr class="separator:acfd3b1f26fcd9e9cfb8d7883950405eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad92f751b60c9bf0190b7a336a26bc23d"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1common.html#ad92f751b60c9bf0190b7a336a26bc23d">vecRefStr2array</a> (const std::vector&lt; <a class="el" href="namespaceosapi.html#a9c691d7b64fd555d9ba559b5ca2138cc">refConstStr</a> &gt; &amp;vec, size_t *arraySize, char ***array)</td></tr>
+<tr class="memdesc:ad92f751b60c9bf0190b7a336a26bc23d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a Vector of strings into a C-array using references to strings.  <a href="#ad92f751b60c9bf0190b7a336a26bc23d">More...</a><br /></td></tr>
 <tr class="separator:ad92f751b60c9bf0190b7a336a26bc23d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad13b2b354b135c1665e79bd844df32b8"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1common.html#ad13b2b354b135c1665e79bd844df32b8">getVecRefString</a> (const std::vector&lt; <a class="el" href="namespaceosapi.html#a9c691d7b64fd555d9ba559b5ca2138cc">refConstStr</a> &gt; &amp;vec, size_t index)</td></tr>
+<tr class="memdesc:ad13b2b354b135c1665e79bd844df32b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain a pointer to the C-String of a given vector element.  <a href="#ad13b2b354b135c1665e79bd844df32b8">More...</a><br /></td></tr>
 <tr class="separator:ad13b2b354b135c1665e79bd844df32b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Class that provides common (among functional modules) functionality. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a6346215d363dbd46e2e8915f1bfcc69d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6346215d363dbd46e2e8915f1bfcc69d">&#9670;&nbsp;</a></span>bool2string()</h2>
 
@@ -134,6 +147,15 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Translate a true or false boolean value into the respective string. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>- The boolean to convert </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The boolean string </dd></dl>
 
 </div>
 </div>
@@ -171,10 +193,20 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Obtain a pointer to the C-String of a given vector element. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">vec</td><td>- The input vector </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>- Vector index from which to retrieve information </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The pointer to the C-string of the index vector element </dd></dl>
+
 </div>
 </div>
-<a id="a8a982b1482ea255441b302c531974e49"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8a982b1482ea255441b302c531974e49">&#9670;&nbsp;</a></span>splitString()</h2>
+<a id="a66cf3b09e8293dd2e9d8fa751eae7e4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66cf3b09e8293dd2e9d8fa751eae7e4b">&#9670;&nbsp;</a></span>splitString()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -186,7 +218,7 @@ Static Public Member Functions</h2></td></tr>
           <td class="memname">void osapi::common::splitString </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>line</em>, </td>
+          <td class="paramname"><em>input</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -198,13 +230,13 @@ Static Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">std::string &amp;&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
+          <td class="paramname"><em>out1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">std::string &amp;&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
+          <td class="paramname"><em>out2</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -219,10 +251,21 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Split an input string in two using a string separator. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">input</td><td>- The input string </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sep</td><td>- The string separator </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out1</td><td>- The first output string </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out2</td><td>- The second output string </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="ac746f5b59630d2aad13c9369134c0c43"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac746f5b59630d2aad13c9369134c0c43">&#9670;&nbsp;</a></span>stringEraser()</h2>
+<a id="a6bbf91ae40e96773eec2167bc35a8b33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6bbf91ae40e96773eec2167bc35a8b33">&#9670;&nbsp;</a></span>stringEraser()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -261,10 +304,20 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Delete part of a string. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">what</td><td>- The thing to erase </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">location</td><td>- Start searching the what to erase in position location </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">where</td><td>- The string to alter </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="aec5d7f6b766c7a4c030338afdec52c45"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec5d7f6b766c7a4c030338afdec52c45">&#9670;&nbsp;</a></span>toLowerCase()</h2>
+<a id="a2b039b0b46db236eb6fcc0727dda6c9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b039b0b46db236eb6fcc0727dda6c9f">&#9670;&nbsp;</a></span>toLowerCase()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -287,10 +340,18 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Transform a string into Lower case. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">str</td><td>- The string to transform </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="aac107a1d4436353e9b8327816b48f818"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aac107a1d4436353e9b8327816b48f818">&#9670;&nbsp;</a></span>toUpperCase()</h2>
+<a id="a78da65d5bae2981b94e420d77d81a78d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78da65d5bae2981b94e420d77d81a78d">&#9670;&nbsp;</a></span>toUpperCase()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -312,6 +373,14 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Transform a string into Upper case. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">str</td><td>- The string to transform </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -355,10 +424,20 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Convert a Vector of strings into a C-array using references to strings. </p>
+<p>The call creates an array of char pointers to the C-strings from vector. It doesn't copy them. It is the responsibility of the caller to release the allocated C-array. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">vec</td><td>- Vector to convert </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">arraySize</td><td>- The size of the output array </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">array</td><td>- The newly allocated C-Array of char pointers </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="a47563c36a745e38d658cf81a5eb09a1d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a47563c36a745e38d658cf81a5eb09a1d">&#9670;&nbsp;</a></span>vecStr2array()</h2>
+<a id="acfd3b1f26fcd9e9cfb8d7883950405eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acfd3b1f26fcd9e9cfb8d7883950405eb">&#9670;&nbsp;</a></span>vecStr2array()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -376,13 +455,13 @@ Static Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">size_t *&#160;</td>
-          <td class="paramname"><em>p_arraySize</em>, </td>
+          <td class="paramname"><em>arraySize</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">char ***&#160;</td>
-          <td class="paramname"><em>p_array</em>&#160;</td>
+          <td class="paramname"><em>array</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -396,6 +475,16 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Convert a Vector of strings into a C-array. </p>
+<p>The call creates an array of char pointers to the C-strings from vector. It doesn't copy them. It is the responsibility of the caller to release the allocated C-array. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">vec</td><td>- Vector to convert </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">arraySize</td><td>- The size of the output array </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">array</td><td>- The newly allocated C-Array of char pointers </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

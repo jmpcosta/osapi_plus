@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">OSAPI Plus
-   &#160;<span id="projectnumber">0.1</span>
+   &#160;<span id="projectnumber">0.3</span>
    </div>
    <div id="projectbrief">The Open System API for C++</div>
   </td>
@@ -90,28 +90,36 @@ $(document).ready(function(){initNavTree('classosapi_1_1process_1_1plan_signal.h
 </div><!--header-->
 <div class="contents">
 
+<p>Class that represents a plan for setting process signals.  
+ <a href="classosapi_1_1process_1_1plan_signal.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="plan__signal_8hh_source.html">plan_signal.hh</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for osapi::process::planSignal:</div>
 <div class="dyncontent">
 <div class="center"><img src="classosapi_1_1process_1_1plan_signal__inherit__graph.png" border="0" usemap="#osapi_1_1process_1_1plan_signal_inherit__map" alt="Inheritance graph"/></div>
 <map name="osapi_1_1process_1_1plan_signal_inherit__map" id="osapi_1_1process_1_1plan_signal_inherit__map">
-<area shape="rect" id="node2" href="classosapi_1_1process_1_1_current.html" title="osapi::process::Current" alt="" coords="5,80,164,107"/>
-<area shape="rect" id="node3" href="classosapi_1_1process_1_1plan.html" title="osapi::process::plan" alt="" coords="189,80,327,107"/>
+<area shape="rect" id="node2" href="classosapi_1_1process_1_1_current.html" title="Specialization class with a single occurrence of a process to support the current working process..." alt="" coords="5,80,164,107"/>
+<area shape="rect" id="node3" href="classosapi_1_1process_1_1plan.html" title="Class that represents a process plan. " alt="" coords="189,80,327,107"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac75520cc38dd96fda05be2a90eea0a0e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1process_1_1plan_signal.html#ac75520cc38dd96fda05be2a90eea0a0e">planSignal</a> ()</td></tr>
+<tr class="memdesc:ac75520cc38dd96fda05be2a90eea0a0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class constructor.  <a href="#ac75520cc38dd96fda05be2a90eea0a0e">More...</a><br /></td></tr>
 <tr class="separator:ac75520cc38dd96fda05be2a90eea0a0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a475e1c90e382b7fb4dab7174e75d697b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1process_1_1plan_signal.html#a475e1c90e382b7fb4dab7174e75d697b">~planSignal</a> ()</td></tr>
+<tr class="memdesc:a475e1c90e382b7fb4dab7174e75d697b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class destructor.  <a href="#a475e1c90e382b7fb4dab7174e75d697b">More...</a><br /></td></tr>
 <tr class="separator:a475e1c90e382b7fb4dab7174e75d697b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b80c77658e26eaf7f42e158ca31cca5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1process_1_1plan_signal.html#a1b80c77658e26eaf7f42e158ca31cca5">addSignal</a> (<a class="el" href="classosapi_1_1process_1_1signal.html">process::signal</a> &amp;sig)</td></tr>
+<tr class="memdesc:a1b80c77658e26eaf7f42e158ca31cca5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new signal to the plan.  <a href="#a1b80c77658e26eaf7f42e158ca31cca5">More...</a><br /></td></tr>
 <tr class="separator:a1b80c77658e26eaf7f42e158ca31cca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e893656ac4d99effb0a5938d679ffb9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1process_1_1plan_signal.html#a3e893656ac4d99effb0a5938d679ffb9">eraseSignal</a> (int signo)</td></tr>
+<tr class="memdesc:a3e893656ac4d99effb0a5938d679ffb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove one signal from the plan.  <a href="#a3e893656ac4d99effb0a5938d679ffb9">More...</a><br /></td></tr>
 <tr class="separator:a3e893656ac4d99effb0a5938d679ffb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a055083ea7682d5b15c659ec1f732f32c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1process_1_1plan_signal.html#a055083ea7682d5b15c659ec1f732f32c">eraseAllSignals</a> (void)</td></tr>
+<tr class="memdesc:a055083ea7682d5b15c659ec1f732f32c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove all signals from the plan.  <a href="#a055083ea7682d5b15c659ec1f732f32c">More...</a><br /></td></tr>
 <tr class="separator:a055083ea7682d5b15c659ec1f732f32c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
@@ -121,7 +129,9 @@ Protected Attributes</h2></td></tr>
 <tr class="memitem:a53d21838e17f286e657f4b5b0ef765eb"><td class="memItemLeft" align="right" valign="top">std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1process_1_1plan_signal.html#a53d21838e17f286e657f4b5b0ef765eb">signalMutex</a></td></tr>
 <tr class="separator:a53d21838e17f286e657f4b5b0ef765eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Class that represents a plan for setting process signals. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ac75520cc38dd96fda05be2a90eea0a0e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac75520cc38dd96fda05be2a90eea0a0e">&#9670;&nbsp;</a></span>planSignal()</h2>
 
@@ -137,6 +147,8 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Class constructor. </p>
 
 </div>
 </div>
@@ -154,6 +166,8 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Class destructor. </p>
 
 </div>
 </div>
@@ -174,6 +188,14 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Add a new signal to the plan. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sig</td><td>- The new signal to add </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a055083ea7682d5b15c659ec1f732f32c"></a>
@@ -192,6 +214,8 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Remove all signals from the plan. </p>
+
 </div>
 </div>
 <a id="a3e893656ac4d99effb0a5938d679ffb9"></a>
@@ -209,6 +233,14 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Remove one signal from the plan. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">signo</td><td>- The signal number to add </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

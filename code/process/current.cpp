@@ -27,7 +27,6 @@
 #include "general/general.hh"
 #include "status/status.hh"
 #include "status/trace.hh"
-#include "util/util.hh"
 
 // Import own module declarations
 #include "process/signal.hh"
@@ -97,8 +96,7 @@ void Current::terminate( bool normal )
 {
  int code = 0;
 
- if( normal )
-	 code = 1;
+ if( ! normal )	 code = 1;
 
  // The next call will always succeed
  proc_instance_terminate( code );
@@ -182,10 +180,10 @@ void Current::activateAllSignals()
 
  for( ; i != sigList.end(); i++ )
     {
-	  TRACE( "Activating signal number:", i->getID() )
+	  TRACE( "Activating signal number:", i->getNumber() )
 	  if( i->hasValidHandler() )
 	    {
-		  st = proc_signal_setHandler( i->getID(), i->getHandler() );
+		  st = proc_signal_setHandler( i->getNumber(), i->getHandler() );
 		  throw_on_failure( st );
 	    }
     }

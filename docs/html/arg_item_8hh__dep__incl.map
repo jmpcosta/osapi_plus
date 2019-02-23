@@ -1,6 +1,6 @@
 <map id="code/configuration/argItem.hh" name="code/configuration/argItem.hh">
 <area shape="rect" id="node2" href="$arg_item_8cpp.html" title="code/configuration\l/argItem.cpp" alt="" coords="5,95,133,136"/>
-<area shape="rect" id="node3" href="$configuration__interfaces_8hh.html" title="code/configuration\l/configuration_interfaces.hh" alt="" coords="158,95,341,136"/>
-<area shape="rect" id="node5" href="$configuration_file_parser_8cpp.html" title="code/configuration\l/configurationFileParser.cpp" alt="" coords="365,95,549,136"/>
-<area shape="rect" id="node4" href="$osapi_8hh.html" title="code/osapi.hh" alt="" coords="198,184,301,211"/>
+<area shape="rect" id="node3" href="$file_parser_8cpp.html" title="code/configuration\l/fileParser.cpp" alt="" coords="157,95,285,136"/>
+<area shape="rect" id="node4" href="$interfaces_8hh.html" title="code/configuration\l/interfaces.hh" alt="" coords="309,95,437,136"/>
+<area shape="rect" id="node5" href="$osapi_8hh.html" title="code/osapi.hh" alt="" coords="322,184,425,211"/>
 </map>

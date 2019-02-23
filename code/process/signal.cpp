@@ -127,7 +127,7 @@ sighandler_t signal::getHandler( void )
  return sigHandler;
 }
 
-int signal::getID( void	)
+int signal::getNumber( void	)
 {
  TRACE( "signal:", sigNumber )
  return sigNumber;

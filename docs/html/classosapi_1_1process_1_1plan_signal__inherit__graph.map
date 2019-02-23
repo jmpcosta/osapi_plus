@@ -1,4 +1,4 @@
 <map id="osapi::process::planSignal" name="osapi::process::planSignal">
-<area shape="rect" id="node2" href="$classosapi_1_1process_1_1_current.html" title="osapi::process::Current" alt="" coords="5,80,164,107"/>
-<area shape="rect" id="node3" href="$classosapi_1_1process_1_1plan.html" title="osapi::process::plan" alt="" coords="189,80,327,107"/>
+<area shape="rect" id="node2" href="$classosapi_1_1process_1_1_current.html" title="Specialization class with a single occurrence of a process to support the current working process..." alt="" coords="5,80,164,107"/>
+<area shape="rect" id="node3" href="$classosapi_1_1process_1_1plan.html" title="Class that represents a process plan. " alt="" coords="189,80,327,107"/>
 </map>

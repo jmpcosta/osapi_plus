@@ -1,12 +1,12 @@
 <map id="code/configuration/configuration.hh" name="code/configuration/configuration.hh">
 <area shape="rect" id="node2" href="$configuration_8cpp.html" title="code/configuration\l/configuration.cpp" alt="" coords="5,95,133,136"/>
-<area shape="rect" id="node3" href="$configuration__interfaces_8hh.html" title="code/configuration\l/configuration_interfaces.hh" alt="" coords="270,273,453,315"/>
-<area shape="rect" id="node5" href="$configuration_file_parser_8cpp.html" title="code/configuration\l/configurationFileParser.cpp" alt="" coords="620,273,804,315"/>
-<area shape="rect" id="node6" href="$configuration_file_parser_8hh.html" title="code/configuration\l/configurationFileParser.hh" alt="" coords="209,184,386,225"/>
-<area shape="rect" id="node7" href="$configuration_parser_8cpp.html" title="code/configuration\l/configurationParser.cpp" alt="" coords="461,184,624,225"/>
-<area shape="rect" id="node8" href="$configuration_parser_8hh.html" title="code/configuration\l/configurationParser.hh" alt="" coords="346,95,502,136"/>
-<area shape="rect" id="node9" href="$configuration_provider_8cpp.html" title="code/configuration\l/configurationProvider.cpp" alt="" coords="915,184,1088,225"/>
-<area shape="rect" id="node10" href="$configuration_provider_8hh.html" title="code/configuration\l/configurationProvider.hh" alt="" coords="603,95,770,136"/>
-<area shape="rect" id="node4" href="$osapi_8hh.html" title="code/osapi.hh" alt="" coords="310,363,413,389"/>
-<area shape="rect" id="node11" href="$log_8cpp.html" title="code/logging/log.cpp" alt="" coords="749,191,891,218"/>
+<area shape="rect" id="node3" href="$file_parser_8cpp.html" title="code/configuration\l/fileParser.cpp" alt="" coords="208,273,336,315"/>
+<area shape="rect" id="node4" href="$file_parser_8hh.html" title="code/configuration\l/fileParser.hh" alt="" coords="208,184,336,225"/>
+<area shape="rect" id="node5" href="$interfaces_8hh.html" title="code/configuration\l/interfaces.hh" alt="" coords="436,273,564,315"/>
+<area shape="rect" id="node7" href="$parser_8cpp.html" title="code/configuration\l/parser.cpp" alt="" coords="411,184,539,225"/>
+<area shape="rect" id="node8" href="$parser_8hh.html" title="code/configuration\l/parser.hh" alt="" coords="309,95,437,136"/>
+<area shape="rect" id="node9" href="$_provider_8cpp.html" title="code/configuration\l/Provider.cpp" alt="" coords="880,184,1008,225"/>
+<area shape="rect" id="node10" href="$_provider_8hh.html" title="code/configuration\l/Provider.hh" alt="" coords="641,95,769,136"/>
+<area shape="rect" id="node6" href="$osapi_8hh.html" title="code/osapi.hh" alt="" coords="449,363,551,389"/>
+<area shape="rect" id="node11" href="$log_8cpp.html" title="code/logging/log.cpp" alt="" coords="664,191,805,218"/>
 </map>

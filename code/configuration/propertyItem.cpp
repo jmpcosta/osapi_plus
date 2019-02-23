@@ -31,6 +31,9 @@
 namespace osapi
 {
 
+namespace configuration
+{
+
 TRACE_CLASSNAME( propertyItem )
 
 
@@ -76,5 +79,5 @@ void propertyItem::setString( const std::string & propValue )
 }
 
 
-
+}	// End of namespace "configuration"
 }	// End of namespace "osapi"

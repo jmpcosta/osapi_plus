@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">OSAPI Plus
-   &#160;<span id="projectnumber">0.1</span>
+   &#160;<span id="projectnumber">0.3</span>
    </div>
    <div id="projectbrief">The Open System API for C++</div>
   </td>
@@ -89,24 +89,35 @@ $(document).ready(function(){initNavTree('classosapi_1_1util.html','');});
 </div><!--header-->
 <div class="contents">
 
+<p>Class that provides utility functions.  
+ <a href="classosapi_1_1util.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="util_8hh_source.html">util.hh</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:af61152127f49f56874b6e6568369d683"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1util.html#af61152127f49f56874b6e6568369d683">splitString</a> (const std::string &amp;, const char, std::string &amp;, std::string &amp;)</td></tr>
-<tr class="separator:af61152127f49f56874b6e6568369d683"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c0027607271f5d2b6bbb0443bf04acd"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1util.html#a0c0027607271f5d2b6bbb0443bf04acd">stringEraser</a> (const std::string &amp;, size_t, std::string &amp;)</td></tr>
-<tr class="separator:a0c0027607271f5d2b6bbb0443bf04acd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33667ad02d777bcc61d40abc88e7e68e"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1util.html#a33667ad02d777bcc61d40abc88e7e68e">toUpperCase</a> (std::string &amp;)</td></tr>
-<tr class="separator:a33667ad02d777bcc61d40abc88e7e68e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39673ed4e447253f4356669d40649ad6"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1util.html#a39673ed4e447253f4356669d40649ad6">toLowerCase</a> (std::string &amp;)</td></tr>
-<tr class="separator:a39673ed4e447253f4356669d40649ad6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c41d5fe618bcf9c316876f1a2d2cb20"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1util.html#a5c41d5fe618bcf9c316876f1a2d2cb20">splitString</a> (const std::string &amp;input, const char sep, std::string &amp;out1, std::string &amp;out2)</td></tr>
+<tr class="memdesc:a5c41d5fe618bcf9c316876f1a2d2cb20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Split an input string in two using a string separator.  <a href="#a5c41d5fe618bcf9c316876f1a2d2cb20">More...</a><br /></td></tr>
+<tr class="separator:a5c41d5fe618bcf9c316876f1a2d2cb20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae81e9af89f46dd53430b1f31ed7f4d68"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1util.html#ae81e9af89f46dd53430b1f31ed7f4d68">stringEraser</a> (const std::string &amp;what, size_t location, std::string &amp;where)</td></tr>
+<tr class="memdesc:ae81e9af89f46dd53430b1f31ed7f4d68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Delete part of a string.  <a href="#ae81e9af89f46dd53430b1f31ed7f4d68">More...</a><br /></td></tr>
+<tr class="separator:ae81e9af89f46dd53430b1f31ed7f4d68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21ed0da0483f239f9218c3d2f6df8396"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1util.html#a21ed0da0483f239f9218c3d2f6df8396">toUpperCase</a> (std::string &amp;str)</td></tr>
+<tr class="memdesc:a21ed0da0483f239f9218c3d2f6df8396"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transform a string into Upper case.  <a href="#a21ed0da0483f239f9218c3d2f6df8396">More...</a><br /></td></tr>
+<tr class="separator:a21ed0da0483f239f9218c3d2f6df8396"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefba022841db763f1135bcc94ad16e8f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1util.html#aefba022841db763f1135bcc94ad16e8f">toLowerCase</a> (std::string &amp;str)</td></tr>
+<tr class="memdesc:aefba022841db763f1135bcc94ad16e8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Transform a string into Lower case.  <a href="#aefba022841db763f1135bcc94ad16e8f">More...</a><br /></td></tr>
+<tr class="separator:aefba022841db763f1135bcc94ad16e8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8fbececac57175e20d7302c9c96a98b3"><td class="memItemLeft" align="right" valign="top">static const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1util.html#a8fbececac57175e20d7302c9c96a98b3">bool2string</a> (bool value)</td></tr>
+<tr class="memdesc:a8fbececac57175e20d7302c9c96a98b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Translate a true or false boolean value into the respective string.  <a href="#a8fbececac57175e20d7302c9c96a98b3">More...</a><br /></td></tr>
 <tr class="separator:a8fbececac57175e20d7302c9c96a98b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af572bbe82fca4fe50c1826ee7855da5c"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1util.html#af572bbe82fca4fe50c1826ee7855da5c">vecStr2array</a> (const std::vector&lt; std::string &gt; &amp;, size_t *, char ***)</td></tr>
-<tr class="separator:af572bbe82fca4fe50c1826ee7855da5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae92a6b834ad98723dd67cd05ce0f94e8"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1util.html#ae92a6b834ad98723dd67cd05ce0f94e8">vecStr2array</a> (const std::vector&lt; std::string &gt; &amp;vec, size_t *arraySize, char ***array)</td></tr>
+<tr class="memdesc:ae92a6b834ad98723dd67cd05ce0f94e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert a Vector of strings into a C-array.  <a href="#ae92a6b834ad98723dd67cd05ce0f94e8">More...</a><br /></td></tr>
+<tr class="separator:ae92a6b834ad98723dd67cd05ce0f94e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Class that provides utility functions. </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a8fbececac57175e20d7302c9c96a98b3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8fbececac57175e20d7302c9c96a98b3">&#9670;&nbsp;</a></span>bool2string()</h2>
 
@@ -131,10 +142,19 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Translate a true or false boolean value into the respective string. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>- The boolean to convert </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The boolean string </dd></dl>
+
 </div>
 </div>
-<a id="af61152127f49f56874b6e6568369d683"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af61152127f49f56874b6e6568369d683">&#9670;&nbsp;</a></span>splitString()</h2>
+<a id="a5c41d5fe618bcf9c316876f1a2d2cb20"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5c41d5fe618bcf9c316876f1a2d2cb20">&#9670;&nbsp;</a></span>splitString()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -146,7 +166,7 @@ Static Public Member Functions</h2></td></tr>
           <td class="memname">void osapi::util::splitString </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>line</em>, </td>
+          <td class="paramname"><em>input</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -158,13 +178,13 @@ Static Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">std::string &amp;&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
+          <td class="paramname"><em>out1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">std::string &amp;&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
+          <td class="paramname"><em>out2</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -179,10 +199,21 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Split an input string in two using a string separator. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">input</td><td>- The input string </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">sep</td><td>- The string separator </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out1</td><td>- The first output string </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">out2</td><td>- The second output string </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="a0c0027607271f5d2b6bbb0443bf04acd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c0027607271f5d2b6bbb0443bf04acd">&#9670;&nbsp;</a></span>stringEraser()</h2>
+<a id="ae81e9af89f46dd53430b1f31ed7f4d68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae81e9af89f46dd53430b1f31ed7f4d68">&#9670;&nbsp;</a></span>stringEraser()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -221,10 +252,20 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Delete part of a string. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">what</td><td>- The thing to erase </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">location</td><td>- Start searching the what to erase in position location </td></tr>
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">where</td><td>- The string to alter </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="a39673ed4e447253f4356669d40649ad6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a39673ed4e447253f4356669d40649ad6">&#9670;&nbsp;</a></span>toLowerCase()</h2>
+<a id="aefba022841db763f1135bcc94ad16e8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefba022841db763f1135bcc94ad16e8f">&#9670;&nbsp;</a></span>toLowerCase()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -247,10 +288,18 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Transform a string into Lower case. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">str</td><td>- The string to transform </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="a33667ad02d777bcc61d40abc88e7e68e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a33667ad02d777bcc61d40abc88e7e68e">&#9670;&nbsp;</a></span>toUpperCase()</h2>
+<a id="a21ed0da0483f239f9218c3d2f6df8396"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21ed0da0483f239f9218c3d2f6df8396">&#9670;&nbsp;</a></span>toUpperCase()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -273,10 +322,18 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Transform a string into Upper case. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">str</td><td>- The string to transform </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
-<a id="af572bbe82fca4fe50c1826ee7855da5c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af572bbe82fca4fe50c1826ee7855da5c">&#9670;&nbsp;</a></span>vecStr2array()</h2>
+<a id="ae92a6b834ad98723dd67cd05ce0f94e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae92a6b834ad98723dd67cd05ce0f94e8">&#9670;&nbsp;</a></span>vecStr2array()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -294,13 +351,13 @@ Static Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">size_t *&#160;</td>
-          <td class="paramname"><em>p_arraySize</em>, </td>
+          <td class="paramname"><em>arraySize</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">char ***&#160;</td>
-          <td class="paramname"><em>p_array</em>&#160;</td>
+          <td class="paramname"><em>array</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -314,6 +371,16 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Convert a Vector of strings into a C-array. </p>
+<p>The call creates an array of char pointers to the C-strings from vector. It doesn't copy them. It is the responsibility of the caller to release the allocated C-array. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">vec</td><td>- Vector to convert </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">arraySize</td><td>- The size of the output array </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">array</td><td>- The newly allocated C-Array of char pointers </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

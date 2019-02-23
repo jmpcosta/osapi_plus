@@ -350,12 +350,14 @@ bool plan::addGroup( const std::string & group )
 }
 
 
-void plan::addName( const std::string & procName )
+bool plan::addName( const std::string & procName )
 {
  // Convert the generic pointer to the concrete OSAPI t_proc pointer
  t_proc * p_proc = (t_proc *) rawData;
 
  p_proc->name = (char *) procName.c_str();
+
+ return true;	// To keep the interfaces consistent
 }
 
 

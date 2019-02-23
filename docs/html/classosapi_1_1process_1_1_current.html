@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">OSAPI Plus
-   &#160;<span id="projectnumber">0.1</span>
+   &#160;<span id="projectnumber">0.3</span>
    </div>
    <div id="projectbrief">The Open System API for C++</div>
   </td>
@@ -90,13 +90,16 @@ $(document).ready(function(){initNavTree('classosapi_1_1process_1_1_current.html
 </div><!--header-->
 <div class="contents">
 
+<p>Specialization class with a single occurrence of a process to support the current working process.  
+ <a href="classosapi_1_1process_1_1_current.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="current_8hh_source.html">current.hh</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for osapi::process::Current:</div>
 <div class="dyncontent">
 <div class="center"><img src="classosapi_1_1process_1_1_current__inherit__graph.png" border="0" usemap="#osapi_1_1process_1_1_current_inherit__map" alt="Inheritance graph"/></div>
 <map name="osapi_1_1process_1_1_current_inherit__map" id="osapi_1_1process_1_1_current_inherit__map">
-<area shape="rect" id="node2" href="classosapi_1_1process_1_1plan_signal.html" title="osapi::process::planSignal" alt="" coords="5,5,180,32"/>
+<area shape="rect" id="node2" href="classosapi_1_1process_1_1plan_signal.html" title="Class that represents a plan for setting process signals. " alt="" coords="5,5,180,32"/>
 <area shape="rect" id="node3" href="classosapi_1_1process_1_1runner.html" title="osapi::process::runner" alt="" coords="204,5,355,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
@@ -105,29 +108,37 @@ Collaboration diagram for osapi::process::Current:</div>
 <div class="dyncontent">
 <div class="center"><img src="classosapi_1_1process_1_1_current__coll__graph.png" border="0" usemap="#osapi_1_1process_1_1_current_coll__map" alt="Collaboration graph"/></div>
 <map name="osapi_1_1process_1_1_current_coll__map" id="osapi_1_1process_1_1_current_coll__map">
-<area shape="rect" id="node2" href="classosapi_1_1process_1_1plan_signal.html" title="osapi::process::planSignal" alt="" coords="5,95,180,121"/>
+<area shape="rect" id="node2" href="classosapi_1_1process_1_1plan_signal.html" title="Class that represents a plan for setting process signals. " alt="" coords="5,95,180,121"/>
 <area shape="rect" id="node3" href="classosapi_1_1process_1_1runner.html" title="osapi::process::runner" alt="" coords="204,95,355,121"/>
-<area shape="rect" id="node4" href="classosapi_1_1id_1_1process.html" title="osapi::id::process" alt="" coords="217,5,342,32"/>
+<area shape="rect" id="node4" href="classosapi_1_1id_1_1process.html" title="Class that represents a Process ID. " alt="" coords="217,5,342,32"/>
 </map>
 <center><span class="legend">[<a target="top" href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a5c08a94324d1b61da3bed9bc4a904c0c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1process_1_1_current.html#a5c08a94324d1b61da3bed9bc4a904c0c">clone</a> (bool &amp;isClone)</td></tr>
+<tr class="memdesc:a5c08a94324d1b61da3bed9bc4a904c0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clone the current process (Fork in UNIX systems)  <a href="#a5c08a94324d1b61da3bed9bc4a904c0c">More...</a><br /></td></tr>
 <tr class="separator:a5c08a94324d1b61da3bed9bc4a904c0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acca6e0443f8c7fcf155663bc1d7d3f7a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1process_1_1_current.html#acca6e0443f8c7fcf155663bc1d7d3f7a">terminate</a> (bool <a class="el" href="classosapi_1_1process_1_1status.html">status</a>)</td></tr>
-<tr class="separator:acca6e0443f8c7fcf155663bc1d7d3f7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81083c702d48732e07822ed1be707aa2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1process_1_1_current.html#a81083c702d48732e07822ed1be707aa2">terminate</a> (bool normal)</td></tr>
+<tr class="memdesc:a81083c702d48732e07822ed1be707aa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Terminate the current process.  <a href="#a81083c702d48732e07822ed1be707aa2">More...</a><br /></td></tr>
+<tr class="separator:a81083c702d48732e07822ed1be707aa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3527d9544faee112102498f82f671326"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1process_1_1_current.html#a3527d9544faee112102498f82f671326">getPID</a> ()</td></tr>
+<tr class="memdesc:a3527d9544faee112102498f82f671326"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current process ID.  <a href="#a3527d9544faee112102498f82f671326">More...</a><br /></td></tr>
 <tr class="separator:a3527d9544faee112102498f82f671326"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd076e265795e422e7fc1cf08050464c"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1process_1_1_current.html#abd076e265795e422e7fc1cf08050464c">getParentPID</a> ()</td></tr>
+<tr class="memdesc:abd076e265795e422e7fc1cf08050464c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the Process ID of the parent process.  <a href="#abd076e265795e422e7fc1cf08050464c">More...</a><br /></td></tr>
 <tr class="separator:abd076e265795e422e7fc1cf08050464c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52982d94495973e7aa4b5bd15edbb7fc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1process_1_1_current.html#a52982d94495973e7aa4b5bd15edbb7fc">setSession</a> ()</td></tr>
+<tr class="memdesc:a52982d94495973e7aa4b5bd15edbb7fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Promote itself as session leader.  <a href="#a52982d94495973e7aa4b5bd15edbb7fc">More...</a><br /></td></tr>
 <tr class="separator:a52982d94495973e7aa4b5bd15edbb7fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7eb10aa0705b9fc1fbece78a71bfd34d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1process_1_1_current.html#a7eb10aa0705b9fc1fbece78a71bfd34d">suspend</a> ()</td></tr>
+<tr class="memdesc:a7eb10aa0705b9fc1fbece78a71bfd34d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Suspend the current working process.  <a href="#a7eb10aa0705b9fc1fbece78a71bfd34d">More...</a><br /></td></tr>
 <tr class="separator:a7eb10aa0705b9fc1fbece78a71bfd34d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7f7475779ee0cf559f4d69c93d057fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1process_1_1_current.html#ae7f7475779ee0cf559f4d69c93d057fc">clearAllSignals</a> ()</td></tr>
+<tr class="memdesc:ae7f7475779ee0cf559f4d69c93d057fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear all process signals disposition in the current process.  <a href="#ae7f7475779ee0cf559f4d69c93d057fc">More...</a><br /></td></tr>
 <tr class="separator:ae7f7475779ee0cf559f4d69c93d057fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7ca9d098529114a715cb6d03094d934c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1process_1_1_current.html#a7ca9d098529114a715cb6d03094d934c">activateAllSignals</a> ()</td></tr>
+<tr class="memdesc:a7ca9d098529114a715cb6d03094d934c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable all planned signals disposition in the current process.  <a href="#a7ca9d098529114a715cb6d03094d934c">More...</a><br /></td></tr>
 <tr class="separator:a7ca9d098529114a715cb6d03094d934c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adac91f1ffcb76f0c5e0b5cb5bb57be73"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1process_1_1_current.html#adac91f1ffcb76f0c5e0b5cb5bb57be73">Current</a> (<a class="el" href="classosapi_1_1process_1_1_current.html">Current</a> const &amp;)=delete</td></tr>
 <tr class="separator:adac91f1ffcb76f0c5e0b5cb5bb57be73"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -139,39 +150,54 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a582a9ed8bd211dda1b5d6412aa67e6ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classosapi_1_1process_1_1plan_signal"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classosapi_1_1process_1_1plan_signal')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classosapi_1_1process_1_1plan_signal.html">osapi::process::planSignal</a></td></tr>
 <tr class="memitem:ac75520cc38dd96fda05be2a90eea0a0e inherit pub_methods_classosapi_1_1process_1_1plan_signal"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1process_1_1plan_signal.html#ac75520cc38dd96fda05be2a90eea0a0e">planSignal</a> ()</td></tr>
+<tr class="memdesc:ac75520cc38dd96fda05be2a90eea0a0e inherit pub_methods_classosapi_1_1process_1_1plan_signal"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class constructor.  <a href="classosapi_1_1process_1_1plan_signal.html#ac75520cc38dd96fda05be2a90eea0a0e">More...</a><br /></td></tr>
 <tr class="separator:ac75520cc38dd96fda05be2a90eea0a0e inherit pub_methods_classosapi_1_1process_1_1plan_signal"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a475e1c90e382b7fb4dab7174e75d697b inherit pub_methods_classosapi_1_1process_1_1plan_signal"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1process_1_1plan_signal.html#a475e1c90e382b7fb4dab7174e75d697b">~planSignal</a> ()</td></tr>
+<tr class="memdesc:a475e1c90e382b7fb4dab7174e75d697b inherit pub_methods_classosapi_1_1process_1_1plan_signal"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class destructor.  <a href="classosapi_1_1process_1_1plan_signal.html#a475e1c90e382b7fb4dab7174e75d697b">More...</a><br /></td></tr>
 <tr class="separator:a475e1c90e382b7fb4dab7174e75d697b inherit pub_methods_classosapi_1_1process_1_1plan_signal"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b80c77658e26eaf7f42e158ca31cca5 inherit pub_methods_classosapi_1_1process_1_1plan_signal"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1process_1_1plan_signal.html#a1b80c77658e26eaf7f42e158ca31cca5">addSignal</a> (<a class="el" href="classosapi_1_1process_1_1signal.html">process::signal</a> &amp;sig)</td></tr>
+<tr class="memdesc:a1b80c77658e26eaf7f42e158ca31cca5 inherit pub_methods_classosapi_1_1process_1_1plan_signal"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a new signal to the plan.  <a href="classosapi_1_1process_1_1plan_signal.html#a1b80c77658e26eaf7f42e158ca31cca5">More...</a><br /></td></tr>
 <tr class="separator:a1b80c77658e26eaf7f42e158ca31cca5 inherit pub_methods_classosapi_1_1process_1_1plan_signal"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e893656ac4d99effb0a5938d679ffb9 inherit pub_methods_classosapi_1_1process_1_1plan_signal"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1process_1_1plan_signal.html#a3e893656ac4d99effb0a5938d679ffb9">eraseSignal</a> (int signo)</td></tr>
+<tr class="memdesc:a3e893656ac4d99effb0a5938d679ffb9 inherit pub_methods_classosapi_1_1process_1_1plan_signal"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove one signal from the plan.  <a href="classosapi_1_1process_1_1plan_signal.html#a3e893656ac4d99effb0a5938d679ffb9">More...</a><br /></td></tr>
 <tr class="separator:a3e893656ac4d99effb0a5938d679ffb9 inherit pub_methods_classosapi_1_1process_1_1plan_signal"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a055083ea7682d5b15c659ec1f732f32c inherit pub_methods_classosapi_1_1process_1_1plan_signal"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1process_1_1plan_signal.html#a055083ea7682d5b15c659ec1f732f32c">eraseAllSignals</a> (void)</td></tr>
+<tr class="memdesc:a055083ea7682d5b15c659ec1f732f32c inherit pub_methods_classosapi_1_1process_1_1plan_signal"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove all signals from the plan.  <a href="classosapi_1_1process_1_1plan_signal.html#a055083ea7682d5b15c659ec1f732f32c">More...</a><br /></td></tr>
 <tr class="separator:a055083ea7682d5b15c659ec1f732f32c inherit pub_methods_classosapi_1_1process_1_1plan_signal"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classosapi_1_1process_1_1runner"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classosapi_1_1process_1_1runner')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classosapi_1_1process_1_1runner.html">osapi::process::runner</a></td></tr>
 <tr class="memitem:a861ab06b7325c16c17bb2bc5900fa142 inherit pub_methods_classosapi_1_1process_1_1runner"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1process_1_1runner.html#a861ab06b7325c16c17bb2bc5900fa142">runner</a> (int64_t pid)</td></tr>
+<tr class="memdesc:a861ab06b7325c16c17bb2bc5900fa142 inherit pub_methods_classosapi_1_1process_1_1runner"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class constructor.  <a href="classosapi_1_1process_1_1runner.html#a861ab06b7325c16c17bb2bc5900fa142">More...</a><br /></td></tr>
 <tr class="separator:a861ab06b7325c16c17bb2bc5900fa142 inherit pub_methods_classosapi_1_1process_1_1runner"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab3c352212f2b7bf3931eb5dd9302e404 inherit pub_methods_classosapi_1_1process_1_1runner"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1process_1_1runner.html#ab3c352212f2b7bf3931eb5dd9302e404">runner</a> ()</td></tr>
+<tr class="memdesc:ab3c352212f2b7bf3931eb5dd9302e404 inherit pub_methods_classosapi_1_1process_1_1runner"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class constructor.  <a href="classosapi_1_1process_1_1runner.html#ab3c352212f2b7bf3931eb5dd9302e404">More...</a><br /></td></tr>
 <tr class="separator:ab3c352212f2b7bf3931eb5dd9302e404 inherit pub_methods_classosapi_1_1process_1_1runner"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af57b0e043052bb0d7be86db191466e04 inherit pub_methods_classosapi_1_1process_1_1runner"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1process_1_1runner.html#af57b0e043052bb0d7be86db191466e04">~runner</a> ()</td></tr>
+<tr class="memdesc:af57b0e043052bb0d7be86db191466e04 inherit pub_methods_classosapi_1_1process_1_1runner"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class destructor.  <a href="classosapi_1_1process_1_1runner.html#af57b0e043052bb0d7be86db191466e04">More...</a><br /></td></tr>
 <tr class="separator:af57b0e043052bb0d7be86db191466e04 inherit pub_methods_classosapi_1_1process_1_1runner"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0524d32853d3971de249a283be38bbeb inherit pub_methods_classosapi_1_1process_1_1runner"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1process_1_1runner.html#a0524d32853d3971de249a283be38bbeb">getPID</a> (void)</td></tr>
+<tr class="memdesc:a0524d32853d3971de249a283be38bbeb inherit pub_methods_classosapi_1_1process_1_1runner"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the process ID of the runner instance.  <a href="classosapi_1_1process_1_1runner.html#a0524d32853d3971de249a283be38bbeb">More...</a><br /></td></tr>
 <tr class="separator:a0524d32853d3971de249a283be38bbeb inherit pub_methods_classosapi_1_1process_1_1runner"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6365dcb7169d7cbab8b81a82225dee7c inherit pub_methods_classosapi_1_1process_1_1runner"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1process_1_1runner.html#a6365dcb7169d7cbab8b81a82225dee7c">getParentPID</a> (void)</td></tr>
+<tr class="memdesc:a6365dcb7169d7cbab8b81a82225dee7c inherit pub_methods_classosapi_1_1process_1_1runner"><td class="mdescLeft">&#160;</td><td class="mdescRight">Obtain the parent process ID of the runner instance.  <a href="classosapi_1_1process_1_1runner.html#a6365dcb7169d7cbab8b81a82225dee7c">More...</a><br /></td></tr>
 <tr class="separator:a6365dcb7169d7cbab8b81a82225dee7c inherit pub_methods_classosapi_1_1process_1_1runner"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b52eddde5a0049ec670e7ff4cf6aafc inherit pub_methods_classosapi_1_1process_1_1runner"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceosapi_1_1process.html#a78ca600f0c423008834ffbda0af2fbd3">state</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1process_1_1runner.html#a5b52eddde5a0049ec670e7ff4cf6aafc">getState</a> (void)</td></tr>
+<tr class="memdesc:a5b52eddde5a0049ec670e7ff4cf6aafc inherit pub_methods_classosapi_1_1process_1_1runner"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the state of an existing process.  <a href="classosapi_1_1process_1_1runner.html#a5b52eddde5a0049ec670e7ff4cf6aafc">More...</a><br /></td></tr>
 <tr class="separator:a5b52eddde5a0049ec670e7ff4cf6aafc inherit pub_methods_classosapi_1_1process_1_1runner"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56f83d3c8f8e778b38421b8bedc297dd inherit pub_methods_classosapi_1_1process_1_1runner"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classosapi_1_1process_1_1status.html">status</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1process_1_1runner.html#a56f83d3c8f8e778b38421b8bedc297dd">getStatus</a> (void)</td></tr>
+<tr class="memdesc:a56f83d3c8f8e778b38421b8bedc297dd inherit pub_methods_classosapi_1_1process_1_1runner"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the status of an existing process.  <a href="classosapi_1_1process_1_1runner.html#a56f83d3c8f8e778b38421b8bedc297dd">More...</a><br /></td></tr>
 <tr class="separator:a56f83d3c8f8e778b38421b8bedc297dd inherit pub_methods_classosapi_1_1process_1_1runner"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7e853863fdee84742cc460b7260334e inherit pub_methods_classosapi_1_1process_1_1runner"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1process_1_1runner.html#ad7e853863fdee84742cc460b7260334e">terminate</a> (size_t graceTime)</td></tr>
+<tr class="memdesc:ad7e853863fdee84742cc460b7260334e inherit pub_methods_classosapi_1_1process_1_1runner"><td class="mdescLeft">&#160;</td><td class="mdescRight">Terminate a process.  <a href="classosapi_1_1process_1_1runner.html#ad7e853863fdee84742cc460b7260334e">More...</a><br /></td></tr>
 <tr class="separator:ad7e853863fdee84742cc460b7260334e inherit pub_methods_classosapi_1_1process_1_1runner"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a931b18d9dcad0003ff0326e109774c99"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classosapi_1_1process_1_1_current.html">Current</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1process_1_1_current.html#a931b18d9dcad0003ff0326e109774c99">get</a> ()</td></tr>
+<tr class="memdesc:a931b18d9dcad0003ff0326e109774c99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the current singleton instance (only one running process)  <a href="#a931b18d9dcad0003ff0326e109774c99">More...</a><br /></td></tr>
 <tr class="separator:a931b18d9dcad0003ff0326e109774c99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_static_methods_classosapi_1_1process_1_1runner"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classosapi_1_1process_1_1runner')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classosapi_1_1process_1_1runner.html">osapi::process::runner</a></td></tr>
 <tr class="memitem:a37096bcc57aba05259cac2ae6b441dd8 inherit pub_static_methods_classosapi_1_1process_1_1runner"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1process_1_1runner.html#a37096bcc57aba05259cac2ae6b441dd8">exists</a> (int64_t pid)</td></tr>
+<tr class="memdesc:a37096bcc57aba05259cac2ae6b441dd8 inherit pub_static_methods_classosapi_1_1process_1_1runner"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a given process is running.  <a href="classosapi_1_1process_1_1runner.html#a37096bcc57aba05259cac2ae6b441dd8">More...</a><br /></td></tr>
 <tr class="separator:a37096bcc57aba05259cac2ae6b441dd8 inherit pub_static_methods_classosapi_1_1process_1_1runner"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
@@ -185,7 +211,9 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a4e53a9a5c8555cbe0eeecd71b5eb20ba inherit pro_attribs_classosapi_1_1process_1_1runner"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classosapi_1_1id_1_1process.html">id::process</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1process_1_1runner.html#a4e53a9a5c8555cbe0eeecd71b5eb20ba">id</a></td></tr>
 <tr class="separator:a4e53a9a5c8555cbe0eeecd71b5eb20ba inherit pro_attribs_classosapi_1_1process_1_1runner"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Specialization class with a single occurrence of a process to support the current working process. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="adac91f1ffcb76f0c5e0b5cb5bb57be73"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adac91f1ffcb76f0c5e0b5cb5bb57be73">&#9670;&nbsp;</a></span>Current() <span class="overload">[1/2]</span></h2>
 
@@ -254,6 +282,8 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Enable all planned signals disposition in the current process. </p>
+
 </div>
 </div>
 <a id="ae7f7475779ee0cf559f4d69c93d057fc"></a>
@@ -270,6 +300,8 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Clear all process signals disposition in the current process. </p>
 
 </div>
 </div>
@@ -288,6 +320,15 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Clone the current process (Fork in UNIX systems) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">isClone</td><td>- Indicates if the current process is the clone or the original </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Operation status, True if cloned, false otherwise </dd></dl>
 
 </div>
 </div>
@@ -314,6 +355,9 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Get the current singleton instance (only one running process) </p>
+<dl class="section return"><dt>Returns</dt><dd>The singleton instance </dd></dl>
+
 </div>
 </div>
 <a id="abd076e265795e422e7fc1cf08050464c"></a>
@@ -332,6 +376,9 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Obtain the Process ID of the parent process. </p>
+<dl class="section return"><dt>Returns</dt><dd>The parent PID </dd></dl>
+
 </div>
 </div>
 <a id="a3527d9544faee112102498f82f671326"></a>
@@ -349,6 +396,9 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Get the current process ID. </p>
+<dl class="section return"><dt>Returns</dt><dd>The own process ID </dd></dl>
 
 </div>
 </div>
@@ -419,6 +469,9 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Promote itself as session leader. </p>
+<dl class="section return"><dt>Returns</dt><dd>Operation status, True if process was able to set itself as Session Leader. False otherwise. </dd></dl>
+
 </div>
 </div>
 <a id="a7eb10aa0705b9fc1fbece78a71bfd34d"></a>
@@ -436,10 +489,13 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Suspend the current working process. </p>
+<dl class="section return"><dt>Returns</dt><dd>False if an error occurred, if suspended, upon resuming it will return True </dd></dl>
+
 </div>
 </div>
-<a id="acca6e0443f8c7fcf155663bc1d7d3f7a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acca6e0443f8c7fcf155663bc1d7d3f7a">&#9670;&nbsp;</a></span>terminate()</h2>
+<a id="a81083c702d48732e07822ed1be707aa2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a81083c702d48732e07822ed1be707aa2">&#9670;&nbsp;</a></span>terminate()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -448,11 +504,19 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname">void osapi::process::Current::terminate </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>status</em></td><td>)</td>
+          <td class="paramname"><em>normal</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Terminate the current process. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">normal</td><td>- The exit is a normal exit or not? </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

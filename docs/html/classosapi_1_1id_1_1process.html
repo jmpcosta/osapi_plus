@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">OSAPI Plus
-   &#160;<span id="projectnumber">0.1</span>
+   &#160;<span id="projectnumber">0.3</span>
    </div>
    <div id="projectbrief">The Open System API for C++</div>
   </td>
@@ -89,20 +89,29 @@ $(document).ready(function(){initNavTree('classosapi_1_1id_1_1process.html','');
 </div><!--header-->
 <div class="contents">
 
+<p>Class that represents a Process ID.  
+ <a href="classosapi_1_1id_1_1process.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="id_8hh_source.html">id.hh</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a9888195d1bb663b09285b3c4ce6b93e7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1id_1_1process.html#a9888195d1bb663b09285b3c4ce6b93e7">process</a> (int64_t pid)</td></tr>
+<tr class="memdesc:a9888195d1bb663b09285b3c4ce6b93e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class constructor.  <a href="#a9888195d1bb663b09285b3c4ce6b93e7">More...</a><br /></td></tr>
 <tr class="separator:a9888195d1bb663b09285b3c4ce6b93e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78108985f77310a2f6536ab6d84da4e4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1id_1_1process.html#a78108985f77310a2f6536ab6d84da4e4">~process</a> ()</td></tr>
+<tr class="memdesc:a78108985f77310a2f6536ab6d84da4e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class destructor.  <a href="#a78108985f77310a2f6536ab6d84da4e4">More...</a><br /></td></tr>
 <tr class="separator:a78108985f77310a2f6536ab6d84da4e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac82b500e9f75b38373b61cb1ffe89f6a"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1id_1_1process.html#ac82b500e9f75b38373b61cb1ffe89f6a">get</a> (void)</td></tr>
+<tr class="memdesc:ac82b500e9f75b38373b61cb1ffe89f6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Process ID.  <a href="#ac82b500e9f75b38373b61cb1ffe89f6a">More...</a><br /></td></tr>
 <tr class="separator:ac82b500e9f75b38373b61cb1ffe89f6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7aa8010f5e0bbbd8c0200612a328c865"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1id_1_1process.html#a7aa8010f5e0bbbd8c0200612a328c865">set</a> (int64_t newId)</td></tr>
+<tr class="memdesc:a7aa8010f5e0bbbd8c0200612a328c865"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the Process ID.  <a href="#a7aa8010f5e0bbbd8c0200612a328c865">More...</a><br /></td></tr>
 <tr class="separator:a7aa8010f5e0bbbd8c0200612a328c865"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Class that represents a Process ID. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a9888195d1bb663b09285b3c4ce6b93e7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9888195d1bb663b09285b3c4ce6b93e7">&#9670;&nbsp;</a></span>process()</h2>
 
@@ -118,6 +127,14 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Class constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pid</td><td>- The new process ID </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -144,6 +161,8 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Class destructor. </p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -163,6 +182,8 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Get the Process ID. </p>
+
 </div>
 </div>
 <a id="a7aa8010f5e0bbbd8c0200612a328c865"></a>
@@ -180,6 +201,14 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Set the Process ID. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">newId</td><td>- Overwrite the ID with a new process ID </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

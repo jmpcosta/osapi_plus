@@ -4,33 +4,33 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
+../code/configuration/Provider.cpp \
 ../code/configuration/argItem.cpp \
-../code/configuration/ciContainer.cpp \
 ../code/configuration/configuration.cpp \
-../code/configuration/configurationFileParser.cpp \
-../code/configuration/configurationItem.cpp \
-../code/configuration/configurationParser.cpp \
-../code/configuration/configurationProvider.cpp \
+../code/configuration/container.cpp \
+../code/configuration/fileParser.cpp \
+../code/configuration/item.cpp \
+../code/configuration/parser.cpp \
 ../code/configuration/propertyItem.cpp 
 
 OBJS += \
+./code/configuration/Provider.o \
 ./code/configuration/argItem.o \
-./code/configuration/ciContainer.o \
 ./code/configuration/configuration.o \
-./code/configuration/configurationFileParser.o \
-./code/configuration/configurationItem.o \
-./code/configuration/configurationParser.o \
-./code/configuration/configurationProvider.o \
+./code/configuration/container.o \
+./code/configuration/fileParser.o \
+./code/configuration/item.o \
+./code/configuration/parser.o \
 ./code/configuration/propertyItem.o 
 
 CPP_DEPS += \
+./code/configuration/Provider.d \
 ./code/configuration/argItem.d \
-./code/configuration/ciContainer.d \
 ./code/configuration/configuration.d \
-./code/configuration/configurationFileParser.d \
-./code/configuration/configurationItem.d \
-./code/configuration/configurationParser.d \
-./code/configuration/configurationProvider.d \
+./code/configuration/container.d \
+./code/configuration/fileParser.d \
+./code/configuration/item.d \
+./code/configuration/parser.d \
 ./code/configuration/propertyItem.d 
 
 

@@ -11,5 +11,5 @@ var classosapi_1_1process_1_1_current =
     [ "operator=", "classosapi_1_1process_1_1_current.html#a582a9ed8bd211dda1b5d6412aa67e6ca", null ],
     [ "setSession", "classosapi_1_1process_1_1_current.html#a52982d94495973e7aa4b5bd15edbb7fc", null ],
     [ "suspend", "classosapi_1_1process_1_1_current.html#a7eb10aa0705b9fc1fbece78a71bfd34d", null ],
-    [ "terminate", "classosapi_1_1process_1_1_current.html#acca6e0443f8c7fcf155663bc1d7d3f7a", null ]
+    [ "terminate", "classosapi_1_1process_1_1_current.html#a81083c702d48732e07822ed1be707aa2", null ]
 ];

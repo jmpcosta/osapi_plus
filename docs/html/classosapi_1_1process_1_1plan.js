@@ -5,7 +5,7 @@ var classosapi_1_1process_1_1plan =
     [ "addCommandLine", "classosapi_1_1process_1_1plan.html#aaa907807ee307596f1fb17f907d87b1c", null ],
     [ "addEnvironment", "classosapi_1_1process_1_1plan.html#a1970a83981e0af49b762c58a82db5d95", null ],
     [ "addGroup", "classosapi_1_1process_1_1plan.html#ab5fbc9060c8d5c9d66481e9f6b548b49", null ],
-    [ "addName", "classosapi_1_1process_1_1plan.html#acd503f9ab1c4e9f20b130678842f61a3", null ],
+    [ "addName", "classosapi_1_1process_1_1plan.html#aa296617b63d99b94b74f8ca965434fd4", null ],
     [ "addUser", "classosapi_1_1process_1_1plan.html#a7e91baa16c804cf3727845c5c45f279c", null ],
     [ "getCommandLine", "classosapi_1_1process_1_1plan.html#a48d77897df3b4fc461731caef572d5a0", null ],
     [ "getEnvironment", "classosapi_1_1process_1_1plan.html#ab8f0efac25e87eb03d138455a7bf6c06", null ],

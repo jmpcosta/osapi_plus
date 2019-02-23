@@ -39,14 +39,29 @@ namespace osapi
 namespace process
 {
 
+/// @brief Class responsible for the creation of new OS processes
 class factory
 {
 public:
 
 	// Class methods
+	/// @brief Creates a new process from a plan
+	/// @param [in] planned - The process plan
+	/// @return A pointer to a new runner instance
 	static runner *  	make		( process::plan & planned 	);
+
+	/// @brief Get an instance of the factory
+	/// @return The singleton instance
 	static factory & 	getFactory	( void 						);
+
+	/// @brief Check if the new process is the creator or the child
+	/// @param [in] planned - Process plan
+	/// @return True if creator or False otherwise (False doesn't mean child)
 	static bool			isParent	( process::plan & planned 	);
+
+	/// @brief Check if the new process is the child
+	/// @param [in] planned - Process plan
+	/// @return True if child. False otherwise (False doesn't mean parent)
 	static bool			isChild		( process::plan & planned 	);
 
 	// delete copy and move constructors and assign operators

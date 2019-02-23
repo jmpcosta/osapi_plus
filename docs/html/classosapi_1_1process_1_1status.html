@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">OSAPI Plus
-   &#160;<span id="projectnumber">0.1</span>
+   &#160;<span id="projectnumber">0.3</span>
    </div>
    <div id="projectbrief">The Open System API for C++</div>
   </td>
@@ -89,22 +89,32 @@ $(document).ready(function(){initNavTree('classosapi_1_1process_1_1status.html',
 </div><!--header-->
 <div class="contents">
 
+<p>The process status class encapsulates the actions that are required to obtain status information.  
+ <a href="classosapi_1_1process_1_1status.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="process_2status_8hh_source.html">status.hh</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a04e8c44383b45c9b548ea2b012eac981"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1process_1_1status.html#a04e8c44383b45c9b548ea2b012eac981">status</a> (int <a class="el" href="classosapi_1_1info.html">info</a>, int signumber, int exitCode)</td></tr>
+<tr class="memdesc:a04e8c44383b45c9b548ea2b012eac981"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class constructor.  <a href="#a04e8c44383b45c9b548ea2b012eac981">More...</a><br /></td></tr>
 <tr class="separator:a04e8c44383b45c9b548ea2b012eac981"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9448680cebe787a71384405292a58a31"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1process_1_1status.html#a9448680cebe787a71384405292a58a31">~status</a> ()</td></tr>
+<tr class="memdesc:a9448680cebe787a71384405292a58a31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class destructor.  <a href="#a9448680cebe787a71384405292a58a31">More...</a><br /></td></tr>
 <tr class="separator:a9448680cebe787a71384405292a58a31"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ec8d624cdf82506c2eaeecfacfc07b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceosapi_1_1process.html#a0a40de8e309519bf16123848d67861b5">statusInfo</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1process_1_1status.html#a4ec8d624cdf82506c2eaeecfacfc07b8">getInfo</a> (void) const noexcept</td></tr>
+<tr class="memdesc:a4ec8d624cdf82506c2eaeecfacfc07b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Process status information.  <a href="#a4ec8d624cdf82506c2eaeecfacfc07b8">More...</a><br /></td></tr>
 <tr class="separator:a4ec8d624cdf82506c2eaeecfacfc07b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99832fdc4cdc66f9ee449aefd242bbf2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1process_1_1status.html#a99832fdc4cdc66f9ee449aefd242bbf2">getSignal</a> (void) const noexcept</td></tr>
+<tr class="memdesc:a99832fdc4cdc66f9ee449aefd242bbf2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the signal number responsible for the process termination.  <a href="#a99832fdc4cdc66f9ee449aefd242bbf2">More...</a><br /></td></tr>
 <tr class="separator:a99832fdc4cdc66f9ee449aefd242bbf2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0634c86207266258d8e253a9fcc3368"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1process_1_1status.html#ad0634c86207266258d8e253a9fcc3368">getCode</a> (void) const noexcept</td></tr>
+<tr class="memdesc:ad0634c86207266258d8e253a9fcc3368"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Process exit code.  <a href="#ad0634c86207266258d8e253a9fcc3368">More...</a><br /></td></tr>
 <tr class="separator:ad0634c86207266258d8e253a9fcc3368"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>The process status class encapsulates the actions that are required to obtain status information. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a04e8c44383b45c9b548ea2b012eac981"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a04e8c44383b45c9b548ea2b012eac981">&#9670;&nbsp;</a></span>status()</h2>
 
@@ -137,6 +147,16 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Class constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">info</td><td>- Status information </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">signumber</td><td>- Signal number (if terminated by signal) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">exitCode</td><td>- Process exit code when normal exit </td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a9448680cebe787a71384405292a58a31"></a>
@@ -161,6 +181,8 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Class destructor. </p>
 
 </div>
 </div>
@@ -189,6 +211,9 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Get the Process exit code. </p>
+<dl class="section return"><dt>Returns</dt><dd>Exit code, when process exited normally </dd></dl>
+
 </div>
 </div>
 <a id="a4ec8d624cdf82506c2eaeecfacfc07b8"></a>
@@ -215,6 +240,9 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Get the Process status information. </p>
+<dl class="section return"><dt>Returns</dt><dd>Process status information </dd></dl>
+
 </div>
 </div>
 <a id="a99832fdc4cdc66f9ee449aefd242bbf2"></a>
@@ -240,6 +268,9 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Get the signal number responsible for the process termination. </p>
+<dl class="section return"><dt>Returns</dt><dd>Termination signal number </dd></dl>
 
 </div>
 </div>

@@ -23,14 +23,14 @@ namespace osapi
 namespace process
 {
 
-
+/// @brief The state enum represents the possible process states
 enum class state
 {
-  inexistent	= 0,
-  running		= 1,
-  terminated	= 2,
-  waiting		= 3,
-  stopped		= 4
+  inexistent	= 0, ///< Unknown process state, possible the process doesn't exist
+  running		= 1, ///< The process is still running
+  terminated	= 2, ///< The process terminated and waits status collection
+  waiting		= 3, ///< The process is waiting for something (IO for instance)
+  stopped		= 4  ///< The process is currently stopped
 };
 
 

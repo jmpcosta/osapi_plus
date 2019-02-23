@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">OSAPI Plus
-   &#160;<span id="projectnumber">0.1</span>
+   &#160;<span id="projectnumber">0.3</span>
    </div>
    <div id="projectbrief">The Open System API for C++</div>
   </td>
@@ -90,6 +90,9 @@ $(document).ready(function(){initNavTree('classosapi_1_1_log.html','');});
 </div><!--header-->
 <div class="contents">
 
+<p>Class responsible for interfacing with the platform system logging framework, if it exists.  
+ <a href="classosapi_1_1_log.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="log_8hh_source.html">log.hh</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -103,40 +106,57 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0e9c4aef896bb5bc3ade80d14bb0c316"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classosapi_1_1_log.html">Log</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1_log.html#a0e9c4aef896bb5bc3ade80d14bb0c316">operator=</a> (<a class="el" href="classosapi_1_1_log.html">Log</a> &amp;&amp;)=delete</td></tr>
 <tr class="separator:a0e9c4aef896bb5bc3ade80d14bb0c316"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ddb60384de4709c15266c9c42568a1d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1_log.html#a5ddb60384de4709c15266c9c42568a1d">~Log</a> ()</td></tr>
+<tr class="memdesc:a5ddb60384de4709c15266c9c42568a1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor.  <a href="#a5ddb60384de4709c15266c9c42568a1d">More...</a><br /></td></tr>
 <tr class="separator:a5ddb60384de4709c15266c9c42568a1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7de1a60b035b16cf34fa83c8f71b782b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1_log.html#a7de1a60b035b16cf34fa83c8f71b782b">open</a> (const char *source, const char *target, const char *options[])</td></tr>
+<tr class="memdesc:a7de1a60b035b16cf34fa83c8f71b782b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open the system log.  <a href="#a7de1a60b035b16cf34fa83c8f71b782b">More...</a><br /></td></tr>
 <tr class="separator:a7de1a60b035b16cf34fa83c8f71b782b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0d7256d1f17fd3e89f2ddd9e674c0bb0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1_log.html#a0d7256d1f17fd3e89f2ddd9e674c0bb0">close</a> ()</td></tr>
+<tr class="memdesc:a0d7256d1f17fd3e89f2ddd9e674c0bb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close the system log.  <a href="#a0d7256d1f17fd3e89f2ddd9e674c0bb0">More...</a><br /></td></tr>
 <tr class="separator:a0d7256d1f17fd3e89f2ddd9e674c0bb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a639ded937aa206703eac63d6293a95be"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1_log.html#a639ded937aa206703eac63d6293a95be">debug</a> (const char *message)</td></tr>
+<tr class="memdesc:a639ded937aa206703eac63d6293a95be"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classosapi_1_1_log.html" title="Class responsible for interfacing with the platform system logging framework, if it exists...">Log</a> a message at level DEBUG.  <a href="#a639ded937aa206703eac63d6293a95be">More...</a><br /></td></tr>
 <tr class="separator:a639ded937aa206703eac63d6293a95be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7f2a285b3203130cebe561bfdf15d7c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1_log.html#ad7f2a285b3203130cebe561bfdf15d7c">info</a> (const char *message)</td></tr>
+<tr class="memdesc:ad7f2a285b3203130cebe561bfdf15d7c"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classosapi_1_1_log.html" title="Class responsible for interfacing with the platform system logging framework, if it exists...">Log</a> a message at level INFO.  <a href="#ad7f2a285b3203130cebe561bfdf15d7c">More...</a><br /></td></tr>
 <tr class="separator:ad7f2a285b3203130cebe561bfdf15d7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae328f419df044be6b16ddb6266de6d06"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1_log.html#ae328f419df044be6b16ddb6266de6d06">warn</a> (const char *message)</td></tr>
+<tr class="memdesc:ae328f419df044be6b16ddb6266de6d06"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classosapi_1_1_log.html" title="Class responsible for interfacing with the platform system logging framework, if it exists...">Log</a> a message at level WARNING.  <a href="#ae328f419df044be6b16ddb6266de6d06">More...</a><br /></td></tr>
 <tr class="separator:ae328f419df044be6b16ddb6266de6d06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab43a440fcda8bddc2621e7e6eb2d38ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1_log.html#ab43a440fcda8bddc2621e7e6eb2d38ce">error</a> (const char *message)</td></tr>
+<tr class="memdesc:ab43a440fcda8bddc2621e7e6eb2d38ce"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classosapi_1_1_log.html" title="Class responsible for interfacing with the platform system logging framework, if it exists...">Log</a> a message at level ERROR.  <a href="#ab43a440fcda8bddc2621e7e6eb2d38ce">More...</a><br /></td></tr>
 <tr class="separator:ab43a440fcda8bddc2621e7e6eb2d38ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6119084bf6a9e2ca112a2f0c11c6699b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1_log.html#a6119084bf6a9e2ca112a2f0c11c6699b">fatal</a> (const char *message)</td></tr>
+<tr class="memdesc:a6119084bf6a9e2ca112a2f0c11c6699b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classosapi_1_1_log.html" title="Class responsible for interfacing with the platform system logging framework, if it exists...">Log</a> a message at level FATAL.  <a href="#a6119084bf6a9e2ca112a2f0c11c6699b">More...</a><br /></td></tr>
 <tr class="separator:a6119084bf6a9e2ca112a2f0c11c6699b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab469135e0d6324dc09d6a0bddd0acac7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1_log.html#ab469135e0d6324dc09d6a0bddd0acac7">debug</a> (std::string &amp;message)</td></tr>
+<tr class="memdesc:ab469135e0d6324dc09d6a0bddd0acac7"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classosapi_1_1_log.html" title="Class responsible for interfacing with the platform system logging framework, if it exists...">Log</a> a message at level DEBUG.  <a href="#ab469135e0d6324dc09d6a0bddd0acac7">More...</a><br /></td></tr>
 <tr class="separator:ab469135e0d6324dc09d6a0bddd0acac7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b2e306530dcadaafe7ff2e5d6068b79"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1_log.html#a1b2e306530dcadaafe7ff2e5d6068b79">info</a> (std::string &amp;message)</td></tr>
+<tr class="memdesc:a1b2e306530dcadaafe7ff2e5d6068b79"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classosapi_1_1_log.html" title="Class responsible for interfacing with the platform system logging framework, if it exists...">Log</a> a message at level INFO.  <a href="#a1b2e306530dcadaafe7ff2e5d6068b79">More...</a><br /></td></tr>
 <tr class="separator:a1b2e306530dcadaafe7ff2e5d6068b79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a930a07a7b298191e16869bebddeea657"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1_log.html#a930a07a7b298191e16869bebddeea657">warn</a> (std::string &amp;message)</td></tr>
+<tr class="memdesc:a930a07a7b298191e16869bebddeea657"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classosapi_1_1_log.html" title="Class responsible for interfacing with the platform system logging framework, if it exists...">Log</a> a message at level WARNING.  <a href="#a930a07a7b298191e16869bebddeea657">More...</a><br /></td></tr>
 <tr class="separator:a930a07a7b298191e16869bebddeea657"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7970bebfeb5c8f21795f38d89ee34bad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1_log.html#a7970bebfeb5c8f21795f38d89ee34bad">error</a> (std::string &amp;message)</td></tr>
+<tr class="memdesc:a7970bebfeb5c8f21795f38d89ee34bad"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classosapi_1_1_log.html" title="Class responsible for interfacing with the platform system logging framework, if it exists...">Log</a> a message at level ERROR.  <a href="#a7970bebfeb5c8f21795f38d89ee34bad">More...</a><br /></td></tr>
 <tr class="separator:a7970bebfeb5c8f21795f38d89ee34bad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ab30407cb20dac50a84a6f7fcd3bee0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1_log.html#a0ab30407cb20dac50a84a6f7fcd3bee0">fatal</a> (std::string &amp;message)</td></tr>
+<tr class="memdesc:a0ab30407cb20dac50a84a6f7fcd3bee0"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classosapi_1_1_log.html" title="Class responsible for interfacing with the platform system logging framework, if it exists...">Log</a> a message at level FATAL.  <a href="#a0ab30407cb20dac50a84a6f7fcd3bee0">More...</a><br /></td></tr>
 <tr class="separator:a0ab30407cb20dac50a84a6f7fcd3bee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a3e7d2215f6d39e4f514134e111e4e755"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1_log.html#a3e7d2215f6d39e4f514134e111e4e755">isLogAvailable</a> ()</td></tr>
+<tr class="memdesc:a3e7d2215f6d39e4f514134e111e4e755"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if there is already a log instance available.  <a href="#a3e7d2215f6d39e4f514134e111e4e755">More...</a><br /></td></tr>
 <tr class="separator:a3e7d2215f6d39e4f514134e111e4e755"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6270f0b087cdbc0a28f2f79fcc4848c3"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classosapi_1_1_log.html">Log</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1_log.html#a6270f0b087cdbc0a28f2f79fcc4848c3">getLog</a> ()</td></tr>
+<tr class="memdesc:a6270f0b087cdbc0a28f2f79fcc4848c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the singleton log instance.  <a href="#a6270f0b087cdbc0a28f2f79fcc4848c3">More...</a><br /></td></tr>
 <tr class="separator:a6270f0b087cdbc0a28f2f79fcc4848c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Class responsible for interfacing with the platform system logging framework, if it exists. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a2ccae102baf09b378f3c5d4bdb62d507"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2ccae102baf09b378f3c5d4bdb62d507">&#9670;&nbsp;</a></span>Log() <span class="overload">[1/2]</span></h2>
 
@@ -205,6 +225,8 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Destructor. </p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -224,6 +246,8 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Close the system log. </p>
+
 </div>
 </div>
 <a id="a639ded937aa206703eac63d6293a95be"></a>
@@ -241,6 +265,14 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p><a class="el" href="classosapi_1_1_log.html" title="Class responsible for interfacing with the platform system logging framework, if it exists...">Log</a> a message at level DEBUG. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">message</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -260,6 +292,14 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p><a class="el" href="classosapi_1_1_log.html" title="Class responsible for interfacing with the platform system logging framework, if it exists...">Log</a> a message at level DEBUG. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">message</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="ab43a440fcda8bddc2621e7e6eb2d38ce"></a>
@@ -277,6 +317,14 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p><a class="el" href="classosapi_1_1_log.html" title="Class responsible for interfacing with the platform system logging framework, if it exists...">Log</a> a message at level ERROR. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">message</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -296,6 +344,14 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p><a class="el" href="classosapi_1_1_log.html" title="Class responsible for interfacing with the platform system logging framework, if it exists...">Log</a> a message at level ERROR. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">message</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a6119084bf6a9e2ca112a2f0c11c6699b"></a>
@@ -314,6 +370,14 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p><a class="el" href="classosapi_1_1_log.html" title="Class responsible for interfacing with the platform system logging framework, if it exists...">Log</a> a message at level FATAL. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">message</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a0ab30407cb20dac50a84a6f7fcd3bee0"></a>
@@ -331,6 +395,14 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p><a class="el" href="classosapi_1_1_log.html" title="Class responsible for interfacing with the platform system logging framework, if it exists...">Log</a> a message at level FATAL. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">message</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -357,6 +429,9 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Get the singleton log instance. </p>
+<dl class="section return"><dt>Returns</dt><dd>A reference to the system log instance </dd></dl>
+
 </div>
 </div>
 <a id="ad7f2a285b3203130cebe561bfdf15d7c"></a>
@@ -375,6 +450,14 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p><a class="el" href="classosapi_1_1_log.html" title="Class responsible for interfacing with the platform system logging framework, if it exists...">Log</a> a message at level INFO. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">message</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a1b2e306530dcadaafe7ff2e5d6068b79"></a>
@@ -392,6 +475,14 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p><a class="el" href="classosapi_1_1_log.html" title="Class responsible for interfacing with the platform system logging framework, if it exists...">Log</a> a message at level INFO. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">message</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -417,6 +508,9 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Check if there is already a log instance available. </p>
+<dl class="section return"><dt>Returns</dt><dd>Available (true) or not (false) </dd></dl>
 
 </div>
 </div>
@@ -451,6 +545,16 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Open the system log. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">source</td><td>- The log source, for instance, the program name </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">target</td><td>- <a class="el" href="classosapi_1_1_log.html" title="Class responsible for interfacing with the platform system logging framework, if it exists...">Log</a> target such as LOG_LOCAL0 in UNIX systems </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">options</td><td>- Any option to pass to the system logger such as LOG_PID, in UNIX systems </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -522,6 +626,14 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p><a class="el" href="classosapi_1_1_log.html" title="Class responsible for interfacing with the platform system logging framework, if it exists...">Log</a> a message at level WARNING. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">message</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a930a07a7b298191e16869bebddeea657"></a>
@@ -539,6 +651,14 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p><a class="el" href="classosapi_1_1_log.html" title="Class responsible for interfacing with the platform system logging framework, if it exists...">Log</a> a message at level WARNING. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">message</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

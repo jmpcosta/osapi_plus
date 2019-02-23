@@ -42,13 +42,22 @@ namespace id
 //
 // *****************************************************************************************
 
+/// @brief Class that represents a Process ID
 class process
 {
 public:
+		/// @brief Class constructor
+		/// @param [in] pid - The new process ID
 						process		( int64_t pid	);
+
+		/// @brief Class destructor
 						~process() {}
 
+		/// @brief Get the Process ID
 		int64_t		 	get			( void			);
+
+		/// @brief Set the Process ID
+		/// @param [in] newId - Overwrite the ID with a new process ID
 		void			set			( int64_t newId	);
 
 private:
@@ -58,13 +67,20 @@ private:
 };
 
 
+/// @brief Class that represents a User ID
 class user
 {
 public:
+		/// @brief Class constructor
+		/// @param [in] uid - The new user ID
 						user( std::string & uid );
+		/// @brief Class destructor
 						~user() {}
 
+		/// @brief Get the Process ID
 		std::string	& 	get( void );
+
+		/// @brief Verify if there is such user created in the system
 		static bool		exists( std::string id );
 
 private:
@@ -74,10 +90,16 @@ private:
 };
 
 
+/// @brief Class that represents a Group ID
 class group
 {
 public:
+		/// @brief Class constructor
+		/// @param [in] gid - The new group ID
+
 						group( std::string & gid );
+
+		/// @brief Class destructor
 						~group() {}
 
 		std::string	& 	get( void );

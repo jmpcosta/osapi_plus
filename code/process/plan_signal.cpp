@@ -29,7 +29,6 @@
 #include "general/templates.hh"
 #include "status/status.hh"
 #include "status/trace.hh"
-#include "util/util.hh"
 
 // Import own module declarations
 #include "process/plan_signal.hh"

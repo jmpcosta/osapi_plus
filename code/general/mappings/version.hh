@@ -17,7 +17,7 @@ namespace osapi
 {
 
 // Own version
-enum osapi_version { library_version = 2 };
+enum osapi_version { library_version = 3 };
 
 }	// End of namespace "osapi"
 

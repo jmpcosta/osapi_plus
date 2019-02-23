@@ -33,7 +33,7 @@ namespace osapi
 // https://gcc.gnu.org/onlinedocs/libstdc++/manual/using_macros.html
 #ifdef _GLIBCXX_RELEASE
 
-  // Define name of Standard C++ library
+  /// @brief Define name of Standard C++ library
   constexpr const char * CPP_LIBRARY_NAME	= "libstdc++.so";
 
   // Map specific GNU C++ library versions to internal versions
