@@ -1,4 +1,5 @@
 <map id="osapi::configuration::item" name="osapi::configuration::item">
-<area shape="rect" id="node2" href="$classosapi_1_1configuration_1_1arg_item.html" title="osapi::configuration\l::argItem" alt="" coords="5,95,140,136"/>
-<area shape="rect" id="node3" href="$classosapi_1_1configuration_1_1property_item.html" title="The class is responsible for managing Property Items. " alt="" coords="164,95,299,136"/>
+<area shape="rect" id="node2" href="$classosapi_1_1configuration_1_1arg_item.html" title="osapi::configuration\l::argItem" alt="" coords="188,5,323,47"/>
+<area shape="rect" id="node3" href="$classosapi_1_1configuration_1_1object_item.html" title="osapi::configuration\l::objectItem" alt="" coords="188,71,323,112"/>
+<area shape="rect" id="node4" href="$classosapi_1_1configuration_1_1property_item.html" title="The class is responsible for managing Property Items. " alt="" coords="188,136,323,177"/>
 </map>

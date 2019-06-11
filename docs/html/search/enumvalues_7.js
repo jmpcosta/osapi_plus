@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['signal',['signal',['../namespaceosapi_1_1process.html#a0a40de8e309519bf16123848d67861b5a521345a9fb579f52117f27be6e0673ee',1,'osapi::process']]],
-  ['stopped',['stopped',['../namespaceosapi_1_1process.html#a78ca600f0c423008834ffbda0af2fbd3af0a0bfe6bc7d2c58d2989034f83183e0',1,'osapi::process::stopped()'],['../namespaceosapi_1_1process.html#a0a40de8e309519bf16123848d67861b5af0a0bfe6bc7d2c58d2989034f83183e0',1,'osapi::process::stopped()']]]
+  ['library_5frelease',['library_release',['../namespaceosapi.html#abffac92170214098cb1da44bceb13b2da802b7a5f53c6a04f3250be7a43bb9d43',1,'osapi']]],
+  ['library_5fversion',['library_version',['../namespaceosapi.html#a142c8a45a751d87840d1a7f2644367f4a7198b221300b2674cd1fd19daa6d4771',1,'osapi']]]
 ];

@@ -5,5 +5,6 @@ var dir_949a34977f408544262fabd05133be9a =
       [ "status", "classosapi_1_1status.html", "classosapi_1_1status" ]
     ] ],
     [ "trace.hh", "trace_8hh.html", "trace_8hh" ],
+    [ "trace_internal.hh", "trace__internal_8hh.html", "trace__internal_8hh" ],
     [ "trace_macros.hh", "trace__macros_8hh.html", "trace__macros_8hh" ]
 ];

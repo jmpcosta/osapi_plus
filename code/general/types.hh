@@ -19,6 +19,10 @@
 // Import C++ system headers
 #include <functional>
 
+// Include other more complex OSAPI types
+#include "general/property.hh"
+#include "general/object.hh"
+
 // *****************************************************************************************
 //
 // Section: Type declaration/definition
@@ -42,6 +46,7 @@ constexpr	char falseString[]	= "false";
 
 // Useful type declaration for containers
 using refConstStr = std::reference_wrapper<const std::string>;
+
 
 };	// End of namespace "osapi"
 

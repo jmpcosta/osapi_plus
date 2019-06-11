@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['inexistent',['inexistent',['../namespaceosapi_1_1process.html#a78ca600f0c423008834ffbda0af2fbd3a5b220a70beff0a2eaf51a39ae53991c8',1,'osapi::process']]]
+  ['environment',['ENVIRONMENT',['../namespaceosapi_1_1configuration.html#a134872698cf3e553eef57af4751b33aaa889a65415d92b72cffa7df3f8ecf13f9',1,'osapi::configuration']]]
 ];

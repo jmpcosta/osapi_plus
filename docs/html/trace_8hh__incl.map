@@ -1,4 +1,5 @@
 <map id="code/status/trace.hh" name="code/status/trace.hh">
-<area shape="rect" id="node4" href="$status_2status_8hh.html" title="status/status.hh" alt="" coords="235,80,351,107"/>
-<area shape="rect" id="node6" href="$trace__macros_8hh.html" title="status/trace_macros.hh" alt="" coords="285,155,443,181"/>
+<area shape="rect" id="node3" href="$status_2status_8hh.html" title="status/status.hh" alt="" coords="235,155,351,181"/>
+<area shape="rect" id="node6" href="$trace__internal_8hh.html" title="status/trace_internal.hh" alt="" coords="79,80,238,107"/>
+<area shape="rect" id="node5" href="$trace__macros_8hh.html" title="status/trace_macros.hh" alt="" coords="286,229,445,256"/>
 </map>

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['library',['library',['../classosapi_1_1library.html',1,'osapi']]],
-  ['log',['Log',['../classosapi_1_1_log.html',1,'osapi']]]
+  ['info',['info',['../classosapi_1_1info.html',1,'osapi']]],
+  ['item',['item',['../classosapi_1_1configuration_1_1item.html',1,'osapi::configuration']]]
 ];

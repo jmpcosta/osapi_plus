@@ -4,6 +4,5 @@ var searchData=
   ['throw_5ferror',['throw_error',['../namespaceosapi.html#a648313e3abeb6450d9630999466c0778',1,'osapi']]],
   ['throw_5fon_5ffailure',['throw_on_failure',['../namespaceosapi.html#a1f3e0a8ae014e19b6d58a4e714aced81',1,'osapi']]],
   ['tolowercase',['toLowerCase',['../classosapi_1_1common.html#a2b039b0b46db236eb6fcc0727dda6c9f',1,'osapi::common::toLowerCase()'],['../classosapi_1_1util.html#aefba022841db763f1135bcc94ad16e8f',1,'osapi::util::toLowerCase()']]],
-  ['touppercase',['toUpperCase',['../classosapi_1_1common.html#a78da65d5bae2981b94e420d77d81a78d',1,'osapi::common::toUpperCase()'],['../classosapi_1_1util.html#a21ed0da0483f239f9218c3d2f6df8396',1,'osapi::util::toUpperCase()']]],
-  ['trace',['trace',['../namespaceosapi.html#a32ab30911643476fb58a639993e5e516',1,'osapi::trace(const V &amp;value)'],['../namespaceosapi.html#a0ac104ca5e0ed7b500f6e49559133e4f',1,'osapi::trace(const V &amp;value, const R &amp;... rest)']]]
+  ['touppercase',['toUpperCase',['../classosapi_1_1common.html#a78da65d5bae2981b94e420d77d81a78d',1,'osapi::common::toUpperCase()'],['../classosapi_1_1util.html#a21ed0da0483f239f9218c3d2f6df8396',1,'osapi::util::toUpperCase()']]]
 ];

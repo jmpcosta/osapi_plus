@@ -1,4 +1,5 @@
 <map id="code/configuration/propertyItem.hh" name="code/configuration/propertyItem.hh">
-<area shape="rect" id="node2" href="$item_8hh.html" title="configuration/item.hh" alt="" coords="5,95,148,121"/>
-<area shape="rect" id="node5" href="$trace__macros_8hh.html" title="status/trace_macros.hh" alt="" coords="320,95,479,121"/>
+<area shape="rect" id="node5" href="$property_8hh.html" title="general/property.hh" alt="" coords="235,95,368,121"/>
+<area shape="rect" id="node6" href="$trace__macros_8hh.html" title="status/trace_macros.hh" alt="" coords="393,95,551,121"/>
+<area shape="rect" id="node7" href="$item_8hh.html" title="configuration/item.hh" alt="" coords="575,95,718,121"/>
 </map>

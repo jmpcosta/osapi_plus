@@ -23,6 +23,10 @@ var dir_47bc8d42c1c03d700a6f6c0493035775 =
       [ "item", "classosapi_1_1configuration_1_1item.html", "classosapi_1_1configuration_1_1item" ]
     ] ],
     [ "itemType.hh", "item_type_8hh.html", "item_type_8hh" ],
+    [ "objectItem.cpp", "object_item_8cpp.html", null ],
+    [ "objectItem.hh", "object_item_8hh.html", [
+      [ "objectItem", "classosapi_1_1configuration_1_1object_item.html", "classosapi_1_1configuration_1_1object_item" ]
+    ] ],
     [ "parser.cpp", "parser_8cpp.html", null ],
     [ "parser.hh", "parser_8hh.html", [
       [ "parser", "classosapi_1_1configuration_1_1parser.html", "classosapi_1_1configuration_1_1parser" ]

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['environment',['ENVIRONMENT',['../namespaceosapi_1_1configuration.html#a134872698cf3e553eef57af4751b33aaa889a65415d92b72cffa7df3f8ecf13f9',1,'osapi::configuration']]]
+  ['directory',['directory',['../namespaceosapi_1_1filesystem.html#acb27ca3a4fb070737d33d156cc8b5774a5f8f22b8cdbaeee8cf857673a9b6ba20',1,'osapi::filesystem']]]
 ];

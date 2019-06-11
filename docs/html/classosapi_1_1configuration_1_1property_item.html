@@ -127,6 +127,22 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2c405e7def944871d69f02d54944cd51"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1configuration_1_1property_item.html#a2c405e7def944871d69f02d54944cd51">equal</a> (const std::string &amp;name)</td></tr>
 <tr class="memdesc:a2c405e7def944871d69f02d54944cd51"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a CI property name is the same (to find a given property)  <a href="#a2c405e7def944871d69f02d54944cd51">More...</a><br /></td></tr>
 <tr class="separator:a2c405e7def944871d69f02d54944cd51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacf9bd150e24670aae8bfd903cb51433"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1configuration_1_1property_item.html#aacf9bd150e24670aae8bfd903cb51433">addAttributes</a> (std::vector&lt; <a class="el" href="classosapi_1_1property.html">property</a> &gt; &amp;attributes)</td></tr>
+<tr class="memdesc:aacf9bd150e24670aae8bfd903cb51433"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a set of attributes to this CI property.  <a href="#aacf9bd150e24670aae8bfd903cb51433">More...</a><br /></td></tr>
+<tr class="separator:aacf9bd150e24670aae8bfd903cb51433"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a749707b2dcee42b2e32361072bbe3047"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1configuration_1_1property_item.html#a749707b2dcee42b2e32361072bbe3047">addAttribute</a> (<a class="el" href="classosapi_1_1property.html">property</a> &amp;attribute)</td></tr>
+<tr class="memdesc:a749707b2dcee42b2e32361072bbe3047"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add one attribute to this CI property.  <a href="#a749707b2dcee42b2e32361072bbe3047">More...</a><br /></td></tr>
+<tr class="separator:a749707b2dcee42b2e32361072bbe3047"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfb7393bd5df4ea5389edb6af8042d14"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classosapi_1_1property.html">property</a> &gt; const  &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1configuration_1_1property_item.html#abfb7393bd5df4ea5389edb6af8042d14">getAttributes</a> (void) const</td></tr>
+<tr class="separator:abfb7393bd5df4ea5389edb6af8042d14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae14b199cbca6a01ba8f91cf1728abb66"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classosapi_1_1property.html">property</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1configuration_1_1property_item.html#ae14b199cbca6a01ba8f91cf1728abb66">getAttribute</a> (const std::string &amp;name)</td></tr>
+<tr class="separator:ae14b199cbca6a01ba8f91cf1728abb66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0b29a4ce4a860ab80b7bc579ba1fd89"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1configuration_1_1property_item.html#ad0b29a4ce4a860ab80b7bc579ba1fd89">deleteAttribute</a> (const std::string &amp;name)</td></tr>
+<tr class="separator:ad0b29a4ce4a860ab80b7bc579ba1fd89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classosapi_1_1configuration_1_1item"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classosapi_1_1configuration_1_1item')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classosapi_1_1configuration_1_1item.html">osapi::configuration::item</a></td></tr>
+<tr class="memitem:a7fac77ccd134dec32e96b98ac3c2d423 inherit pub_methods_classosapi_1_1configuration_1_1item"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1configuration_1_1item.html#a7fac77ccd134dec32e96b98ac3c2d423">~item</a> ()</td></tr>
+<tr class="memdesc:a7fac77ccd134dec32e96b98ac3c2d423 inherit pub_methods_classosapi_1_1configuration_1_1item"><td class="mdescLeft">&#160;</td><td class="mdescRight">The virtual Class destructor.  <a href="classosapi_1_1configuration_1_1item.html#a7fac77ccd134dec32e96b98ac3c2d423">More...</a><br /></td></tr>
+<tr class="separator:a7fac77ccd134dec32e96b98ac3c2d423 inherit pub_methods_classosapi_1_1configuration_1_1item"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The class is responsible for managing Property Items. </p>
@@ -196,6 +212,76 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a749707b2dcee42b2e32361072bbe3047"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a749707b2dcee42b2e32361072bbe3047">&#9670;&nbsp;</a></span>addAttribute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void osapi::configuration::propertyItem::addAttribute </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classosapi_1_1property.html">property</a> &amp;&#160;</td>
+          <td class="paramname"><em>attribute</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add one attribute to this CI property. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">attribute</td><td>- The new attribute to add </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="aacf9bd150e24670aae8bfd903cb51433"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacf9bd150e24670aae8bfd903cb51433">&#9670;&nbsp;</a></span>addAttributes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void osapi::configuration::propertyItem::addAttributes </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="classosapi_1_1property.html">property</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>attributes</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Add a set of attributes to this CI property. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">attributes</td><td>- Property list </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad0b29a4ce4a860ab80b7bc579ba1fd89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0b29a4ce4a860ab80b7bc579ba1fd89">&#9670;&nbsp;</a></span>deleteAttribute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void osapi::configuration::propertyItem::deleteAttribute </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a2c405e7def944871d69f02d54944cd51"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2c405e7def944871d69f02d54944cd51">&#9670;&nbsp;</a></span>equal()</h2>
 
@@ -230,6 +316,50 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>Property match (true) or not (false) </dd></dl>
 
 <p>Implements <a class="el" href="classosapi_1_1configuration_1_1item.html#a399444d0f1c09babe19ee799b84d652d">osapi::configuration::item</a>.</p>
+
+</div>
+</div>
+<a id="ae14b199cbca6a01ba8f91cf1728abb66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae14b199cbca6a01ba8f91cf1728abb66">&#9670;&nbsp;</a></span>getAttribute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classosapi_1_1property.html">property</a> &amp; osapi::configuration::propertyItem::getAttribute </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abfb7393bd5df4ea5389edb6af8042d14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abfb7393bd5df4ea5389edb6af8042d14">&#9670;&nbsp;</a></span>getAttributes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="classosapi_1_1property.html">property</a>&gt; const&amp; osapi::configuration::propertyItem::getAttributes </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>

@@ -10,6 +10,7 @@ CPP_SRCS += \
 ../code/configuration/container.cpp \
 ../code/configuration/fileParser.cpp \
 ../code/configuration/item.cpp \
+../code/configuration/objectItem.cpp \
 ../code/configuration/parser.cpp \
 ../code/configuration/propertyItem.cpp 
 
@@ -20,6 +21,7 @@ OBJS += \
 ./code/configuration/container.o \
 ./code/configuration/fileParser.o \
 ./code/configuration/item.o \
+./code/configuration/objectItem.o \
 ./code/configuration/parser.o \
 ./code/configuration/propertyItem.o 
 
@@ -30,6 +32,7 @@ CPP_DEPS += \
 ./code/configuration/container.d \
 ./code/configuration/fileParser.d \
 ./code/configuration/item.d \
+./code/configuration/objectItem.d \
 ./code/configuration/parser.d \
 ./code/configuration/propertyItem.d 
 

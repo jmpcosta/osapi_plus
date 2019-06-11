@@ -17,13 +17,16 @@
 // *****************************************************************************************
 
 // Import C++ system headers
-#include <configuration/item.hh>
 #include <iostream>
 #include <string>
+#include <vector>
 
 // Import OSAPI++ declarations
+#include "general/property.hh"
 #include "status/trace_macros.hh"
 
+// Import module headers
+#include "configuration/item.hh"
 
 namespace osapi
 {
@@ -44,7 +47,7 @@ namespace configuration
 // *****************************************************************************************
 
 /// @brief The class is responsible for managing Property Items
-class propertyItem : item
+class propertyItem : public item
 {
 public:
 		/// @brief Class destructor
@@ -68,9 +71,27 @@ public:
     	/// @return Property match (true) or not (false)
     	bool 						equal			( const std::string & name	);
 
+    	/// @brief Add a set of attributes to this CI property
+    	/// @param [in] attributes - Property list
+    	void						addAttributes	( std::vector<property> & attributes	);
+
+    	/// @brief Add one attribute to this CI property
+    	/// @param [in] attribute - The new attribute to add
+    	void						addAttribute	( property & attribute	 				);
+
+    	// Inline call
+    	std::vector<property> const &	getAttributes( void ) const { return iAttributes;	}
+
+    	property & 					getAttribute( const std::string & name );
+
+    	void 						deleteAttribute( const std::string & name );
+
 private:
-    	std::string 				name;
-    	std::string 				value;
+    	property					data;
+
+    	// Data meta information attributes
+    	std::vector<property>		iAttributes;
+
 
     	TRACE_CLASSNAME_DECLARATION
 };

@@ -97,6 +97,8 @@ $(document).ready(function(){initNavTree('namespaceosapi.html','');});
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceosapi_1_1configuration"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceosapi_1_1configuration.html">configuration</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:namespaceosapi_1_1filesystem"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceosapi_1_1filesystem.html">filesystem</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceosapi_1_1id"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceosapi_1_1id.html">id</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:namespaceosapi_1_1process"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceosapi_1_1process.html">process</a></td></tr>
@@ -118,6 +120,15 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1_log.html">Log</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class responsible for interfacing with the platform system logging framework, if it exists.  <a href="classosapi_1_1_log.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1object.html">object</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definition of an opaque Object type.  <a href="classosapi_1_1object.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1property.html">property</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Definition of a property type.  <a href="classosapi_1_1property.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1state_holder.html">stateHolder</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Template class to manage/hold a generic state.  <a href="classosapi_1_1state_holder.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1status.html">status</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class responsible for reporting OSAPI C++ exceptions.  <a href="classosapi_1_1status.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -135,7 +146,7 @@ Enumerations</h2></td></tr>
 <tr class="memitem:abffac92170214098cb1da44bceb13b2d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceosapi.html#abffac92170214098cb1da44bceb13b2d">osapi_release</a> { <a class="el" href="namespaceosapi.html#abffac92170214098cb1da44bceb13b2da802b7a5f53c6a04f3250be7a43bb9d43">library_release</a> = 0
  }</td></tr>
 <tr class="separator:abffac92170214098cb1da44bceb13b2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a142c8a45a751d87840d1a7f2644367f4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceosapi.html#a142c8a45a751d87840d1a7f2644367f4">osapi_version</a> { <a class="el" href="namespaceosapi.html#a142c8a45a751d87840d1a7f2644367f4a7198b221300b2674cd1fd19daa6d4771">library_version</a> = 3
+<tr class="memitem:a142c8a45a751d87840d1a7f2644367f4"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceosapi.html#a142c8a45a751d87840d1a7f2644367f4">osapi_version</a> { <a class="el" href="namespaceosapi.html#a142c8a45a751d87840d1a7f2644367f4a7198b221300b2674cd1fd19daa6d4771">library_version</a> = 6
  }</td></tr>
 <tr class="separator:a142c8a45a751d87840d1a7f2644367f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -146,24 +157,18 @@ Functions</h2></td></tr>
 <tr class="memitem:a77b697e29ce0c8b7f0ac192023721988"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Args&gt; </td></tr>
 <tr class="memitem:a77b697e29ce0c8b7f0ac192023721988"><td class="memTemplItemLeft" align="right" valign="top">std::unique_ptr&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceosapi.html#a77b697e29ce0c8b7f0ac192023721988">make_unique</a> (Args &amp;&amp;... args)</td></tr>
 <tr class="separator:a77b697e29ce0c8b7f0ac192023721988"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a32ab30911643476fb58a639993e5e516"><td class="memTemplParams" colspan="2">template&lt;typename V &gt; </td></tr>
-<tr class="memitem:a32ab30911643476fb58a639993e5e516"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceosapi.html#a32ab30911643476fb58a639993e5e516">trace</a> (const V &amp;value)</td></tr>
-<tr class="separator:a32ab30911643476fb58a639993e5e516"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ac104ca5e0ed7b500f6e49559133e4f"><td class="memTemplParams" colspan="2">template&lt;typename V , typename... R&gt; </td></tr>
-<tr class="memitem:a0ac104ca5e0ed7b500f6e49559133e4f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceosapi.html#a0ac104ca5e0ed7b500f6e49559133e4f">trace</a> (const V &amp;value, const R &amp;... rest)</td></tr>
-<tr class="separator:a0ac104ca5e0ed7b500f6e49559133e4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f3e0a8ae014e19b6d58a4e714aced81"><td class="memTemplParams" colspan="2">template&lt;typename S &gt; </td></tr>
-<tr class="memitem:a1f3e0a8ae014e19b6d58a4e714aced81"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceosapi.html#a1f3e0a8ae014e19b6d58a4e714aced81">throw_on_failure</a> (const S &amp;st)</td></tr>
-<tr class="separator:a1f3e0a8ae014e19b6d58a4e714aced81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a648313e3abeb6450d9630999466c0778"><td class="memTemplParams" colspan="2">template&lt;typename P &gt; </td></tr>
 <tr class="memitem:a648313e3abeb6450d9630999466c0778"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceosapi.html#a648313e3abeb6450d9630999466c0778">throw_error</a> (const P p_c)</td></tr>
 <tr class="separator:a648313e3abeb6450d9630999466c0778"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f3e0a8ae014e19b6d58a4e714aced81"><td class="memTemplParams" colspan="2">template&lt;typename S &gt; </td></tr>
+<tr class="memitem:a1f3e0a8ae014e19b6d58a4e714aced81"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceosapi.html#a1f3e0a8ae014e19b6d58a4e714aced81">throw_on_failure</a> (const S &amp;st)</td></tr>
+<tr class="separator:a1f3e0a8ae014e19b6d58a4e714aced81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
 <tr class="memitem:adb852580875c91e57677fb6c9cf16dbd"><td class="memItemLeft" align="right" valign="top">std::map&lt; int, const char * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceosapi.html#adb852580875c91e57677fb6c9cf16dbd">releaseMap</a> = { { <a class="el" href="namespaceosapi.html#abffac92170214098cb1da44bceb13b2da802b7a5f53c6a04f3250be7a43bb9d43">library_release</a>, &quot;0&quot; } }</td></tr>
 <tr class="separator:adb852580875c91e57677fb6c9cf16dbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad317d8cd26e95fdb801a73b16b1abe1a"><td class="memItemLeft" align="right" valign="top">std::map&lt; int, const char * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceosapi.html#ad317d8cd26e95fdb801a73b16b1abe1a">versionMap</a> = { { <a class="el" href="namespaceosapi.html#a142c8a45a751d87840d1a7f2644367f4a7198b221300b2674cd1fd19daa6d4771">library_version</a>, &quot;1&quot; } }</td></tr>
+<tr class="memitem:ad317d8cd26e95fdb801a73b16b1abe1a"><td class="memItemLeft" align="right" valign="top">std::map&lt; int, const char * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceosapi.html#ad317d8cd26e95fdb801a73b16b1abe1a">versionMap</a> = { { <a class="el" href="namespaceosapi.html#a142c8a45a751d87840d1a7f2644367f4a7198b221300b2674cd1fd19daa6d4771">library_version</a>, &quot;5&quot; } }</td></tr>
 <tr class="separator:ad317d8cd26e95fdb801a73b16b1abe1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af738d5eb87e485dc8633304c76ab04f8"><td class="memItemLeft" align="right" valign="top">constexpr char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceosapi.html#af738d5eb87e485dc8633304c76ab04f8">empty_string</a> [] = &quot;&quot;</td></tr>
 <tr class="memdesc:af738d5eb87e485dc8633304c76ab04f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">The empty string.  <a href="#af738d5eb87e485dc8633304c76ab04f8">More...</a><br /></td></tr>
@@ -314,56 +319,6 @@ template&lt;typename S &gt; </div>
 
 </div>
 </div>
-<a id="a32ab30911643476fb58a639993e5e516"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a32ab30911643476fb58a639993e5e516">&#9670;&nbsp;</a></span>trace() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename V &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void osapi::trace </td>
-          <td>(</td>
-          <td class="paramtype">const V &amp;&#160;</td>
-          <td class="paramname"><em>value</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a0ac104ca5e0ed7b500f6e49559133e4f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0ac104ca5e0ed7b500f6e49559133e4f">&#9670;&nbsp;</a></span>trace() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename V , typename... R&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">void osapi::trace </td>
-          <td>(</td>
-          <td class="paramtype">const V &amp;&#160;</td>
-          <td class="paramname"><em>value</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const R &amp;...&#160;</td>
-          <td class="paramname"><em>rest</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Variable Documentation</h2>
 <a id="af738d5eb87e485dc8633304c76ab04f8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af738d5eb87e485dc8633304c76ab04f8">&#9670;&nbsp;</a></span>empty_string</h2>
@@ -435,7 +390,7 @@ template&lt;typename V , typename... R&gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::map&lt;int, const char*&gt; osapi::versionMap = { { <a class="el" href="namespaceosapi.html#a142c8a45a751d87840d1a7f2644367f4a7198b221300b2674cd1fd19daa6d4771">library_version</a>, &quot;1&quot; } }</td>
+          <td class="memname">std::map&lt;int, const char*&gt; osapi::versionMap = { { <a class="el" href="namespaceosapi.html#a142c8a45a751d87840d1a7f2644367f4a7198b221300b2674cd1fd19daa6d4771">library_version</a>, &quot;5&quot; } }</td>
         </tr>
       </table>
 </div><div class="memdoc">

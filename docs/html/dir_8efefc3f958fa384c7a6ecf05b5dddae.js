@@ -9,6 +9,10 @@ var dir_8efefc3f958fa384c7a6ecf05b5dddae =
     [ "factory.hh", "factory_8hh.html", [
       [ "factory", "classosapi_1_1process_1_1factory.html", "classosapi_1_1process_1_1factory" ]
     ] ],
+    [ "library.cpp", "library_8cpp.html", null ],
+    [ "library.hh", "process_2library_8hh.html", [
+      [ "library", "classosapi_1_1process_1_1library.html", "classosapi_1_1process_1_1library" ]
+    ] ],
     [ "plan.cpp", "plan_8cpp.html", null ],
     [ "plan.hh", "plan_8hh.html", [
       [ "plan", "classosapi_1_1process_1_1plan.html", "classosapi_1_1process_1_1plan" ]

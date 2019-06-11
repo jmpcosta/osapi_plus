@@ -35,12 +35,12 @@ namespace osapi
 {
 
 std::map<int, const char*> releaseMap = { { library_release, "0" } };
-std::map<int, const char*> versionMap = { { library_version, "1" } };
+std::map<int, const char*> versionMap = { { library_version, "5" } };
 
 
 // *****************************************************************************************
 //
-// Section: CurrentProcess Function definition
+// Section: Function definition
 //
 // *****************************************************************************************
 

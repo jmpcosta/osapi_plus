@@ -1,5 +1,6 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classosapi_1_1configuration_1_1item.html" title="The Configuration Item interface class. " alt="" coords="5,39,140,80"/>
+<area shape="rect" id="node1" href="$classosapi_1_1configuration_1_1item.html" title="The Configuration Item interface class. " alt="" coords="5,71,140,112"/>
 <area shape="rect" id="node2" href="$classosapi_1_1configuration_1_1arg_item.html" title="osapi::configuration\l::argItem" alt="" coords="188,5,323,47"/>
-<area shape="rect" id="node3" href="$classosapi_1_1configuration_1_1property_item.html" title="The class is responsible for managing Property Items. " alt="" coords="188,71,323,112"/>
+<area shape="rect" id="node3" href="$classosapi_1_1configuration_1_1object_item.html" title="osapi::configuration\l::objectItem" alt="" coords="188,71,323,112"/>
+<area shape="rect" id="node4" href="$classosapi_1_1configuration_1_1property_item.html" title="The class is responsible for managing Property Items. " alt="" coords="188,136,323,177"/>
 </map>

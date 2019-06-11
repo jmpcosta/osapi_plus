@@ -19,12 +19,11 @@
 // Import C++ system headers
 #include <iostream>
 
-// Import OSAPI C declarations
-#include "status/status.h"
-
 // Import OSAPI++ declarations
 #include "status/status.hh"
 
+// Include own private headers
+#include "status/trace_internal.hh"
 
 // *****************************************************************************************
 //
@@ -34,6 +33,8 @@
 
 namespace osapi
 {
+
+#ifdef OSAPI_TRACING
 
 // Trace template composed of the next two entries
 template <typename V>
@@ -52,18 +53,7 @@ void trace( const V & value, const R & ... rest  )
 }
 
 
-
-// Wrap the C status return "object" and throw exception if a failure is returned
-template <typename S>
-void throw_on_failure( const S & st  )
-{
- if( status_failure( st ) )
-	 throw status(
-						status_module_get	( st ),
-						status_function_get	( st ),
-						status_error_get	( st )
-	 	 	 	 );
-}
+#endif	// OSAPI_TRACING
 
 
 template <typename P>
@@ -76,6 +66,8 @@ void throw_error( const P p_c)
 
 
 }	// End of namespace "osapi"
+
+
 
 
 #endif /* OSAPI_TRACE_HH_ */

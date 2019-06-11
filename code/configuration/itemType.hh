@@ -44,7 +44,7 @@ enum class ciType { UNKNOWN = 0,		//!< Type not known
 
 
 }	// End of namespace "configuration"
-}	// End of namespace
+}	// End of namespace "osapi"
 
 
 #endif /* OSAPI_CITYPE_HH_ */

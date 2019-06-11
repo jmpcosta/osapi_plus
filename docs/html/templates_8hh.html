@@ -82,13 +82,15 @@ $(document).ready(function(){initNavTree('templates_8hh.html','');});
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">templates.hh File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;memory&gt;</code><br />
+<div class="textblock"><code>#include &lt;exception&gt;</code><br />
+<code>#include &lt;memory&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for templates.hh:</div>
 <div class="dyncontent">
@@ -99,31 +101,39 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="templates_8hh__dep__incl.png" border="0" usemap="#code_2general_2templates_8hhdep" alt=""/></div>
 <map name="code_2general_2templates_8hhdep" id="code_2general_2templates_8hhdep">
-<area shape="rect" id="node2" href="general_8hh.html" title="code/general/general.hh" alt="" coords="697,80,857,107"/>
-<area shape="rect" id="node15" href="plan__signal_8cpp.html" title="code/process/plan_signal.cpp" alt="" coords="1425,319,1620,345"/>
-<area shape="rect" id="node3" href="configuration_8cpp.html" title="code/configuration\l/configuration.cpp" alt="" coords="1096,155,1224,196"/>
-<area shape="rect" id="node4" href="glib_8cpp.html" title="code/general/library\l/glib.cpp" alt="" coords="1249,155,1383,196"/>
-<area shape="rect" id="node5" href="os_8cpp.html" title="code/os/os.cpp" alt="" coords="718,244,829,271"/>
-<area shape="rect" id="node6" href="os_8hh.html" title="code/os/os.hh" alt="" coords="725,162,829,189"/>
-<area shape="rect" id="node7" href="osapi_8hh.html" title="code/osapi.hh" alt="" coords="173,543,275,569"/>
-<area shape="rect" id="node8" href="current_8cpp.html" title="code/process/current.cpp" alt="" coords="595,393,765,420"/>
-<area shape="rect" id="node9" href="current_8hh.html" title="code/process/current.hh" alt="" coords="479,319,641,345"/>
-<area shape="rect" id="node11" href="factory_8cpp.html" title="code/process/factory.cpp" alt="" coords="93,468,262,495"/>
-<area shape="rect" id="node12" href="factory_8hh.html" title="code/process/factory.hh" alt="" coords="219,393,381,420"/>
-<area shape="rect" id="node13" href="plan_8cpp.html" title="code/process/plan.cpp" alt="" coords="841,393,994,420"/>
-<area shape="rect" id="node14" href="plan_8hh.html" title="code/process/plan.hh" alt="" coords="959,319,1105,345"/>
-<area shape="rect" id="node16" href="plan__signal_8hh.html" title="code/process/plan_signal.hh" alt="" coords="955,244,1141,271"/>
-<area shape="rect" id="node17" href="runner_8cpp.html" title="code/process/runner.cpp" alt="" coords="144,319,309,345"/>
-<area shape="rect" id="node18" href="runner_8hh.html" title="code/process/runner.hh" alt="" coords="195,244,354,271"/>
-<area shape="rect" id="node19" href="signal_8cpp.html" title="code/process/signal.cpp" alt="" coords="429,244,592,271"/>
-<area shape="rect" id="node20" href="signal_8hh.html" title="code/process/signal.hh" alt="" coords="494,162,650,189"/>
-<area shape="rect" id="node21" href="util_8cpp.html" title="code/util/util.cpp" alt="" coords="955,162,1072,189"/>
-<area shape="rect" id="node10" href="process_8hh.html" title="code/process/process.hh" alt="" coords="335,468,503,495"/>
+<area shape="rect" id="node2" href="general_8hh.html" title="code/general/general.hh" alt="" coords="688,80,848,107"/>
+<area shape="rect" id="node17" href="plan__signal_8cpp.html" title="code/process/plan_signal.cpp" alt="" coords="1636,319,1830,345"/>
+<area shape="rect" id="node3" href="configuration_8cpp.html" title="code/configuration\l/configuration.cpp" alt="" coords="1178,155,1306,196"/>
+<area shape="rect" id="node4" href="glib_8cpp.html" title="code/general/library\l/glib.cpp" alt="" coords="1432,155,1567,196"/>
+<area shape="rect" id="node5" href="os_8cpp.html" title="code/os/os.cpp" alt="" coords="568,244,679,271"/>
+<area shape="rect" id="node6" href="os_8hh.html" title="code/os/os.hh" alt="" coords="576,162,680,189"/>
+<area shape="rect" id="node7" href="osapi_8hh.html" title="code/osapi.hh" alt="" coords="1034,543,1136,569"/>
+<area shape="rect" id="node8" href="current_8cpp.html" title="code/process/current.cpp" alt="" coords="944,393,1114,420"/>
+<area shape="rect" id="node9" href="current_8hh.html" title="code/process/current.hh" alt="" coords="765,319,928,345"/>
+<area shape="rect" id="node11" href="factory_8cpp.html" title="code/process/factory.cpp" alt="" coords="1039,468,1208,495"/>
+<area shape="rect" id="node12" href="factory_8hh.html" title="code/process/factory.hh" alt="" coords="636,393,798,420"/>
+<area shape="rect" id="node13" href="library_8cpp.html" title="code/process/library.cpp" alt="" coords="43,244,207,271"/>
+<area shape="rect" id="node14" href="process_2library_8hh.html" title="code/process/library.hh" alt="" coords="42,162,200,189"/>
+<area shape="rect" id="node15" href="plan_8cpp.html" title="code/process/plan.cpp" alt="" coords="407,393,560,420"/>
+<area shape="rect" id="node16" href="plan_8hh.html" title="code/process/plan.hh" alt="" coords="409,319,556,345"/>
+<area shape="rect" id="node18" href="plan__signal_8hh.html" title="code/process/plan_signal.hh" alt="" coords="754,244,941,271"/>
+<area shape="rect" id="node19" href="runner_8cpp.html" title="code/process/runner.cpp" alt="" coords="168,319,333,345"/>
+<area shape="rect" id="node20" href="runner_8hh.html" title="code/process/runner.hh" alt="" coords="283,244,442,271"/>
+<area shape="rect" id="node21" href="signal_8cpp.html" title="code/process/signal.cpp" alt="" coords="1066,244,1229,271"/>
+<area shape="rect" id="node22" href="signal_8hh.html" title="code/process/signal.hh" alt="" coords="806,162,962,189"/>
+<area shape="rect" id="node23" href="util_8cpp.html" title="code/util/util.cpp" alt="" coords="1037,162,1154,189"/>
+<area shape="rect" id="node10" href="process_8hh.html" title="code/process/process.hh" alt="" coords="574,468,742,495"/>
 </map>
 </div>
 </div>
 <p><a href="templates_8hh_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classosapi_1_1state_holder.html">osapi::stateHolder&lt; T &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Template class to manage/hold a generic state.  <a href="classosapi_1_1state_holder.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:namespaceosapi"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceosapi.html">osapi</a></td></tr>

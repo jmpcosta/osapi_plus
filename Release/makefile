@@ -16,6 +16,7 @@ RM := rm -rf
 -include code/io/subdir.mk
 -include code/general/library/subdir.mk
 -include code/general/subdir.mk
+-include code/filesystem/subdir.mk
 -include code/configuration/subdir.mk
 -include code/common/subdir.mk
 -include subdir.mk

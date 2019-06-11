@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['runner',['runner',['../classosapi_1_1process_1_1runner.html',1,'osapi::process']]]
+  ['object',['object',['../classosapi_1_1object.html',1,'osapi']]],
+  ['objectitem',['objectItem',['../classosapi_1_1configuration_1_1object_item.html',1,'osapi::configuration']]]
 ];

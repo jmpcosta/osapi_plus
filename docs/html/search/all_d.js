@@ -4,6 +4,7 @@ var searchData=
   ['refconststr',['refConstStr',['../namespaceosapi.html#a9c691d7b64fd555d9ba559b5ca2138cc',1,'osapi']]],
   ['release_2ehh',['release.hh',['../release_8hh.html',1,'']]],
   ['releasemap',['releaseMap',['../namespaceosapi.html#adb852580875c91e57677fb6c9cf16dbd',1,'osapi']]],
+  ['reset',['reset',['../classosapi_1_1state_holder.html#af94da85bbb5b9323f4f921d2e2f15faf',1,'osapi::stateHolder']]],
   ['runner',['runner',['../classosapi_1_1process_1_1runner.html',1,'osapi::process::runner'],['../classosapi_1_1process_1_1runner.html#a861ab06b7325c16c17bb2bc5900fa142',1,'osapi::process::runner::runner(int64_t pid)'],['../classosapi_1_1process_1_1runner.html#ab3c352212f2b7bf3931eb5dd9302e404',1,'osapi::process::runner::runner()']]],
   ['runner_2ecpp',['runner.cpp',['../runner_8cpp.html',1,'']]],
   ['runner_2ehh',['runner.hh',['../runner_8hh.html',1,'']]],

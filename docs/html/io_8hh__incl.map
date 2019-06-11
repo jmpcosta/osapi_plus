@@ -1,4 +1,6 @@
 <map id="code/io/io.hh" name="code/io/io.hh">
-<area shape="rect" id="node3" href="$types_8hh.html" title="general/types.hh" alt="" coords="84,80,203,107"/>
-<area shape="rect" id="node5" href="$trace__macros_8hh.html" title="status/trace_macros.hh" alt="" coords="227,80,385,107"/>
+<area shape="rect" id="node3" href="$types_8hh.html" title="general/types.hh" alt="" coords="83,80,202,107"/>
+<area shape="rect" id="node7" href="$trace__macros_8hh.html" title="status/trace_macros.hh" alt="" coords="226,80,385,107"/>
+<area shape="rect" id="node5" href="$property_8hh.html" title="general/property.hh" alt="" coords="132,155,265,181"/>
+<area shape="rect" id="node6" href="$object_8hh.html" title="general/object.hh" alt="" coords="290,155,411,181"/>
 </map>
