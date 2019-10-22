@@ -64,14 +64,6 @@ public:
 		/// @return The boolean string
 		static const char * 	bool2string ( bool value );
 
-		/// @brief Convert a Vector of strings into a C-array
-		///
-		/// The call creates an array of char pointers to the C-strings from vector. It doesn't copy them.
-		/// It is the responsibility of the caller to release the allocated C-array.
-		/// @param [in] vec - Vector to convert
-		/// @param [out] arraySize - The size of the output array
-		/// @param [out] array - The newly allocated C-Array of char pointers
-		static bool				vecStr2array( const std::vector<std::string> & vec, size_t * arraySize, char *** array );
 
 private:
 		TRACE_CLASSNAME_DECLARATION

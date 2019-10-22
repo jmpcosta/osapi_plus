@@ -4,13 +4,22 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
-../code/filesystem/element.cpp 
+../code/filesystem/directory.cpp \
+../code/filesystem/element.cpp \
+../code/filesystem/file.cpp \
+../code/filesystem/fileInfo.cpp 
 
 OBJS += \
-./code/filesystem/element.o 
+./code/filesystem/directory.o \
+./code/filesystem/element.o \
+./code/filesystem/file.o \
+./code/filesystem/fileInfo.o 
 
 CPP_DEPS += \
-./code/filesystem/element.d 
+./code/filesystem/directory.d \
+./code/filesystem/element.d \
+./code/filesystem/file.d \
+./code/filesystem/fileInfo.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

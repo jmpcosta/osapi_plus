@@ -17,12 +17,12 @@
 // *****************************************************************************************
 
 // Import C++ system headers
+#include <common/property.hh>
 #include <iostream>
 #include <string>
 #include <vector>
 
 // Import OSAPI++ declarations
-#include "general/property.hh"
 #include "status/trace_macros.hh"
 
 // Import module headers

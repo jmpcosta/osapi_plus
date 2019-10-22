@@ -92,9 +92,9 @@ public:
 	/// @return Number of elements in the container
 	size_t						getNumber		();
 
-	/// @brief Get a vector with CI strings
-	/// @return Vector of C-string pointers to the container CIs
-	std::vector<refConstStr> 	getStringList	();
+	/// @brief Get a vector with CI strings from the container
+	/// @param [in,out] stringList - Vector of C-strings to the container CIs
+	void						getStringList	( std::vector<const char *> & stringList );
 
 
 private:

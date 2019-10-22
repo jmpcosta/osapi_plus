@@ -80,14 +80,12 @@ size_t container::getNumber()
  return ciList.size();
 }
 
-std::vector<refConstStr> container::getStringList()
+void container::getStringList( std::vector<const char *> & stringList )
 {
- std::vector<std::reference_wrapper<const std::string>> stringList;
+ stringList.clear();
 
  for( const auto & i : ciList )
-	  stringList.push_back( std::ref( i->getString() ) );
-
- return stringList;
+	  stringList.push_back( i->getString().c_str() );
 }
 
 

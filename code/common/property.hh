@@ -7,8 +7,8 @@
 //
 // *****************************************************************************************
 
-#ifndef OSAPI_PROPERTY_HH_
-#define OSAPI_PROPERTY_HH_
+#ifndef OSAPI_COMMON_PROPERTY_HH_
+#define OSAPI_COMMON_PROPERTY_HH_
 
 
 // *****************************************************************************************
@@ -67,4 +67,4 @@ private:
 
 
 
-#endif /* OSAPI_PROPERTY_HH_ */
+#endif /* OSAPI_COMMON_PROPERTY_HH_ */

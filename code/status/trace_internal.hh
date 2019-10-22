@@ -45,7 +45,7 @@ void throw_on_failure( const S & st  )
 	 throw status(
 						status_module_get	( st ),
 						status_function_get	( st ),
-						status_error_get	( st )
+						status_message_get	( st )
 	 	 	 	 );
 }
 
@@ -55,5 +55,6 @@ void throw_on_failure( const S & st  )
 
 
 #endif	// ! OSAPI_TRACE_CLIENT
+
 
 #endif /* OSAPI_TRACE_INTERNAL_HH_ */

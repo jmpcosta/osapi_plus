@@ -89,112 +89,20 @@ const char * common::bool2string ( bool value )
  return ( value ? trueString : falseString );
 }
 
-
-bool common::vecStr2array( const std::vector<std::string> & vec, size_t * p_arraySize, char *** p_array )
+// Using void pointer to avoid propagating a t_list OSAPI-C to the OSAPI+ clients
+void common::vecStrings( const std::vector<std::string> & source, std::vector<const char *> & target )
 {
- t_status 	st;
- bool		ret 		= false;
- size_t		vecSize		= vec.size();
-
  TRACE_ENTER
 
- if( p_arraySize != nullptr && p_array != nullptr && vecSize > 0 )
-   {
-	 t_size allocSize	= (vecSize + 1 ) * sizeof( char * );
-	 void * p_mem		= nullptr;
+ if( source.size() == 0 ) return;
 
-	 // Allocates the memory for the array of pointers first
-	 st = proc_memory_allocate( allocSize, & p_mem );
-	 if( status_failure( st ) )
-		 throw_error( "Error in memory allocation." );
-	 else
-	   {
-		 size_t cur		= 0;
-		 *p_arraySize	= 0;
-		 *p_array		= (char **) p_mem;
-		 TRACE( "Successfully allocated ", allocSize, " bytes at location:", p_mem )
-		 TRACE( "Converting vector with size ", vecSize, " to a C-String array" )
+ target.reserve( source.size() + 1 );
 
-		 // For each string, copy it and add the reference to the array of pointers
-		 for( auto const & i : vec )
-		 	{
-			  (*p_array)[ cur++ ] = (char *) i.c_str();
+ for( auto const & i : source )
+	  target.push_back( i.c_str() );
 
-			  // Make sure that the there are no buffer overruns
-			  if( cur <= vecSize )
-				  (*p_arraySize)++;
-			  else
-			  	{
-				  TRACE( "Error: Current vector bigger than array size: ", cur )
-				  break;
-			  	}
-		 	}
-		 // Make sure that the last element of the array is a NULL
-		 (*p_array)[ vecSize ] = NULL;
-		 ret = true;
-	   }
-   }
+ target.push_back( nullptr );
 
- TRACE( "Exiting with return=", common::bool2string( ret ), " and array size:", (*p_arraySize) )
-
- return ret;
-}
-
-
-const char * getVecRefString( const std::vector<refConstStr> & vec, size_t index )
-{
- return vec[ index ].get().c_str();
-}
-
-
-// Copy a vector of string into an array of C Strings. The vector is a reference object for const strings
-bool common::vecRefStr2array( const std::vector<refConstStr> & vec, size_t * p_arraySize, char *** p_array )
-{
- t_status 	st;
- bool		ret 		= false;
- size_t		vecSize		= vec.size();
-
- TRACE_ENTER
-
- if( p_arraySize != nullptr && p_array != nullptr && vecSize > 0 )
-   {
-	 t_size allocSize	= (vecSize + 1 ) * sizeof( char * );
-	 void * p_mem		= nullptr;
-
-	 // Allocates the memory for the array of pointers first
-	 st = proc_memory_allocate( allocSize, & p_mem );
-	 if( status_failure( st ) )
-		 throw_error( "Error in memory allocation." );
-	 else
-	   {
-		 size_t cur		= 0;
-		 *p_array		= (char **) p_mem;
-		 TRACE( "Successfully allocated ", allocSize, " bytes at location:", p_mem )
-		 TRACE( "Converting vector with size ", vecSize, " to a C-String array" )
-
-		 // For each string, copy it and add the reference to the array of pointers
-		 for( auto const & i : vec )
-		 	{
-			  (*p_array)[ cur++ ] = (char *) i.get().c_str();
-
-			  // Make sure that the there are no buffer overruns
-			  if( cur <= vecSize )
-				  (*p_arraySize)++;
-			  else
-			  	{
-				  TRACE( "Error: Current vector bigger than array size: ", cur )
-				  break;
-			  	}
-		 	}
-		 // Make sure that the last element of the array is a NULL
-		 (*p_array)[ vecSize ] = NULL;
-		 ret = true;
-	   }
-   }
-
- TRACE( "Exiting with return=", common::bool2string( ret ), " and array size:", (*p_arraySize) )
-
- return ret;
 }
 
 

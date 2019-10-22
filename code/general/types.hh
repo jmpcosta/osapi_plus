@@ -17,11 +17,11 @@
 // *****************************************************************************************
 
 // Import C++ system headers
+#include <common/object.hh>
+#include <common/property.hh>
 #include <functional>
 
 // Include other more complex OSAPI types
-#include "general/property.hh"
-#include "general/object.hh"
 
 // *****************************************************************************************
 //

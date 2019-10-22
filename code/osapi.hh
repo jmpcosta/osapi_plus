@@ -19,11 +19,13 @@
 
 #include "general/general.hh"
 #include "status/status.hh"
-#include "configuration/interfaces.hh"
+#include "clock/module.hh"
+#include "configuration/module.hh"
 #include "logging/log.hh"
 #include "io/io.hh"
 #include "filesystem/filesystem.hh"
 #include "process/process.hh"
+#include "com/com.hh"
 #include "util/util.hh"
 
 #endif /* OSAPI_PLUS_HH_ */

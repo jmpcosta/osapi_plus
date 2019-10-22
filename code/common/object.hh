@@ -7,8 +7,8 @@
 //
 // *****************************************************************************************
 
-#ifndef OSAPI_GENERAL_OBJECT_HH_
-#define OSAPI_GENERAL_OBJECT_HH_
+#ifndef OSAPI_COMMON_OBJECT_HH_
+#define OSAPI_COMMON_OBJECT_HH_
 
 // *****************************************************************************************
 //
@@ -17,6 +17,7 @@
 // *****************************************************************************************
 
 // Import C++ system headers
+#include <cstddef>
 #include <string>
 
 // *****************************************************************************************
@@ -39,15 +40,15 @@ public:
 	// Inline methods
 	std::string	&	getName	( void ) 		{ return iName; }
 	uint64_t		getSize	( void ) 		{ return iSize; }
-	void 	*		getData	( void ) const 	{ return iData; }
+	void 	*		getData	( void );
 
 private:
-  std::string		iName;
-  uint64_t			iSize;
-  void 		*		iData;
+	std::string			iName;
+	uint64_t			iSize;
+	void 		*		iData;
 };
 
 
 };	// End of namespace "osapi"
 
-#endif /* OSAPI_GENERAL_OBJECT_HH_ */
+#endif /* OSAPI_COMMON_OBJECT_HH_ */

@@ -60,9 +60,9 @@ library::library( std::string & name )
  st = proc_library_supported();
  throw_on_failure( st );
 
- libInfo = nullptr;
+ libInfo = (void *) new t_memory;
 
- st = proc_memory_allocate( sizeof( t_library ), &libInfo );
+ st = proc_memory_allocate( sizeof( t_library ), (t_memory *) &libInfo );
  throw_on_failure( st );
 
  libName	= name;
@@ -75,49 +75,48 @@ library::~library( void )
 {
  TRACE_ENTER
 
- proc_memory_deallocate( libInfo );
+ t_memory * p_memory = (t_memory *) libInfo;
+
+ proc_memory_deallocate( p_memory );
+
+ delete p_memory;
 
  TRACE_EXIT
 }
 
 
-bool library::load( std::vector<std::string> & options )
+bool library::load( const std::vector<std::string> & options )
 {
- t_status	st;
- bool 		ret = false;
+ t_status						st;
+ std::vector<const char *>		cOptions;
 
  TRACE_ENTER
 
- size_t aSize;
- char ** array = nullptr;
+ isLoaded = false;
 
  for(size_t i=0; i<options.size(); i++)
 	  TRACE( i, ": loading option:", options[i] )
 
- if( ! common::vecStr2array( options, &aSize, &array ) )
-	 throw status( "Unable to convert vector to C-Array" );
+ common::vecStrings( options, cOptions );
 
  TRACE( "Loading library:", libName )
- st = proc_library_load( (char *) libName.c_str(), array, (t_library *) &libInfo );
+
+ st = proc_library_load( (char *) libName.c_str(), (char **) cOptions.data(), (t_library *) &libInfo );
 
  if( status_failure( st ) )
    {
-	 lastError = status_error_get( st );
+	 lastError = status_message_get( st );
 	 TRACE( "Error loading library:", lastError )
    }
  else
    {
 	 TRACE( "Successfully loaded library into the current process:", libName )
 	 isLoaded 	= true;
-	 ret 		= true;
    }
-
- // Deallocate the temporary array
- proc_memory_deallocate( (void *) array );
 
  TRACE_EXIT
 
- return ret;
+ return isLoaded;
 }
 
 
@@ -133,7 +132,7 @@ bool library::unload( void )
    {
 	 st = proc_library_unload( (t_library) libInfo );
 	 if( status_failure( st ) )
-		 lastError = status_error_get( st );
+		 lastError = status_message_get( st );
 	 else
 	   {
 		 TRACE( "Successfully unloaded library from the current process:", libName )

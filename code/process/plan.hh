@@ -61,12 +61,12 @@ public:
 		/// @brief Add a command line for the planned process
 		/// @param [in] line - The planned command line
 		/// @return Operation status, True if successful, False otherwise
-		bool 				addCommandLine	( const std::vector<refConstStr> & line	);
+		bool 				addCommandLine	( const std::vector<const char *> & line	);
 
 		/// @brief Add a process environment for the planned process
 		/// @param [in] env - The planned process environment
 		/// @return Operation status, True if successful, False otherwise
-		bool				addEnvironment	( const std::vector<refConstStr> & env );
+		bool				addEnvironment	( const std::vector<const char *> & env );
 
 		/// @brief Add the User ID under which the process will run
 		/// @param [in] user - User ID
@@ -86,11 +86,11 @@ public:
 		// Retrieve data from the instance
 		/// @brief Get a command line from the planned process
 		/// @return The command line as a vector of pointers to C-strings
-		std::vector<char *>	getCommandLine	( void );
+		bool				getCommandLine	( std::vector<const char *> & cmdLine );
 
 		/// @brief Get the process environment from the planned process
 		/// @return The process environment as a vector of pointers to C-strings
-		std::vector<char *>	getEnvironment	( void );
+		bool				getEnvironment	( std::vector<const char *> & env	);
 		/*
 		std::string			getUser			( void 								);
 		std::string			getGroup		( void 								);

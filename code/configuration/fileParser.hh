@@ -57,7 +57,7 @@ namespace configuration
 /// prop:[property name]=[property value]<BR>
 /// env:[variable name]=[variable value]<BR>
 /// arg:[arguments]<BR>
-class fileParser : parser
+class fileParser : public parser
 {
 public:
 		/// @brief class destructor

@@ -11,13 +11,13 @@
 #define OSAPI_VERSION_HH_
 
 // My version requires the following minimum OSAPI C version
-#define OSAPIC_REQUIRED_VERSION		22
+#define OSAPIC_REQUIRED_VERSION		29
 
 namespace osapi
 {
 
 // Own version
-enum osapi_version { library_version = 6 };
+enum osapi_version { library_version = 7 };
 
 }	// End of namespace "osapi"
 

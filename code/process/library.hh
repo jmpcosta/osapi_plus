@@ -51,7 +51,7 @@ public:
 		/// @brief Load the shared library into the current process
 		/// @param [in] options	- Vector of strings with system specific load options
 		/// @return Operation status, True if successful, False otherwise
-		bool				load		( std::vector<std::string> & options );
+		bool				load		( const std::vector<std::string> & options );
 
 		/// @brief Unload the shared library from the current process
 		/// @return Operation status, True if successful, False otherwise

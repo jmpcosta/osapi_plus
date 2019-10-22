@@ -4,6 +4,7 @@
 //
 // Author:	Joao Costa
 // Purpose:	Provide an enumeration of the file system element types
+//			This file must match the OSAPI C counter part (fs/type/fs_type_type.h)
 //
 // *****************************************************************************************
 
@@ -23,7 +24,7 @@ namespace filesystem
 {
 
 /// @brief The elementType enum represents the possible elements of a file system
-enum class elementType
+enum class elementType : int
 {
   unknown		= 0, ///< Unknown element
   file			= 1, ///< The element is a file

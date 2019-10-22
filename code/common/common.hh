@@ -65,29 +65,13 @@ public:
 		/// @return The boolean string
 		static const char * 	bool2string 	( bool value																	);
 
-		/// @brief Convert a Vector of strings into a C-array
+		/// @brief Convert a Vector of strings into a vector of C-array
 		///
-		/// The call creates an array of char pointers to the C-strings from vector. It doesn't copy them.
-		/// It is the responsibility of the caller to release the allocated C-array.
-		/// @param [in] vec - Vector to convert
-		/// @param [out] arraySize - The size of the output array
-		/// @param [out] array - The newly allocated C-Array of char pointers
-		static bool				vecStr2array	( const std::vector<std::string> & vec, size_t * arraySize, char *** array		);
+		/// The call creates an array of char pointers to the C-strings from a vector of C++ strings. It doesn't copy those strings.
+		/// @param [in]  source - Vector containing the C++ strings
+		/// @param [out] target - The vector containing pointers to C-strings
+		static void				vecStrings		( const std::vector<std::string> & source, std::vector<const char *> & target	);
 
-		/// @brief Convert a Vector of strings into a C-array using references to strings
-		///
-		/// The call creates an array of char pointers to the C-strings from vector. It doesn't copy them.
-		/// It is the responsibility of the caller to release the allocated C-array.
-		/// @param [in] vec - Vector to convert
-		/// @param [out] arraySize - The size of the output array
-		/// @param [out] array - The newly allocated C-Array of char pointers
-		static bool				vecRefStr2array	( const std::vector<refConstStr> & vec, size_t * arraySize, char *** array 		);
-
-		/// @brief Obtain a pointer to the C-String of a given vector element
-		/// @param [in] vec - The input vector
-		/// @param [in] index - Vector index from which to retrieve information
-		/// @return The pointer to the C-string of the index vector element
-		static const char *		getVecRefString	( const std::vector<refConstStr> & vec, size_t index							);
 
 private:
 

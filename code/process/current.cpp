@@ -176,7 +176,7 @@ void Current::activateAllSignals()
  std::lock_guard<std::mutex> 			guard( procMutex );
  signal_list::iterator				i =	sigList.begin();
 
- t_size sz = sigList.size();
+ TRACE_IF( t_size sz = sigList.size(); )
  TRACE( "Size of list of signals:", sz )
 
  for( ; i != sigList.end(); i++ )

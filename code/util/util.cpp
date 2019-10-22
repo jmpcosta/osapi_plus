@@ -77,12 +77,6 @@ const char * util::bool2string ( bool value )
 	return common::bool2string( value );
 }
 
-// Copy a vector of strings into an array of C Strings
-bool util::vecStr2array( const std::vector<std::string> & vec, size_t * p_arraySize, char *** p_array )
-{
- return common::vecStr2array( vec, p_arraySize, p_array );
-}
-
 
 
 

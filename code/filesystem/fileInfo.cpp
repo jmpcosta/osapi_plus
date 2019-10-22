@@ -3,7 +3,7 @@
 // File description:
 //
 // Author:	Joao Costa
-// Purpose:	Implementation of the OSAPI+ library interface
+// Purpose:	Provide Filesystem module implementation for a fileInfo class
 //
 // *****************************************************************************************
 
@@ -13,20 +13,34 @@
 //
 // *****************************************************************************************
 
-// Include OSAPI C headers
-#include "proc/proc_resource.h"
+// Include the C OSAPI interfaces first
+#include "status/status.h"
 
 // Import C++ system headers
-#include <stdexcept>
+#include <string>
+
+// Import OSAPI++ generic headers
+#include "general/types.hh"
+#include "status/status.hh"
+#include "status/trace.hh"
 
 // Import own module declarations
-#include "general/object.hh"
+#include "filesystem/fileInfo.hh"
+
+
 
 // *****************************************************************************************
 //
-// Section: Module constants
+// Section: Module Constant definitions
 //
 // *****************************************************************************************
+
+namespace osapi
+{
+namespace filesystem
+{
+
+//TRACE_CLASSNAME( fileInfo )
 
 
 // *****************************************************************************************
@@ -35,32 +49,22 @@
 //
 // *****************************************************************************************
 
-namespace osapi
+// What does the constructor do: Create/open a file in the filesystem or just create an instance of the type?
+/*
+fileInfo::fileInfo( const std::string & filename ) : elementInfo( filename )
 {
-
-
-object::object( std::string & name, uint64_t size, void * data )
-{
- // Sanity checks
- if( iData == nullptr )
-	 throw std::invalid_argument( "Object Name missing" );
-
- if( size < 1 )
-	 throw std::invalid_argument( "Object Size must be greater than 0" );
-
- if( iData == nullptr )
-	 throw std::invalid_argument( "Object Data pointer is null" );
-
- // All conditions are met, assign
- iName = std::move( name );
- iSize = size;
- iData = data;
+ p_info = nullptr;	// Temporary
+ TRACE_POINT
 }
 
 
-object::~object()
+fileInfo::~fileInfo()
 {
- proc_memory_deallocate( iData );
+ TRACE_POINT
 }
+*/
 
-}	// End of namespace "osapi"
+
+
+}   // End of namespace "filesystem"
+}   // End of namespace "osapi"
