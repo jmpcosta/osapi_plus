@@ -135,7 +135,7 @@ clock::clock( int64_t seconds, uint64_t fraction, precision	prec )
 
  TRACE_ENTER
 
- st = clock_time_make( seconds, fraction, &tm );
+ st = clock_time_make( seconds, fraction, static_cast<t_time_precision>(prec), &tm );
  throw_on_failure( st );
 
  st = clock_offset_make( (int64_t) 0, (uint64_t) 0, &offset );
